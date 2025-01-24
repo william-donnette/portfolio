@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-bg: #f1f1f2;
+  --primary-color: #004aad;
+  --title-color: #150941;
+}
+
+body {
+  background-color: var(--primary-bg);
+}
+
+* {
+  font-family: "Roboto Condensed";
+}
