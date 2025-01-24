@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Container from "../Container";
+import Container from "../../../src-archive/components/Container";
 
 interface BiographyProps {}
 

@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
-import { displayDuration } from "../../utils/displayDuration";
-import Container from "../Container";
+import Container from "../../../src-archive/components/Container";
+import { displayDuration } from "../../../src-archive/utils/displayDuration";
 
 interface AcademicTraining {
   title: string;

@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import QRCode from "react-qr-code";
-import Container from "../Container";
+import Container from "../../../src-archive/components/Container";
 
 interface Projects {
   title: string;
