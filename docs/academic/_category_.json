@@ -1,8 +1,10 @@
 {
-  "label": "Formation Académique",
-  "position": 4,
-  "link": {
-    "type": "generated-index",
-    "description": "Découvrez plus en détail mon parcours académique ainsi que mes projets scolaires."
-  }
+	"label": "🎓 Formation Académique",
+	"position": 3,
+	"link": {
+		"type": "doc",
+		"id": "academic/master-eisi/index"
+	},
+	"collapsed": false,
+	"collapsible": false
 }
