@@ -3,7 +3,7 @@ sidebar_position: 1
 title: 2024 - 📚 ABES
 ---
 
-#### `📍 Montpellier, France` `📅 2024 - Présent`
+#### `📅 2024 - Présent` `📍 Montpellier, France`
 
 ---
 
@@ -38,5 +38,7 @@ Tous les projets de l'ABES sont **open source** et disponibles sur leur dépôt 
 -   **📌 Gestion de projet en méthodologie SCRUM via Jira**
 
 ## 🔥 Expérience unique
+
+#### Découverte du monde bibliothécaire et de l'Open-Source
 
 Cette expérience me permet de consolider mes compétences en **développement web** tout en évoluant dans un environnement **agile et collaboratif**. Travailler au sein de l'ABES, c'est aussi contribuer à un **service public essentiel** pour la communauté universitaire française, en développant des **solutions open source** qui favorisent la diffusion et l’accessibilité de la connaissance.

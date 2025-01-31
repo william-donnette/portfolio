@@ -4,7 +4,7 @@ title: 2022 - Master EISI
 description: Découvrez le master Expert en Informatique et Système d'Information (EISI) et l'école EPSI.
 ---
 
-#### `📅 2022 - 2024` `📜 Certification RNCP35584 Niveau 7` `🎓 BAC+5`
+#### `📅 2022 - 2024` `🏫 EPSI` `📜 Certification RNCP35584 Niveau 7` `🎓 BAC+5`
 
 ---
 

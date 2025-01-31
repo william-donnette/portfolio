@@ -4,7 +4,7 @@ title: 2019 - DUT Informatique
 description: Découvrez le diplôme universitaire de technologie en informatique à l'Université de Montpellier.
 ---
 
-#### `📅 2019 - 2021` `📜 Certification RNCP Niveau 5` `🎓 BAC+2`
+#### `📅 2019 - 2021` `🏫 Université de Montpellier` `📜 Certification RNCP Niveau 5` `🎓 BAC+2`
 
 ---
 

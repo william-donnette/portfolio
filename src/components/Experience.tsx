@@ -129,8 +129,12 @@ const Experience = () => {
 					description: 'Maintenances de sites WEB (WordPress)',
 					links: [
 						{
-							category: 'Site Estimer Immobilier',
-							url: 'https://estimer-immobilier.com/',
+							category: 'Site bilan fertitlité',
+							url: 'https://bilanfertilite.fr/',
+						},
+						{
+							category: 'IVF France',
+							url: 'https://ivf-france.fr/',
 						},
 					],
 				},

@@ -4,7 +4,7 @@ title: 2021 - Licence APIDAE
 description: Découvrez la Licence Professionnelle Assistant de Projet Informatique, Développement d'Applications WEB/E-Business (APIDAE) à l'Université de Montpellier.
 ---
 
-#### `📅 2021 - 2022` `📜 Certification RNCP Niveau 6` `🎓 BAC+3`
+#### `📅 2021 - 2022` `🏫 Université de Montpellier` `📜 Certification RNCP Niveau 6` `🎓 BAC+3`
 
 ---
 
