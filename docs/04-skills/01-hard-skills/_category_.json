@@ -1,8 +1,8 @@
 {
-	"label": "🛠️ Hard Skills",
+	"label": "</> Hard Skills",
 	"link": {
 		"type": "doc",
-		"id": "skills/hard-skills/docker/index"
+		"id": "skills/hard-skills/index"
 	},
 	"collapsed": true,
 	"collapsible": true
