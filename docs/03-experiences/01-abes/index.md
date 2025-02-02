@@ -10,7 +10,7 @@ title: 2024 - 📚 ABES
 
 🔗 **Site Web** : [abes.fr](https://abes.fr/)
 
-## 🎯 Contexte de l'entreprise
+## 📌 Contexte de l'entreprise
 
 L'**Agence Bibliographique de l'Enseignement Supérieur (ABES)** joue un rôle clé dans la gestion et la diffusion des ressources bibliographiques de l'enseignement supérieur français. Elle développe et maintient des plateformes facilitant l'accès aux données scientifiques et académiques.
 
@@ -18,7 +18,7 @@ L'ABES gère des **applications vieillissantes** avec une **forte volumétrie de
 
 Tous les projets de l'ABES sont **open source** et disponibles sur leur dépôt officiel GitHub : [ABES GitHub](https://github.com/abes-esr).
 
-## 🚀 Mes missions
+## 🎯 Mes missions
 
 -   **🔧 Maintenance et évolution de sites web bibliographiques**
 

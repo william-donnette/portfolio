@@ -1,8 +1,8 @@
 ---
-title: 🎯 Soft Skills
+title: ☕ Soft Skills
 ---
 
-# 🎯 Soft-Skills
+# ☕ Soft-Skills
 
 -   **Travail en équipe & Communication** 🤝
 -   **Gestion du temps & Organisation (SCRUM)** ⏳

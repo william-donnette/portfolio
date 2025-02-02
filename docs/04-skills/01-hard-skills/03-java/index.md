@@ -20,8 +20,8 @@ title: Java
 
 -   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="20" /> **Spring Boot**
     -   **Projet professionnel :** 80% des sites de l'[ABES](../../experiences/abes)
-    -   💄 **Java Servlet Pages (JSP)**
--   **💄 JavaFX**
+    -   🎨 **Java Servlet Pages (JSP)**
+-   **🎨 JavaFX**
     -   **Projet scolaire :** [Jeu d'Escape Game](../../academic/dut-informatique/projects#-développement-dun-escape-game-virtuel)
 
 ## Projets

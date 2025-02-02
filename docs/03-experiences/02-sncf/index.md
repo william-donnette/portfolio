@@ -11,7 +11,7 @@ title: 2022 - 🚆 SNCF Voyageurs
 🔗 **Site Web** : [sncf.com](https://www.sncf.com/)
 🔗 **Site Web** : [sncf-voyageurs.com](https://www.sncf-voyageurs.com/)
 
-## 🎯 Contexte de l'entreprise
+## 📌 Contexte de l'entreprise
 
 Dans le cadre du projet **OSCAR**, la SNCF se prépare à l'arrivée de la concurrence et revoit entièrement la stratégie de son **Système d'Information (S.I.)** pour la **planification du plan de transport**.
 
@@ -19,7 +19,7 @@ Elle déploie ainsi un nouveau progiciel, **HASTUS**, destiné à remplacer **se
 
 J'ai rejoint l'équipe **SNCF Occitanie**, en charge de **mettre en production** ce nouvel outil et d'**accompagner les collaborateurs** dans l'adoption des nouveaux processus.
 
-## 🚀 Mes missions
+## 🎯 Mes missions
 
 -   **💾 Développement d'un ETL interne (JavaScript/TypeScript Node.js)**
 

@@ -11,7 +11,7 @@ title: 2021 - 🏡 DomData
 🔗 **Site Web** : [DomData](https://domdata.pro/)
 🔗 **Site Web** : [A3CDigital](https://a3cdigital.com/)
 
-## 🎯 Contexte de l'entreprise
+## 📌 Contexte de l'entreprise
 
 **DomData** est une agence web spécialisée dans le développement et la maintenance de sites internet, notamment sous WordPress, ainsi que dans la conception de solutions sur mesure pour le secteur immobilier. C'est l'un des secteurs d'activité de l'entreprise "mère" **A3CDigital**
 
@@ -21,7 +21,7 @@ Ayant fait mes preuves lors de ma précédente expérience en [stage à A3CDigit
 
 J'ai intégré l'entreprise en tant que **Développeur WEB FullStack** afin d'assurer la maintenance et l'évolution des sites web, mais aussi de développer des solutions innovantes pour l'estimation immobilière.
 
-## 🚀 Mes missions
+## 🎯 Mes missions
 
 :::info
 La start-up m'a demandé durant mon alternance de développer en **autonomie**, de A à Z, un **estimateur immobilier** capable d'être intégrer sur leurs sites d'acquisitions de vendeurs mais aussi sur d'autres sites clients et affiliateurs. Un véritable défi qui m'ont amenés à avoir des missions variées.

@@ -31,13 +31,13 @@ title: JavaScript / TypeScript
     -   **Projet personnel :** [Solution cloud sous forme de réseau social](../../projects/smile)
     -   **Projet personnel :** [Site de portefeuille patrimonial](../../projects/wallet)
     -   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="20" /> Next.js
-    -   💄 Ant Design
+    -   🎨 Ant Design
     -   🔌 Refine
 -   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="20" /> **Vue.js**
     -   **Projet professionnel :** [🔗 Maintenance Theses.fr](https://theses.fr/?domaine=theses)
     -   **Projet scolaire :** [Site de recettes](../../academic/licence-apidae/projects#-développement-dun-site-web-de-recettes)
     -   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" width="20" /> Nuxt.js
-    -   💄 Vuetify
+    -   🎨 Vuetify
 -   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="20" /> **Angular.js**
     -   **Projet Freelance :** [🔗 Intégration de maquettes recrut-innov.fr](https://www.recrut-innov.fr/)
 
