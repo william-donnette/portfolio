@@ -1,0 +1,9 @@
+{
+	"label": "💻 Projets Personnels",
+	"link": {
+		"type": "generated-index",
+		"description": "Découvrez quelques uns de mes projets personnels."
+	},
+	"collapsed": true,
+	"collapsible": true
+}

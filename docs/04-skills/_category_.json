@@ -1,0 +1,9 @@
+{
+	"label": "💡 Compétences",
+	"link": {
+		"type": "doc",
+		"id": "skills/index"
+	},
+	"collapsed": false,
+	"collapsible": true
+}

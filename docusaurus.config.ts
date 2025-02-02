@@ -66,15 +66,9 @@ const config: Config = {
 				className: 'rounded-full',
 			},
 			items: [
-				// {
-				//   type: "docSidebar",
-				//   sidebarId: "tutorialSidebar",
-				//   position: "left",
-				//   label: "Formation Académique",
-				// },
-				{to: '/docs/intro', label: 'Qui suis-je ?', position: 'left'},
-				{to: '/docs/intro', label: 'Mes Projets', position: 'left'},
-				{to: '/docs/intro', label: 'Blog', position: 'left'},
+				{to: '/docs/intro', label: 'Portfolio', position: 'left'},
+				{to: '/docs/projects/homkizz', label: 'Mes Projets', position: 'left'},
+				{to: '/blog', label: 'Blog', position: 'left'},
 				{
 					type: 'search',
 					position: 'right',
@@ -93,16 +87,24 @@ const config: Config = {
 					title: 'Portfolio',
 					items: [
 						{
-							label: 'Formation Académique',
+							label: '👋 Qui suis-je ?',
 							to: '/docs/intro',
 						},
 						{
-							label: 'Expériences Professionnelles',
-							to: '/docs/intro',
+							label: '🎓 Formation Académique',
+							to: '/docs/academic/master-eisi/',
 						},
 						{
-							label: 'Projets',
-							to: '/docs/intro',
+							label: '💼 Expériences Professionnelles',
+							to: '/docs/experiences/abes/',
+						},
+						{
+							label: '💡 Mes Compétences',
+							to: '/docs/skills',
+						},
+						{
+							label: '🚧 Projets Personnels',
+							to: '/docs/category/-projets-personnels',
 						},
 					],
 				},
@@ -110,16 +112,16 @@ const config: Config = {
 					title: 'Community',
 					items: [
 						{
-							label: 'Discord',
-							href: 'https://discordapp.com/invite/docusaurus',
+							label: 'LinkedIn',
+							href: 'https://www.linkedin.com/in/william-donnette-a997a4192/',
 						},
 						{
-							label: 'LinkedIn',
-							href: 'https://twitter.com/docusaurus',
+							label: 'Facebook',
+							href: 'https://www.facebook.com/will.donn17',
 						},
 						{
 							label: 'Instagram',
-							href: 'https://twitter.com/docusaurus',
+							href: 'https://www.instagram.com/donnwill/',
 						},
 					],
 				},
@@ -132,11 +134,11 @@ const config: Config = {
 						},
 						{
 							label: 'GitLab',
-							href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+							href: 'https://gitlab.com/william-donnette',
 						},
 						{
 							label: 'GitHub',
-							href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+							href: 'https://github.com/william-donnette',
 						},
 					],
 				},
