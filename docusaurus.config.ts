@@ -67,8 +67,8 @@ const config: Config = {
 			},
 			items: [
 				{to: '/docs/intro', label: 'Portfolio', position: 'left'},
-				{to: '/docs/projects/homkizz', label: 'Mes Projets', position: 'left'},
-				{to: '/blog', label: 'Blog', position: 'left'},
+				// {to: '/docs/projects/homkizz', label: 'Mes Projets', position: 'left'},
+				// {to: '/blog', label: 'Blog', position: 'left'},
 				{
 					type: 'search',
 					position: 'right',

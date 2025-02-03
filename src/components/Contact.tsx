@@ -1,81 +1,44 @@
-// import { Mail, MapPin, Phone } from 'lucide-react';
+import {Linkedin, Mail, Phone} from 'lucide-react';
+import Container from './commons/Container';
 
-const Contact = () => {
-  return (
-    <section id="contact" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">Get In Touch</h2>
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="space-y-6">
-              <h3 className="text-2xl font-semibold">Contact Information</h3>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  {/* <Mail className="w-6 h-6 text-blue-600 mr-2" /> */}
-                  <span>john.doe@example.com</span>
-                </div>
-                <div className="flex items-center">
-                  {/* <Phone className="w-6 h-6 text-blue-600 mr-2" /> */}
-                  <span>+1 (555) 123-4567</span>
-                </div>
-                <div className="flex items-center">
-                  {/* <MapPin className="w-6 h-6 text-blue-600 mr-2" /> */}
-                  <span>San Francisco, CA</span>
-                </div>
-              </div>
-            </div>
-            <form className="space-y-4">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+const ContactForm = () => {
+	return (
+		<Container id="contact" className="py-12 text-center bg-gray-50 my-40">
+			<div className="max-w-4xl mx-auto px-6">
+				<h2 className="text-3xl font-bold text-gray-900 dark:text-white">Me Contacter</h2>
+				<p className="mt-4 text-gray-600 dark:text-gray-300">N'hésitez pas à me contacter via les moyens suivants !</p>
+			</div>
+			<div className="max-w-4xl mx-auto px-6 mt-10 grid gap-6 grid-cols-1 md:grid-cols-3">
+				<a
+					href="mailto:willdonn17@gmail.com"
+					className="flex flex-col items-center space-x-3 text-gray-900 dark:text-white hover:text-blue-600"
+				>
+					<div className="rounded-xl bg-gray-200 dark:bg-gray-700 w-16 h-16 flex items-center justify-center mb-5">
+						<Mail className="w-8 h-8" />
+					</div>
+					<span>willdonn17@gmail.com</span>
+				</a>
+				<a href="tel:+33651799643" className="flex flex-col items-center space-x-3 text-gray-900 dark:text-white hover:text-blue-600">
+					<div className="rounded-xl bg-gray-200 dark:bg-gray-700 w-16 h-16 flex items-center justify-center mb-5">
+						<Phone className="w-8 h-8" />
+					</div>
+					<span>+33 6 51 79 96 43</span>
+				</a>
+				<a
+					href="https://www.linkedin.com/in/william-donnette-a997a4192/"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="flex flex-col items-center space-x-3 text-gray-900 dark:text-white hover:text-blue-600"
+				>
+					{/* <FaLinkedin className="text-2xl" /> */}
+					<div className="rounded-xl bg-gray-200 dark:bg-gray-700 w-16 h-16 flex items-center justify-center mb-5">
+						<Linkedin className="w-8 h-8" />
+					</div>
+					<span>LinkedIn</span>
+				</a>
+			</div>
+		</Container>
+	);
 };
 
-export default Contact;
+export default ContactForm;

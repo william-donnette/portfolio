@@ -12,7 +12,7 @@ title: JavaScript / TypeScript
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="40" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" width="40" />
 
-**`Expert ⭐⭐⭐⭐⭐`**
+**Niveau : `Expert ⭐⭐⭐⭐⭐`**
 
 ---
 

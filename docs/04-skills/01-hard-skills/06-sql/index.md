@@ -7,7 +7,7 @@ title: SQL
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqldeveloper/sqldeveloper-original.svg" width="40" />
 
-**`Très bon ⭐⭐⭐⭐`**
+**Niveau : `Très bon ⭐⭐⭐⭐`**
 
 ---
 
