@@ -4,8 +4,6 @@ include:
     - 'templates/.deploy.yml'
     
 stages:
-    - sonarqube-check
-    - build
     - register
     - deploy
 
