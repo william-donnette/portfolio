@@ -31,14 +31,14 @@ function AcademicCTA() {
 
 	return (
 		<Container id="academic" className="text-center dark:bg-transparent">
-			<div className="max-w-4xl mx-auto px-6">
+			<div className="max-w-4xl mx-auto">
 				<h2 className="text-3xl font-bold text-gray-900 dark:text-white">Mon Parcours Académique</h2>
 				<p className="mt-4 text-gray-600 dark:text-gray-300">
 					Au fur et à mesure du temps, j'ai affiné mon parcours afin de réaliser des formations qui m'attiraient. Elles m'ont apporter à la
 					fois les connaissances nécessaires tout en mettant l'accent sur la pratique.
 				</p>
 			</div>
-			<div className="max-w-8xl mx-auto px-6 space-y-8">
+			<div className="max-w-8xl mx-auto space-y-8">
 				{timelineData.map(({year, title, level, technologies, ctaLink, detailsLink}, index) => (
 					<div className="relative md:pl-32 py-6 group text-left" key={index}>
 						{/* Timeline line */}

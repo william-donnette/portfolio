@@ -27,7 +27,7 @@ const Experience = () => {
 
 	return (
 		<Container id="experiences" className="text-center dark:bg-transparent">
-			<div className="max-w-4xl mx-auto px-6 mb-10">
+			<div className="max-w-4xl mx-auto mb-10">
 				<h2 className="text-3xl font-bold text-gray-900 dark:text-white">Expériences professionnelles</h2>
 			</div>
 			<div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
