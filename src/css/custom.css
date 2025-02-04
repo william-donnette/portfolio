@@ -28,3 +28,11 @@
 	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 	--ifm-footer-background-color: #1e2939;
 }
+
+html footer {
+	background-color: #1e2939;
+}
+
+html[data-theme='dark'] footer {
+	background-color: #1e2939;
+}
