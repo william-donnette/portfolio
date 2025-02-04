@@ -6,11 +6,3 @@ include:
 stages:
     - register
     - deploy
-
-default:
-    artifacts:
-        paths:
-            - package-lock.json
-            - node_modules
-            - build
-            - .docusaurus
