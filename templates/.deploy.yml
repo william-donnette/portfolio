@@ -27,7 +27,7 @@
 # Déploie l'image de production
 server:production:deploy:
     extends: .server:deploy
-    needs: ['image:stable:register']
+    needs: ['image:latest:register']
     variables:
         ENVIRONMENT: 'production'
         DOCKER_CONTAINER_PREFIX: 'william-donnette-portfolio'
