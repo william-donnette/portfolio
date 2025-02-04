@@ -102,7 +102,7 @@ const config: Config = {
 							to: '/docs/skills',
 						},
 						{
-							label: '🚧 Projets Personnels',
+							label: '💻 Projets Personnels',
 							to: '/docs/category/-projets-personnels',
 						},
 					],

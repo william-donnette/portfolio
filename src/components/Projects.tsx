@@ -67,7 +67,7 @@ export default function Projects() {
 			status: 'archived',
 			type: 'scolaire',
 			description: "Développement d'une application mobile avec React Native et APIs en C# intégrant la réalité augmentée.",
-			image: 'https://images.unsplash.com/photo-1573164574511-73c773193279?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80',
+			image: 'https://images.unsplash.com/photo-1423666639041-f56000c27a9a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 			technologies: ['React Native', 'Expo', 'C#', 'Keycloak'],
 			links: {
 				github: 'https://gitlab.com/william-donnette/mspr1-mobile-app',
@@ -80,7 +80,7 @@ export default function Projects() {
 			status: 'wip',
 			type: 'personnel',
 			description: 'Application mobile de suivi de patrimoine financier développée avec React Native et Expo.',
-			image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
+			image: 'https://images.unsplash.com/photo-1459257831348-f0cdd359235f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 			technologies: ['React Native', 'Expo', 'Node.js', 'TypeScript'],
 			links: {
 				github: 'https://gitlab.com/william-donnette/wallet',
