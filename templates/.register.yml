@@ -40,7 +40,7 @@
     script:
         - >
             docker build
-            -- target serve
+            --target serve
             --build-arg NODE_ENV=$ENVIRONMENT
             --pull
             --file "Dockerfile"
