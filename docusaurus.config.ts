@@ -144,11 +144,11 @@ const config: Config = {
 			],
 			copyright: `Copyright © ${new Date().getFullYear()} William Donnette. Built with Docusaurus.`,
 		},
-		algolia: {
-			appId: '',
-			apiKey: '',
-			indexName: '',
-		},
+		// algolia: {
+		// 	appId: '',
+		// 	apiKey: '',
+		// 	indexName: '',
+		// },
 	} satisfies Preset.ThemeConfig,
 };
 
