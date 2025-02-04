@@ -1,6 +1,5 @@
 import type * as Preset from '@docusaurus/preset-classic';
 import type {Config} from '@docusaurus/types';
-import {themes as prismThemes} from 'prism-react-renderer';
 import tailwindPlugin from './plugins/tailwind-config.cjs';
 
 const config: Config = {
@@ -9,7 +8,7 @@ const config: Config = {
 	favicon: 'img/favicon.ico',
 
 	// Set the production url of your site here
-	url: 'https://william-donnette.blog',
+	url: 'https://william-donnette.dev',
 	// Set the /<baseUrl>/ pathname under which your site is served
 	// For GitHub pages deployment, it is often '/<projectName>/'
 	baseUrl: '/',
@@ -145,14 +144,10 @@ const config: Config = {
 			],
 			copyright: `Copyright © ${new Date().getFullYear()} William Donnette. Built with Docusaurus.`,
 		},
-		prism: {
-			theme: prismThemes.github,
-			darkTheme: prismThemes.dracula,
-		},
 		algolia: {
-			appId: '0CMHNGVUX0',
-			apiKey: 'fb8a8bf7f10a789e5c28ae7be4f70512',
-			indexName: 'test_index',
+			appId: '',
+			apiKey: '',
+			indexName: '',
 		},
 	} satisfies Preset.ThemeConfig,
 };

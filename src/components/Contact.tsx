@@ -3,7 +3,7 @@ import Container from './commons/Container';
 
 const ContactForm = () => {
 	return (
-		<Container id="contact" className="py-12 text-center md:bg-gray-50 my-20 lg:my-40 p-2">
+		<Container id="contact" className="text-center md:bg-gray-50 my-20 lg:my-40">
 			<div className="max-w-4xl mx-auto">
 				<h2 className="text-3xl font-bold text-gray-900 dark:text-white">Me Contacter</h2>
 				<p className="mt-4 text-gray-600 dark:text-gray-300">N'hésitez pas à me contacter via les moyens suivants !</p>
