@@ -26,7 +26,7 @@ Durant cette année, j'ai développé des compétences variées et complémentai
 
 ### L'Alternance
 
-Cette formation en alternance m'a permis de vivre une première expérience professionnelle en tant que **[Développeur Web FullStack chez DomData](../../experiences/domdata)**, renforçant ainsi mes acquis théoriques par la pratique. J'ai pu travailler sur des projets ambitieux, notamment :
+Cette formation en alternance m'a permis de vivre une première expérience professionnelle en tant que **[Développeur Web FullStack chez DomData](../../03-experiences/03-domdata/index.md)**, renforçant ainsi mes acquis théoriques par la pratique. J'ai pu travailler sur des projets ambitieux, notamment :
 
 ### Un Tremplin Vers l'Avenir
 

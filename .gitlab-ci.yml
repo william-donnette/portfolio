@@ -1,0 +1,18 @@
+
+include:
+    - 'templates/.register.yml'
+    - 'templates/.deploy.yml'
+    
+    stages:
+    - sonarqube-check
+    - build
+    - register
+    - deploy
+
+default:
+    artifacts:
+        paths:
+            - package-lock.json
+            - node_modules
+            - build
+            - .docusaurus

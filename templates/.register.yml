@@ -1,0 +1,64 @@
+.docker-login: &docker-login
+    - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" --password-stdin $CI_REGISTRY
+
+.docker-logout: &docker-logout
+    - docker logout $CI_REGISTRY
+
+# Assure qu'un seul job register est exécuté à la fois
+# Applique la protection de l'environnement
+.register:
+    variables:
+        ENVIRONMENT: ''
+    environment:
+        name: $ENVIRONMENT
+    resource_group: $ENVIRONMENT
+
+# Prépare les jobs register
+.image:register:
+    extends: .register
+    image: docker:18.09.7-dind
+    stage: register
+    services:
+        - docker:18.09.7-dind
+    before_script:
+        - *docker-logout
+        - *docker-login
+        - apk update
+        - apk upgrade
+        - apk add bash curl
+        - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
+    after_script:
+        - *docker-logout
+
+# Prépare les jobs register qui copient une version d'image
+.image:create:register:
+    extends: .image:register
+    variables:
+        ENVIRONMENT: ''
+        VERSION: ''
+        IMAGE_TAG: ''
+    script:
+        - >
+            docker build
+            -- target serve
+            --build-arg NODE_ENV=$ENVIRONMENT
+            --pull
+            --file "Dockerfile"
+            --label "org.opencontainers.image.title=$CI_PROJECT_TITLE"
+            --label "org.opencontainers.image.url=$CI_PROJECT_URL"
+            --label "org.opencontainers.image.created=$CI_JOB_STARTED_AT"
+            --label "org.opencontainers.image.revision=$CI_COMMIT_SHA"
+            --label "org.opencontainers.image.version=$VERSION"
+            --tag $CI_REGISTRY_IMAGE:$IMAGE_TAG
+            .
+        - docker push $CI_REGISTRY_IMAGE:$IMAGE_TAG
+
+# Register la dernière image de staging
+image:latest:register:
+    extends: .image:create:register
+    variables:
+        ENVIRONMENT: 'production'
+        VERSION: $CI_COMMIT_TAG
+        IMAGE_TAG: 'latest'
+    only:
+        - main

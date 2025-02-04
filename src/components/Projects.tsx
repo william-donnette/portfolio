@@ -58,7 +58,7 @@ export default function Projects() {
 			technologies: ['Vue.js', 'Java Spring', 'PostgreSQL'],
 			links: {
 				website: 'https://theses.fr',
-				doc: '/docs/experiences/abes',
+				doc: '/docs/03-experiences/01-abes/index.md',
 			},
 		},
 		{

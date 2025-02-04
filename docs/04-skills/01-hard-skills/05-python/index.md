@@ -18,13 +18,13 @@ title: Python
 ## Back-End
 
 -   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" width="20" /> **Flask**
-    -   **Projet personnel :** [Site de solutions d'estimation pour l'immobilier](../../projects/homkizz)
+    -   **Projet personnel :** [Site de solutions d'estimation pour l'immobilier](../../../05-projects/01-homkizz.md)
 
 ## Intelligence Artificielle
 
 -   **Machine Learning & Deep Learning**
-    -   **Projet scolaire :** [Développement de modèles d'IA : prédiction élection présidentielle](../../academic/master-eisi/projects#-développement-de-modèles-dia)
-    -   **Projet personnel :** [Développement de modèles d'IA : prédiction estimation immobilière](../../projects/homkizz)
+    -   **Projet scolaire :** [Développement de modèles d'IA : prédiction élection présidentielle](../../../02-academic/01-master-eisi/projects.md#-développement-de-modèles-dia)
+    -   **Projet personnel :** [Développement de modèles d'IA : prédiction estimation immobilière](../../../05-projects/01-homkizz.md)
     -   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="20" /> **Tensorflow**
 
 ## Outils

@@ -18,7 +18,7 @@ Depuis mon enfance, l'aéronautique m'a toujours fasciné. L'ingénierie derriè
 Du coup, pourquoi avoir choisi le DUT ?
 Au fil de mes recherches et de mes premières expériences, j'ai réalisé que ce qui me motivait réellement était la mise en application concrète de la théorie. J'avais besoin de voir mes connaissances se transformer en projets, en solutions réelles. C'est ainsi que mon choix s'est porté sur le **[Diplôme Universitaire de Technologie (DUT) en Informatique](https://iut-montpellier-sete.edu.umontpellier.fr/files/2020/01/Fiche-de-formation-DUT-Info_R_V_2020.pdf)**, une formation plus professionnalisante qui offrait une solide base en programmation et en ingénierie logicielle, tout en gardant une ouverture vers les systèmes embarqués appliqués à l'aéronautique.
 
-Un stage en entreprise en tant que **[Développeur Web chez A3CDigital](../../experiences/a3cdigital)** m'a permis de mettre en pratique les compétences acquises, en développant des applications web et en travaillant sur des projets concrets.
+Un stage en entreprise en tant que **[Développeur Web chez A3CDigital](../../03-experiences/04-a3cdigital/index.md)** m'a permis de mettre en pratique les compétences acquises, en développant des applications web et en travaillant sur des projets concrets.
 
 ### Le cursus
 

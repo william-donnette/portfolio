@@ -32,4 +32,4 @@ De plus, l'**EPSI** (Ecole Privée des Sciences Informatiques) est une école de
 
 ### L'Alternance
 
-C'est d'ailleurs grâce à leur carnet d'adresse que j'ai pu postulé dans une entreprise qui me convenait. Après un an dans une startup, je voulais découvrir un nouvel horizon, celui des grosses entreprises avec notamment du travail organisationnel entre équipes. C'est pendant ces 2 ans de formation que j'ai réalisé mon **[alternance à la SNCF Voyageurs](../../experiences/sncf)**
+C'est d'ailleurs grâce à leur carnet d'adresse que j'ai pu postulé dans une entreprise qui me convenait. Après un an dans une startup, je voulais découvrir un nouvel horizon, celui des grosses entreprises avec notamment du travail organisationnel entre équipes. C'est pendant ces 2 ans de formation que j'ai réalisé mon **[alternance à la SNCF Voyageurs](../../03-experiences/02-sncf/index.md)**
