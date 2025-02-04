@@ -3,7 +3,7 @@ include:
     - 'templates/.register.yml'
     - 'templates/.deploy.yml'
     
-    stages:
+stages:
     - sonarqube-check
     - build
     - register
