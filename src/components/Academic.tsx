@@ -34,7 +34,7 @@ function AcademicCTA() {
 			<div className="max-w-4xl mx-auto">
 				<h2 className="text-3xl font-bold text-gray-900 dark:text-white">Mon Parcours Académique</h2>
 				<p className="mt-4 text-gray-600 dark:text-gray-300">
-					Au fur et à mesure du temps, j'ai affiné mon parcours afin de réaliser des formations qui m'attiraient. Elles m'ont apporter à la
+					Au fur et à mesure du temps, j'ai affiné mon parcours afin de réaliser des formations qui m'attiraient. Elles m'ont apportées à la
 					fois les connaissances nécessaires tout en mettant l'accent sur la pratique.
 				</p>
 			</div>
@@ -42,7 +42,7 @@ function AcademicCTA() {
 				{timelineData.map(({year, title, level, technologies, ctaLink, detailsLink}, index) => (
 					<div className="relative md:pl-32 py-6 group text-left" key={index}>
 						{/* Timeline line */}
-						<div className="absolute hidden md:block left-12 h-full w-1 rounded-full bg-blue-200 dark:bg-blue-800" />
+						<div className="absolute hidden md:block left-12 h-full w-1 rounded-full bg-blue-100 dark:bg-blue-900" />
 
 						{/* Timeline dot */}
 						<span className="absolute hidden md:block left-6 top-4 inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200">
