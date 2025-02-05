@@ -1,8 +1,7 @@
 {
 	"label": "💼 Expériences Professionnelles",
 	"link": {
-		"type": "doc",
-		"id": "experiences/abes/index"
+		"type": "generated-index"
 	},
 	"collapsed": false,
 	"collapsible": false

@@ -10,7 +10,7 @@ description: Service cloud tourné autour du réseau social en React
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="40" />
 
-**`📅 2021`** **`❌ Abandonné`**
+**`📅 2021`** **`🗃️ Archivé`**
 
 ---
 

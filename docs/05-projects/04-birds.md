@@ -9,7 +9,7 @@ description: Réseau social en React Native
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" />
 
-**`📅 2020`** **`❌ Abandonné`**
+**`📅 2020`** **`🗃️ Archivé`**
 
 ---
 

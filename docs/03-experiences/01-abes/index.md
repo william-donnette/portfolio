@@ -1,5 +1,6 @@
 ---
 title: 2024 - 📚 ABES
+description: Développeur FullStack
 ---
 
 #### `📅 2024 - Présent` `📍 Montpellier, France`
@@ -9,6 +10,7 @@ title: 2024 - 📚 ABES
 # Développeur FullStack
 
 🔗 **Site Web** : [abes.fr](https://abes.fr/)
+🔗 **Github Open Source** : [abes-esr](https://github.com/abes-esr)
 
 ## 📌 Contexte de l'entreprise
 

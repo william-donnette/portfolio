@@ -37,14 +37,10 @@ const config: Config = {
 			{
 				docs: {
 					sidebarPath: './sidebars.ts',
-					// Please change this to your repo.
-					// Remove this to remove the "edit this page" links.
 					// editUrl: 'https://gitlab.com/william-donnette/portfolio/-/tree/main/',
 				},
 				blog: {
 					showReadingTime: true,
-					// Please change this to your repo.
-					// Remove this to remove the "edit this page" links.
 					// editUrl: 'https://gitlab.com/william-donnette/portfolio/-/tree/main/',
 				},
 				theme: {
@@ -61,12 +57,12 @@ const config: Config = {
 			title: 'William Donnette',
 			logo: {
 				alt: 'William Donnette',
-				src: 'img/IMG_5530.JPG',
-				className: 'rounded-full',
+				src: 'img/logo.png',
+				className: 'rounded-lg',
 			},
 			items: [
-				{to: '/docs/intro', label: 'Portfolio', position: 'left'},
-				// {to: '/docs/projects/homkizz', label: 'Mes Projets', position: 'left'},
+				{to: '/docs/intro', label: 'Curriculum Vitae', position: 'left'},
+				{to: '/docs/category/-projets-personnels', label: 'Mes Projets', position: 'left'},
 				// {to: '/blog', label: 'Blog', position: 'left'},
 				{
 					type: 'search',
@@ -91,11 +87,11 @@ const config: Config = {
 						},
 						{
 							label: '🎓 Formation Académique',
-							to: '/docs/academic/master-eisi/',
+							to: '/docs/category/-formation-académique',
 						},
 						{
 							label: '💼 Expériences Professionnelles',
-							to: '/docs/experiences/abes/',
+							to: '/docs/category/-expériences-professionnelles',
 						},
 						{
 							label: '💡 Mes Compétences',

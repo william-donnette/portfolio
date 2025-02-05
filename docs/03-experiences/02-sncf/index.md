@@ -1,5 +1,6 @@
 ---
 title: 2022 - 🚆 SNCF Voyageurs
+description: Alternance Référent Technique HASTUS
 ---
 
 #### `📅 2022 - 2024` `📍 Montpellier, France`

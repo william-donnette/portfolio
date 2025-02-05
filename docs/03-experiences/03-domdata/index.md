@@ -1,5 +1,6 @@
 ---
 title: 2021 - 🏡 DomData
+description: Alternance Développeur WEB FullStack
 ---
 
 #### `📅 2021 - 2022` `📍 Montpellier, France`

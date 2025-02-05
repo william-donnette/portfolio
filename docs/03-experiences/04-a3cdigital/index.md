@@ -1,5 +1,6 @@
 ---
 title: 2021 - 🚀 A3CDigital
+description: Stage Développeur WEB
 ---
 
 #### `📅 Printemps 2021` `📍 Montpellier, France`
