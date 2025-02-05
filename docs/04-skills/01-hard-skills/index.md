@@ -1,5 +1,5 @@
 ---
-title: </> Hard Skills
+title: 🔧 Hard Skills
 description: Découvrez mes compétences techniques très variées...
 ---
 
