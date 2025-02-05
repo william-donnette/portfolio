@@ -15,12 +15,11 @@ server:production:deploy:
         - eval $(ssh-agent -s)
     script:
         - ssh -i /root/.ssh/private_key -l debian $SERVER_IP_ADDRESS "echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY &&
-          docker stop $DOCKER_CONTAINER_PREFIX || true &&
-          docker rm $DOCKER_CONTAINER_PREFIX --volumes || true &&
-          docker rm $DOCKER_CONTAINER_PREFIX-setup --volumes || true &&
-          docker volume rm $DOCKER_CONTAINER_PREFIX_app-volume || true &&
-          docker image rm $CI_REGISTRY_IMAGE:$IMAGE_TAG || true &&
           cd $DOCKER_CONFIG_PATH/$DOCKER_CONTAINER_PREFIX &&
-          docker-compose up -d && docker logout $CI_REGISTRY"
+          docker-compose stop || true &&
+          docker-compose rm -f || true &&
+          docker-compose pull || true &&
+          docker-compose up -d &&
+          docker logout $CI_REGISTRY"
     only:
         - main
