@@ -143,7 +143,7 @@ const config: Config = {
 		algolia: {
 			appId: 'ZV7NSE3BF9',
 			apiKey: '72cbda1599ca44ddbd1b62735d0b54c5',
-			indexName: 'portfolio_pages',
+			indexName: 'portfolio_search',
 		},
 	} satisfies Preset.ThemeConfig,
 };

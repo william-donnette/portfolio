@@ -38,6 +38,7 @@
         VERSION: ''
         IMAGE_TAG: ''
     script:
+        - sudo apt update && sudo apt install jq
         - >
             docker build
             --target serve
@@ -52,6 +53,7 @@
             --tag $CI_REGISTRY_IMAGE:$IMAGE_TAG
             .
         - docker push $CI_REGISTRY_IMAGE:$IMAGE_TAG
+        - docker run -it --env-file=./.env -e "CONFIG=$(cat ./algolia.config.json | jq -r tostring)" algolia/docsearch-scraper
 
 # Register la dernière image de staging
 image:latest:register:
