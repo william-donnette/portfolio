@@ -94,6 +94,11 @@ Découvrez mes compétences techniques très variées...
 -   Shell
 -   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="20" /> React Native
 
+## Métrique
+
+-   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" width="20" /> Prometheus
+-   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" width="20" /> Grafana
+
 ## Orchestration
 
 -   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="20" /> [Docker](../01-hard-skills/01-docker/index.md)
