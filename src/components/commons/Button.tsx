@@ -18,7 +18,15 @@ interface ButtonProps extends PropsWithChildren, HTMLProps<HTMLAnchorElement> {
 
 const Button: FunctionComponent<ButtonProps> = ({children, className, variant, proportion = 'medium', ...props}) => {
 	return (
-		<a {...props} className={classNames('inline-flex items-center rounded-lg', variantStyles[variant], proportionStyles[proportion], className)}>
+		<a
+			{...props}
+			className={classNames(
+				'inline-flex items-center rounded-lg cursor-pointer',
+				variantStyles[variant],
+				proportionStyles[proportion],
+				className
+			)}
+		>
 			{children}
 		</a>
 	);
