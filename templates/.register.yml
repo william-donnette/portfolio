@@ -39,7 +39,7 @@ image:latest:register:
             --tag $CI_REGISTRY_IMAGE:$IMAGE_TAG
             .
         - docker push $CI_REGISTRY_IMAGE:$IMAGE_TAG
-        - docker run -e "CONFIG=$(cat ./algolia.config.json | jq -r tostring)" algolia/docsearch-scraper
+        - docker run -e ALGOLIA_APP_ID="ZV7NSE3BF9" -e ALGOLIA_API_KEY="72cbda1599ca44ddbd1b62735d0b54c5" -e "CONFIG=$(cat ./algolia.config.json | jq -r tostring)" algolia/docsearch-scraper
     after_script:
         - *docker-logout
     only:
