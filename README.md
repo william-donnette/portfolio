@@ -40,3 +40,7 @@ npm run serve
 ```
 docker compose up -d
 ```
+
+### Note à moi même
+
+🔗 **Site Web** : [Algolia Dashboard](https://dashboard.algolia.com/apps/ZV7NSE3BF9/dashboard)
