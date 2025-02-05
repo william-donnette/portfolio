@@ -22,10 +22,9 @@ image:latest:register:
         - *docker-login
         - apk update
         - apk upgrade
-        - apk add bash curl
+        - apk add bash curl jq
         - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
     script:
-        - apt update && apt install jq
         - >
             docker build
             --target serve

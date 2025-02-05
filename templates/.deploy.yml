@@ -1,13 +1,12 @@
-# Prépare les jobs deploy qui déploient une version d'image sur le serveur
-# Assure qu'un seul job register est exécuté à la fois
-# Applique la protection de l'environnement
-.server:deploy:
-    stage: deploy
-    variables:
-        ENVIRONMENT: ''
-        DOCKER_CONTAINER_PREFIX: ''
-        IMAGE_TAG: ''
+# Déploie l'image de production
+server:production:deploy:
     image: alpine:latest
+    stage: deploy
+    needs: ['image:latest:register']
+    variables:
+        ENVIRONMENT: 'production'
+        DOCKER_CONTAINER_PREFIX: 'william-donnette-portfolio'
+        IMAGE_TAG: 'latest'
     environment:
         name: $ENVIRONMENT
     resource_group: $ENVIRONMENT
@@ -23,14 +22,5 @@
           docker image rm $CI_REGISTRY_IMAGE:$IMAGE_TAG || true &&
           cd $DOCKER_CONFIG_PATH/$DOCKER_CONTAINER_PREFIX &&
           docker-compose up -d && docker logout $CI_REGISTRY"
-
-# Déploie l'image de production
-server:production:deploy:
-    extends: .server:deploy
-    needs: ['image:latest:register']
-    variables:
-        ENVIRONMENT: 'production'
-        DOCKER_CONTAINER_PREFIX: 'william-donnette-portfolio'
-        IMAGE_TAG: 'latest'
     only:
         - main
