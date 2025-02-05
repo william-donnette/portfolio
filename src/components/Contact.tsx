@@ -14,7 +14,7 @@ const ContactForm = () => {
 				<p className="mt-4 text-gray-600 dark:text-gray-300">N'hésitez pas à me contacter via les moyens suivants !</p>
 			</div>
 			<div className="max-w-4xl mx-auto mt-10 grid gap-10 md:gap-6 grid-cols-1 md:grid-cols-3">
-				<div className="flex flex-col items-center space-x-3 text-gray-900 dark:text-white">
+				<div className="flex flex-col items-center text-gray-900 dark:text-white">
 					<div className="rounded-xl bg-gray-200 dark:bg-gray-700 w-16 h-16 flex items-center justify-center mb-5">
 						<Mail className="w-8 h-8" />
 					</div>
@@ -26,13 +26,13 @@ const ContactForm = () => {
 						<Button
 							variant="secondary"
 							onClick={() => setShowEmail(true)}
-							className="flex flex-col items-center space-x-3 text-gray-900 dark:text-white"
+							className="flex flex-col items-center text-gray-900 dark:text-white"
 						>
 							Cliquez pour voir
 						</Button>
 					)}
 				</div>
-				<div className="flex flex-col items-center space-x-3 text-gray-900 dark:text-white">
+				<div className="flex flex-col items-center text-gray-900 dark:text-white">
 					<div className="rounded-xl bg-gray-200 dark:bg-gray-700 w-16 h-16 flex items-center justify-center mb-5">
 						<Phone className="w-8 h-8" />
 					</div>
@@ -44,7 +44,7 @@ const ContactForm = () => {
 						<Button
 							variant="secondary"
 							onClick={() => setShowPhone(true)}
-							className="flex flex-col items-center space-x-3 text-gray-900 dark:text-white"
+							className="flex flex-col items-center text-gray-900 dark:text-white"
 						>
 							Cliquez pour voir
 						</Button>
