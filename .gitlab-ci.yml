@@ -1,8 +1,9 @@
-
 include:
     - 'templates/.register.yml'
     - 'templates/.deploy.yml'
-    
+    - 'templates/.indexation.yml'
+
 stages:
     - register
     - deploy
+    - indexation
