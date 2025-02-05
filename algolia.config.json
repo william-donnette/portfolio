@@ -1,4 +1,6 @@
 {
+	"app_id": "ZV7NSE3BF9",
+	"api_key": "72cbda1599ca44ddbd1b62735d0b54c5",
 	"index_name": "portfolio_search",
 	"sitemap_urls": ["https://william-donnette.dev/sitemap.xml"],
 	"start_urls": ["https://william-donnette.dev/"],
