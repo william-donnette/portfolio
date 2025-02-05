@@ -79,7 +79,7 @@ const config: Config = {
 			style: 'dark',
 			links: [
 				{
-					title: 'Portfolio',
+					title: 'Curriculum Vitae',
 					items: [
 						{
 							label: '👋 Qui suis-je ?',
@@ -104,7 +104,7 @@ const config: Config = {
 					],
 				},
 				{
-					title: 'Community',
+					title: 'Réseaux Sociaux',
 					items: [
 						{
 							label: 'LinkedIn',
@@ -121,7 +121,7 @@ const config: Config = {
 					],
 				},
 				{
-					title: 'More',
+					title: 'Encore plus...',
 					items: [
 						{
 							label: 'Blog',
