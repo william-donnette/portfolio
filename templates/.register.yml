@@ -53,7 +53,7 @@
             --tag $CI_REGISTRY_IMAGE:$IMAGE_TAG
             .
         - docker push $CI_REGISTRY_IMAGE:$IMAGE_TAG
-        - docker run -it --env-file=./.env -e "CONFIG=$(cat ./algolia.config.json | jq -r tostring)" algolia/docsearch-scraper
+        - docker run -it -e "CONFIG=$(cat ./algolia.config.json | jq -r tostring)" algolia/docsearch-scraper
 
 # Register la dernière image de staging
 image:latest:register:
