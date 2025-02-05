@@ -30,7 +30,7 @@ function AcademicCTA() {
 	];
 
 	return (
-		<Container id="academic" className="text-center dark:bg-transparent">
+		<Container id="academic" className="text-center">
 			<div className="max-w-4xl mx-auto">
 				<h2 className="text-3xl font-bold text-gray-900 dark:text-white">Mon Parcours Académique</h2>
 				<p className="mt-4 text-gray-600 dark:text-gray-300">

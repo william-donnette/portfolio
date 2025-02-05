@@ -20,7 +20,7 @@ const skills = [
 
 const SkillsCTA = () => {
 	return (
-		<Container id="skills" className="text-center">
+		<Container id="skills" className="text-center md:dark:bg-gray-800">
 			<div className="max-w-8xl mx-auto">
 				<h2 className="text-3xl font-bold text-gray-900 dark:text-white">Mes Compétences</h2>
 				<p className="mt-4 text-gray-600 dark:text-gray-300">

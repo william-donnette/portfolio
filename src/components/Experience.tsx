@@ -26,7 +26,7 @@ const Experience = () => {
 	];
 
 	return (
-		<Container id="experiences" className="text-center dark:bg-transparent">
+		<Container id="experiences" className="text-center">
 			<div className="max-w-4xl mx-auto mb-10">
 				<h2 className="text-3xl font-bold text-gray-900 dark:text-white">Expériences professionnelles</h2>
 			</div>

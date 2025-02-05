@@ -159,7 +159,7 @@ export default function Projects() {
 	};
 
 	return (
-		<Container id="projects" className="text-center">
+		<Container id="projects" className="text-center md:dark:bg-gray-800">
 			<div className="max-w-4xl mx-auto">
 				<h2 className="text-3xl font-bold text-gray-900 dark:text-white">Mes Contributions</h2>
 				<p className="mt-4 text-gray-600 dark:text-gray-300">

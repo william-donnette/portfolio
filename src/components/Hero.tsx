@@ -6,7 +6,7 @@ const Hero = () => {
 	const {siteConfig} = useDocusaurusContext();
 
 	return (
-		<Container id="home" className="mt-20 dark:bg-transparent">
+		<Container id="home" className="mt-20">
 			{/* <div className="container mx-auto px-4"> */}
 			<div className="flex flex-col-reverse gap-10 lg:flex-row items-center justify-between">
 				<div className="flex-1 space-y-6">
