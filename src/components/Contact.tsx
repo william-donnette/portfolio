@@ -60,6 +60,7 @@ const ContactForm = () => {
 						href="https://www.linkedin.com/in/william-donnette-a997a4192/"
 						target="_blank"
 						rel="noopener noreferrer"
+						className="text-gray-900 dark:text-white"
 					>
 						LinkedIn
 					</Button>
