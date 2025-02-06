@@ -29,7 +29,7 @@ const config: Config = {
 		locales: ['fr'],
 	},
 
-	plugins: [tailwindPlugin],
+	plugins: [tailwindPlugin, 'docusaurus-plugin-matomo'],
 
 	presets: [
 		[
@@ -144,6 +144,12 @@ const config: Config = {
 			appId: 'ZV7NSE3BF9',
 			apiKey: '72cbda1599ca44ddbd1b62735d0b54c5',
 			indexName: 'portfolio_search',
+		},
+		matomo: {
+			matomoUrl: 'https://analytics.homkizz.com/',
+			siteId: '4',
+			phpLoader: 'matomo.php',
+			jsLoader: 'matomo.js',
 		},
 	} satisfies Preset.ThemeConfig,
 };
