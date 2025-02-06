@@ -56,7 +56,7 @@ const config: Config = {
 		navbar: {
 			title: 'William Donnette',
 			logo: {
-				alt: 'William Donnette',
+				alt: 'Logo de William Donnette',
 				src: 'img/logo.webp',
 				className: 'rounded-lg',
 			},
