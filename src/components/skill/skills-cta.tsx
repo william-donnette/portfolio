@@ -1,6 +1,6 @@
 import {FunctionComponent} from 'react';
-import Button from '../common/button2';
-import Container from '../common/container2';
+import Button from '../common/button';
+import Container from '../common/container';
 import SkillCard from './skill-card';
 import skills from './skills.mock';
 

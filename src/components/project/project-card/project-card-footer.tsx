@@ -1,5 +1,5 @@
 import {FunctionComponent} from 'react';
-import Button from '../../common/button2';
+import Button from '../../common/button';
 import {Project} from '../type';
 
 interface ProjectCardFooterProps {
