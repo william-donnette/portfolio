@@ -1,34 +1,42 @@
-import Button from './commons/Button';
-import Container from './commons/Container';
+import {FunctionComponent} from 'react';
+import Button from '../common/Button';
+import Container from '../common/Container';
 
-function AcademicCTA() {
-	const timelineData = [
-		{
-			year: '2024',
-			title: "🎓 Master Expert en Informatique et Système d'Information",
-			level: 'BAC+5',
-			technologies: ['SI', 'Big Data', 'AI', 'Machine Learning', 'Docker', 'DevOps', 'CI/CD'],
-			ctaLink: '/academic/master-eisi/projects',
-			detailsLink: '/academic/master-eisi',
-		},
-		{
-			year: '2022',
-			title: '🎓 Licence Pro. Assistant de Projet Informatique',
-			level: 'BAC+3',
-			technologies: ['Vue.js', 'Node.js', 'Java', 'PHP', 'SQL'],
-			ctaLink: '/academic/licence-apidae/projects',
-			detailsLink: '/academic/licence-apidae',
-		},
-		{
-			year: '2021',
-			title: '🎓 DUT Informatique',
-			level: 'BAC+2',
-			technologies: ['Java', 'PHP', 'SQL', 'JavaScript', 'C'],
-			ctaLink: '/academic/dut-informatique/projects',
-			detailsLink: '/academic/dut-informatique',
-		},
-	];
+type Qualification = {
+	year: number;
+	title: string;
+	level: 'BAC+5' | 'BAC+3' | 'BAC+2';
+	technologies: Array<string>;
+	link: string;
+};
 
+const qualifications: Array<Qualification> = [
+	{
+		year: 2024,
+		title: "🎓 Master Expert en Informatique et Système d'Information",
+		level: 'BAC+5',
+		technologies: ['SI', 'Big Data', 'AI', 'Machine Learning', 'Docker', 'DevOps', 'CI/CD'],
+		link: '/academic/master-eisi',
+	},
+	{
+		year: 2022,
+		title: '🎓 Licence Pro. Assistant de Projet Informatique',
+		level: 'BAC+3',
+		technologies: ['Vue.js', 'Node.js', 'Java', 'PHP', 'SQL'],
+		link: '/academic/licence-apidae',
+	},
+	{
+		year: 2021,
+		title: '🎓 DUT Informatique',
+		level: 'BAC+2',
+		technologies: ['Java', 'PHP', 'SQL', 'JavaScript', 'C'],
+		link: '/academic/dut-informatique',
+	},
+];
+
+interface AcademicCTAProps {}
+
+const AcademicCTA: FunctionComponent<AcademicCTAProps> = () => {
 	return (
 		<Container id="academic" className="text-center">
 			<div className="max-w-4xl mx-auto">
@@ -39,7 +47,7 @@ function AcademicCTA() {
 				</p>
 			</div>
 			<div className="max-w-8xl mx-auto space-y-8">
-				{timelineData.map(({year, title, level, technologies, ctaLink, detailsLink}, index) => (
+				{qualifications.map(({year, title, level, technologies, link}, index) => (
 					<div className="relative md:pl-32 py-6 group text-left" key={index}>
 						{/* Timeline line */}
 						<div className="absolute hidden md:block left-12 h-full w-1 rounded-full bg-blue-100 dark:bg-blue-900" />
@@ -76,10 +84,10 @@ function AcademicCTA() {
 
 							{/* Buttons */}
 							<div className="flex flex-wrap gap-4">
-								<Button variant="primary" href={detailsLink}>
+								<Button variant="primary" href={link}>
 									En savoir +
 								</Button>
-								<Button variant="secondary" href={ctaLink}>
+								<Button variant="secondary" href={link + '/projects'}>
 									Découvrir les projets réalisés
 								</Button>
 							</div>
@@ -94,6 +102,6 @@ function AcademicCTA() {
 			</div>
 		</Container>
 	);
-}
+};
 
 export default AcademicCTA;

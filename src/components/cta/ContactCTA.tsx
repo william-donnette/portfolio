@@ -1,9 +1,11 @@
 import {Linkedin, Mail, Phone} from 'lucide-react';
-import {useState} from 'react';
-import Button from './commons/Button';
-import Container from './commons/Container';
+import {FunctionComponent, useState} from 'react';
+import Button from '../common/Button';
+import Container from '../common/Container';
 
-const ContactForm = () => {
+interface ContactCTAProps {}
+
+const ContactCTA: FunctionComponent<ContactCTAProps> = () => {
 	const [showPhone, setShowPhone] = useState(false);
 	const [showEmail, setShowEmail] = useState(false);
 
@@ -70,4 +72,4 @@ const ContactForm = () => {
 	);
 };
 
-export default ContactForm;
+export default ContactCTA;

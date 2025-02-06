@@ -1,7 +1,14 @@
-import Button from './commons/Button';
-import Container from './commons/Container';
+import {FunctionComponent} from 'react';
+import Button from '../common/Button';
+import Container from '../common/Container';
 
-const skills = [
+type Skill = {
+	name: string;
+	icon: string;
+	link: string;
+};
+
+const skills: Array<Skill> = [
 	{name: 'React.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', link: '/docs/skills/hard-skills/js-ts/'},
 	{name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', link: '/docs/skills/hard-skills/js-ts/'},
 	{name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', link: '/docs/skills/hard-skills/js-ts/'},
@@ -18,7 +25,9 @@ const skills = [
 	},
 ];
 
-const SkillsCTA = () => {
+interface SkillsCTAProps {}
+
+const SkillsCTA: FunctionComponent<SkillsCTAProps> = () => {
 	return (
 		<Container id="skills" className="text-center md:dark:bg-gray-800">
 			<div className="max-w-8xl mx-auto">

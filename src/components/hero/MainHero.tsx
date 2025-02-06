@@ -1,8 +1,11 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Button from './commons/Button';
-import Container from './commons/Container';
+import {FunctionComponent} from 'react';
+import Button from '../common/Button';
+import Container from '../common/Container';
 
-const Hero = () => {
+interface MainHeroProps {}
+
+const MainHero: FunctionComponent<MainHeroProps> = () => {
 	const {siteConfig} = useDocusaurusContext();
 
 	return (
@@ -41,4 +44,4 @@ const Hero = () => {
 	);
 };
 
-export default Hero;
+export default MainHero;

@@ -1,30 +1,39 @@
 // import { Briefcase, Calendar, ChevronRight } from "lucide-react";
-import Container from './commons/Container';
+import {FunctionComponent} from 'react';
+import Container from '../common/Container';
 
-const Experience = () => {
-	const experiences = [
-		{
-			name: 'abes',
-			image: '/img/abes.png',
-			className: 'h-40 mx-5',
-		},
-		{
-			name: 'sncf',
-			image: '/img/sncf.png',
-			className: 'h-20 mx-5',
-		},
-		{
-			name: 'domdata',
-			image: '/img/domdata.webp',
-			className: 'h-10 mx-5',
-		},
-		{
-			name: 'a3cdigital',
-			image: '/img/a3cdigital.webp',
-			className: 'h-14 mx-5',
-		},
-	];
+type Experience = {
+	name: string;
+	image: string;
+	className: string;
+};
 
+const experiences: Array<Experience> = [
+	{
+		name: 'abes',
+		image: '/img/abes.png',
+		className: 'h-40 mx-5',
+	},
+	{
+		name: 'sncf',
+		image: '/img/sncf.png',
+		className: 'h-20 mx-5',
+	},
+	{
+		name: 'domdata',
+		image: '/img/domdata.webp',
+		className: 'h-10 mx-5',
+	},
+	{
+		name: 'a3cdigital',
+		image: '/img/a3cdigital.webp',
+		className: 'h-14 mx-5',
+	},
+];
+
+interface ExperiencesCTAProps {}
+
+const ExperiencesCTA: FunctionComponent<ExperiencesCTAProps> = () => {
 	return (
 		<Container id="experiences" className="text-center">
 			<div className="max-w-4xl mx-auto mb-10">
@@ -54,4 +63,4 @@ const Experience = () => {
 	);
 };
 
-export default Experience;
+export default ExperiencesCTA;
