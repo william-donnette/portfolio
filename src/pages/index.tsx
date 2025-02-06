@@ -1,11 +1,11 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import AcademicCTA from '../components/cta/AcademicCTA';
-import ContactForm from '../components/cta/ContactCTA';
-import Experience from '../components/cta/ExperienceCTA';
-import Projects from '../components/cta/ProjectsCTA';
-import SkillsCTA from '../components/cta/SkillsCTA';
-import MainHero from '../components/hero/MainHero';
+import ContactCTA from '../components/ContactCTA';
+import ExperiencesCTA from '../components/experience/ExperiencesCTA';
+import MainHero from '../components/MainHero';
+import ProjectsCTA from '../components/project/ProjectsCTA';
+import QualificationsCTA from '../components/qualification/QualificationsCTA';
+import SkillsCTA from '../components/skill/SkillsCTA';
 
 export default function Home(): JSX.Element {
 	const {siteConfig} = useDocusaurusContext();
@@ -14,10 +14,10 @@ export default function Home(): JSX.Element {
 			<main className="flex flex-col w-full max-w-6xl mx-auto px-4">
 				<MainHero />
 				<SkillsCTA />
-				<Experience />
-				<Projects />
-				<AcademicCTA />
-				<ContactForm />
+				<ExperiencesCTA />
+				<ProjectsCTA />
+				<QualificationsCTA />
+				<ContactCTA />
 			</main>
 		</Layout>
 	);
