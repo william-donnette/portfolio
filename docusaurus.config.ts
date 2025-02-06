@@ -138,7 +138,7 @@ const config: Config = {
 					],
 				},
 			],
-			copyright: `Copyright © ${new Date().getFullYear()} William Donnette. Built with Docusaurus.`,
+			copyright: `Copyright © ${new Date().getFullYear()} William Donnette`,
 		},
 		algolia: {
 			appId: 'ZV7NSE3BF9',
