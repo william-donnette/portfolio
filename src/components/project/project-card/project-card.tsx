@@ -1,4 +1,4 @@
-import {classNames} from '@site/src/utils/classNames';
+import {classNames} from '@site/src/utils/class-names';
 import {FunctionComponent} from 'react';
 import {Project} from '../type';
 import ProjectCardBody from './project-card-body';

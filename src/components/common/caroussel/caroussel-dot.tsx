@@ -1,4 +1,4 @@
-import {classNames} from '@site/src/utils/classNames';
+import {classNames} from '@site/src/utils/class-names';
 import {FunctionComponent} from 'react';
 
 interface CarousselDotProps {

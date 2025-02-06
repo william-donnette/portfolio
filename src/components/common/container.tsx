@@ -1,5 +1,5 @@
 import {FunctionComponent, HTMLProps, PropsWithChildren} from 'react';
-import {classNames} from '../../utils/classNames';
+import {classNames} from '../../utils/class-names';
 
 interface ContainerProps extends PropsWithChildren, HTMLProps<HTMLDivElement> {}
 
