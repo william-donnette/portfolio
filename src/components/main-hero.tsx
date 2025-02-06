@@ -16,7 +16,7 @@ const MainHero: FunctionComponent<MainHeroProps> = () => {
 					<h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white lg:max-w-lg">
 						Hey, Je suis <span className="text-blue-600">William Donnette</span>
 					</h1>
-					<p className="text-md md:text-lg lg:text-xl text-gray-600 dark:text-gray-300">
+					<p className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300">
 						Développeur Full Stack,
 						<br />
 						Ingénieur en Système d'Information,
