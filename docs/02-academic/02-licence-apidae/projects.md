@@ -21,7 +21,7 @@ L'objectif était de mettre en pratique nos compétences en **JavaScript/TypeScr
 
 Rendu de la page de connexion du front-end :
 
-![Rendu de la page de connexion du front-end](/img/tp-node-recette.png)
+![Rendu de la page de connexion du front-end](/img/tp-node-recette.webp)
 
 ### API REST en Node.js
 

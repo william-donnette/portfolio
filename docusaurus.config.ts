@@ -52,12 +52,12 @@ const config: Config = {
 
 	themeConfig: {
 		// Replace with your project's social card
-		image: 'img/IMG_5530.JPG',
+		image: 'img/profile.webp',
 		navbar: {
 			title: 'William Donnette',
 			logo: {
 				alt: 'William Donnette',
-				src: 'img/logo.png',
+				src: 'img/logo.webp',
 				className: 'rounded-lg',
 			},
 			items: [

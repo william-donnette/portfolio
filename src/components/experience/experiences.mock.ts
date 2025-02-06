@@ -3,12 +3,12 @@ import {Experience} from './type';
 const experiences: Array<Experience> = [
 	{
 		name: 'abes',
-		image: '/img/abes.png',
+		image: '/img/abes.webp',
 		className: 'h-40 mx-5',
 	},
 	{
 		name: 'sncf',
-		image: '/img/sncf.png',
+		image: '/img/sncf.webp',
 		className: 'h-20 mx-5',
 	},
 	{
