@@ -20,6 +20,7 @@ server:production:deploy:
           docker-compose rm -f || true &&
           docker-compose pull || true &&
           docker-compose up -d &&
+          docker run -it --env-file=./.env -e "CONFIG=$(cat ./algolia.config.json | jq -r tostring)" algolia/docsearch-scraper &&
           docker logout $CI_REGISTRY"
     only:
         - main
