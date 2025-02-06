@@ -1,6 +1,6 @@
 import {FunctionComponent} from 'react';
-import Button from '../common/button';
-import Container from '../common/container';
+import Button from '../common/button2';
+import Container from '../common/container2';
 import QualificationTimelineCard from './qualification-timeline-card';
 import qualifications from './qualifications.mock';
 

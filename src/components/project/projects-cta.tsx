@@ -1,6 +1,6 @@
 import {FunctionComponent} from 'react';
 import Caroussel from '../common/caroussel';
-import Container from '../common/container';
+import Container from '../common/container2';
 import ProjectCard from './project-card';
 import projects from './projects.mock';
 

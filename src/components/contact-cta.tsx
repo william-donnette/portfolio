@@ -1,7 +1,7 @@
 import {Linkedin, Mail, Phone} from 'lucide-react';
 import {FunctionComponent, useState} from 'react';
-import Button from './common/button';
-import Container from './common/container';
+import Button from './common/button2';
+import Container from './common/container2';
 
 interface ContactCTAProps {}
 

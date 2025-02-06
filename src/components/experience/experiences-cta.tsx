@@ -1,6 +1,6 @@
 // import { Briefcase, Calendar, ChevronRight } from "lucide-react";
 import {FunctionComponent} from 'react';
-import Container from '../common/container';
+import Container from '../common/container2';
 import InfiniteHorizontalScroll from '../common/infinite-horizontal-scroll';
 import experiences from './experiences.mock';
 
