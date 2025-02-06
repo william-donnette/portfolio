@@ -1,8 +1,4 @@
-export type Experience = {
-	name: string;
-	image: string;
-	className: string;
-};
+import {Experience} from './type';
 
 const experiences: Array<Experience> = [
 	{

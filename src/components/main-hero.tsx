@@ -1,7 +1,7 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {FunctionComponent} from 'react';
-import Button from './common/Button';
-import Container from './common/Container';
+import Button from './common/button';
+import Container from './common/container';
 
 interface MainHeroProps {}
 

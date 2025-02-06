@@ -1,8 +1,4 @@
-export type Skill = {
-	name: string;
-	icon: string;
-	link: string;
-};
+import {Skill} from './type';
 
 const skills: Array<Skill> = [
 	{name: 'React.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', link: '/docs/skills/hard-skills/js-ts/'},

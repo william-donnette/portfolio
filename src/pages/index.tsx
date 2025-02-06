@@ -1,11 +1,11 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import ContactCTA from '../components/ContactCTA';
-import ExperiencesCTA from '../components/experience/ExperiencesCTA';
-import MainHero from '../components/MainHero';
-import ProjectsCTA from '../components/project/ProjectsCTA';
-import QualificationsCTA from '../components/qualification/QualificationsCTA';
-import SkillsCTA from '../components/skill/SkillsCTA';
+import ContactCTA from '../components/contact-cta';
+import ExperiencesCTA from '../components/experience/experiences-cta';
+import MainHero from '../components/main-hero';
+import ProjectsCTA from '../components/project/projects-cta';
+import QualificationsCTA from '../components/qualification/qualifications-cta';
+import SkillsCTA from '../components/skill/skills-cta';
 
 export default function Home(): JSX.Element {
 	const {siteConfig} = useDocusaurusContext();

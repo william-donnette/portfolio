@@ -1,2 +1,2 @@
+export * from './projects-cta';
 export * from './projects.mock';
-export * from './ProjectsCTA';
