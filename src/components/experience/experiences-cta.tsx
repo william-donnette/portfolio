@@ -16,7 +16,7 @@ const ExperiencesCTA: FunctionComponent<ExperiencesCTAProps> = () => {
 				{(experience) => (
 					<li key={experience.name}>
 						<a href={`/docs/experiences/${experience.name}`}>
-							<img className={experience.className} src={experience.image} alt={experience.name} />
+							<img className={experience.className} src={experience.image} alt={`Logo de ${experience.name}`} />
 						</a>
 					</li>
 				)}

@@ -8,6 +8,8 @@ export interface CarousselChevronRightProps {
 const CarousselChevronRight: FunctionComponent<CarousselChevronRightProps> = ({nextSlide}) => {
 	return (
 		<button
+			role="button"
+			aria-label="Caroussel Right"
 			onClick={() => nextSlide()}
 			className="border-0 cursor-pointer h-8 w-8 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 shadow-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200"
 		>
