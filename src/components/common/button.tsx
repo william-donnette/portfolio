@@ -3,7 +3,7 @@ import {FunctionComponent, HTMLProps, PropsWithChildren} from 'react';
 
 const variantStyles = {
 	primary: 'bg-blue-600 text-white hover:bg-blue-700 hover:text-white',
-	secondary: 'text-blue-600 bg-blue-50 hover:bg-blue-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white',
+	secondary: 'text-blue-600 bg-blue-50 hover:bg-blue-100 dark:text-white dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-white',
 };
 
 const proportionStyles = {
