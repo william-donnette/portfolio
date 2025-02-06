@@ -164,7 +164,7 @@ export default function Projects() {
 				<h2 className="text-3xl font-bold text-gray-900 dark:text-white">Mes Contributions</h2>
 				<p className="mt-4 text-gray-600 dark:text-gray-300">
 					J'ai toujours aimé relever des défis qu'ils soient professionnels, scolaires ou personnels. Ce qui m'attire le plus en
-					informatique, c'est la possibilité de découvrir et s'adapter à différents univers complétement différents.
+					informatique, c'est la possibilité de découvrir et de s'adapter à des univers complétement différents.
 				</p>
 			</div>
 			<div className="relative">

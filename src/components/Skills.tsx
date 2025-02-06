@@ -24,8 +24,8 @@ const SkillsCTA = () => {
 			<div className="max-w-8xl mx-auto">
 				<h2 className="text-3xl font-bold text-gray-900 dark:text-white">Mes Compétences</h2>
 				<p className="mt-4 text-gray-600 dark:text-gray-300">
-					Spécialisé en développement web FullStack, mes compétences sont très variées. Mes compétences principales tendent à utiliser des
-					technologies modernes afin d'offrir la meilleure expérience lors de la conception de mes applications.
+					Spécialisé en développement web FullStack, mes compétences sont très variées. J'utilise principalement des technologies modernes
+					afin d'offrir la meilleure expérience lors de la conception de mes applications.
 				</p>
 				<div className="mt-6 flex flex-wrap justify-center gap-6">
 					{skills.map((skill, index) => (
