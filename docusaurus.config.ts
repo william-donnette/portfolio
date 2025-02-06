@@ -69,8 +69,15 @@ const config: Config = {
 					position: 'right',
 				},
 				{
-					href: 'https://gitlab.com/william-donnette',
-					label: 'GitLab',
+					href: '/documents/cv-william-donnette.pdf',
+					label: 'Télécharger mon CV',
+					position: 'right',
+					download: true,
+					target: '_blank',
+				},
+				{
+					href: '/#contact',
+					label: 'Me Contacter',
 					position: 'right',
 				},
 			],
