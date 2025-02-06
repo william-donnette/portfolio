@@ -28,6 +28,7 @@ const ContactCTA: FunctionComponent<ContactCTAProps> = () => {
 						<Button
 							role="button"
 							aria-label="Click to see my email address"
+							href="#contact"
 							variant="secondary"
 							onClick={() => setShowEmail(true)}
 							className="flex flex-col items-center text-gray-900 dark:text-white"
@@ -48,6 +49,7 @@ const ContactCTA: FunctionComponent<ContactCTAProps> = () => {
 						<Button
 							role="button"
 							aria-label="Click to see my phone number"
+							href="#contact"
 							variant="secondary"
 							onClick={() => setShowPhone(true)}
 							className="flex flex-col items-center text-gray-900 dark:text-white"
