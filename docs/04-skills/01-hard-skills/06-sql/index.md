@@ -2,10 +2,10 @@
 title: SQL
 ---
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" width="40" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqldeveloper/sqldeveloper-original.svg" width="40" />
+<img alt="Logo de PostgreSQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" />
+<img alt="Logo de MariaDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" width="40" />
+<img alt="Logo de MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" />
+<img alt="Logo de SQLDeveloper" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqldeveloper/sqldeveloper-original.svg" width="40" />
 
 **Niveau : `Très bon ⭐⭐⭐⭐`**
 
@@ -13,14 +13,14 @@ title: SQL
 
 ## Base de Données
 
--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="20" /> **MySQL**
--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="20" /> **PostgreSQL**
+-   <img alt="Logo de MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="20" /> **MySQL**
+-   <img alt="Logo de PostgreSQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="20" /> **PostgreSQL**
     -   Pour tous mes projets personnels
--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" width="20" /> **MariaDB**
+-   <img alt="Logo de MariaDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" width="20" /> **MariaDB**
     -   **Projet professionnel :** Conception d'une base de données à [Domdata](../../../03-experiences/03-domdata/index.md)
 
 ## Outils
 
--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqldeveloper/sqldeveloper-original.svg" width="20" /> **SQLDeveloper**
+-   <img alt="Logo de SQLDeveloper" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqldeveloper/sqldeveloper-original.svg" width="20" /> **SQLDeveloper**
     -   **Projet professionnel :** Maintenance de bases de données à l'[ABES](../../../03-experiences/01-abes/index.md)
 -   **PostgresAdmin**

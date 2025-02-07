@@ -7,19 +7,19 @@ description: Stage Développeur WEB
 
 ---
 
-# Stage Développeur WEB
+## Stage Développeur WEB
 
 🔗 **Site Web** : [A3CDigital](https://www.a3cdigital.com/)
 🔗 **Site Web** : [DoctoWeb](https://site-web-medecins.fr/)
 🔗 **Site Web** : [E-Juriste](https://site-avocat-notaire.fr/)
 
-## 📌 Contexte de l'entreprise
+### 📌 Contexte de l'entreprise
 
 **A3CDigital** est une agence web spécialisée dans la création et la maintenance de sites internet sous **WordPress**, ainsi que dans le développement de solutions personnalisées pour ses clients ainsi que dans le référencement web pour des domaines spécifiques tel que **la médecine** et **la justice** qui ont leurs propres réglementation en terme de publicité et de RGPD.
 
 Ce stage a été ma **première expérience professionnelle** en tant que développeur, où j'ai pu découvrir l'univers du développement web en travaillant sur des projets concrets pour des clients du secteur médical et du bien-être.
 
-## 🎯 Mes missions
+### 🎯 Mes missions
 
 -   **🛠️ Maintenance et évolution de sites web (WordPress)**
 
@@ -29,9 +29,9 @@ Ce stage a été ma **première expérience professionnelle** en tant que dével
 -   **🔌 Développement de plugins WordPress (PHP MVC natif)**
     -   Création et intégration de modules personnalisés pour répondre aux besoins spécifiques des clients.
 
-## 🔥 Expérience unique
+### 🔥 Expérience unique
 
-### Première Expérience
+#### Première Expérience
 
 Ce stage a marqué **mon premier pas dans le monde du développement web**, me permettant de comprendre les **enjeux techniques et fonctionnels** liés aux sites web d'entreprise.
 

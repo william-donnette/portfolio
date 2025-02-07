@@ -6,21 +6,21 @@ const qualifications: Array<Qualification> = [
 		title: "🎓 Master Expert en Informatique et Système d'Information",
 		level: 'BAC+5',
 		technologies: ['SI', 'Big Data', 'AI', 'Machine Learning', 'Docker', 'DevOps', 'CI/CD'],
-		link: '/academic/master-eisi',
+		link: '/docs/academic/master-eisi',
 	},
 	{
 		year: 2022,
 		title: '🎓 Licence Pro. Assistant de Projet Informatique',
 		level: 'BAC+3',
 		technologies: ['Vue.js', 'Node.js', 'Java', 'PHP', 'SQL'],
-		link: '/academic/licence-apidae',
+		link: '/docs/academic/licence-apidae',
 	},
 	{
 		year: 2021,
 		title: '🎓 DUT Informatique',
 		level: 'BAC+2',
 		technologies: ['Java', 'PHP', 'SQL', 'JavaScript', 'C'],
-		link: '/academic/dut-informatique',
+		link: '/docs/academic/dut-informatique',
 	},
 ];
 

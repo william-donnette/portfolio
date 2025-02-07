@@ -7,12 +7,12 @@ description: Développeur FullStack
 
 ---
 
-# Développeur FullStack
+## Développeur FullStack
 
 🔗 **Site Web** : [abes.fr](https://abes.fr/)
 🔗 **Github Open Source** : [abes-esr](https://github.com/abes-esr)
 
-## 📌 Contexte de l'entreprise
+### 📌 Contexte de l'entreprise
 
 L'**Agence Bibliographique de l'Enseignement Supérieur (ABES)** joue un rôle clé dans la gestion et la diffusion des ressources bibliographiques de l'enseignement supérieur français. Elle développe et maintient des plateformes facilitant l'accès aux données scientifiques et académiques.
 
@@ -20,7 +20,7 @@ L'ABES gère des **applications vieillissantes** avec une **forte volumétrie de
 
 Tous les projets de l'ABES sont **open source** et disponibles sur leur dépôt officiel GitHub : [ABES GitHub](https://github.com/abes-esr).
 
-## 🎯 Mes missions
+### 🎯 Mes missions
 
 -   **🔧 Maintenance et évolution de sites web bibliographiques**
 
@@ -38,8 +38,8 @@ Tous les projets de l'ABES sont **open source** et disponibles sur leur dépôt 
 
 -   **📌 Gestion de projet en méthodologie SCRUM via Jira**
 
-## 🔥 Expérience unique
+### 🔥 Expérience unique
 
-### Découverte du monde bibliothécaire et de l'Open-Source
+#### Découverte du monde bibliothécaire et de l'Open-Source
 
 Cette expérience me permet de consolider mes compétences en **développement web** tout en évoluant dans un environnement **agile et collaboratif**. Travailler au sein de l'ABES, c'est aussi contribuer à un **service public essentiel** pour la communauté universitaire française, en développant des **solutions open source** qui favorisent la diffusion et l'accessibilité de la connaissance.

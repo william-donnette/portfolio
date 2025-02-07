@@ -7,9 +7,9 @@ description: Découvrez le diplôme universitaire de technologie en informatique
 
 ---
 
-# 🎓 Diplôme Universitaire de Technologie en Informatique
+## 🎓 Diplôme Universitaire de Technologie en Informatique
 
-## Pourquoi le DUT Informatique ?
+### Pourquoi le DUT Informatique ?
 
 Depuis mon enfance, l'aéronautique m'a toujours fasciné. L'ingénierie derrière un avion, la complexité des systèmes embarqués et l'innovation constante du domaine ont nourri ma curiosité. Naturellement, cette passion m'a d'abord orienté vers les classes préparatoires aux grandes écoles d'ingénieurs, un parcours réputé pour sa rigueur et son intensité théorique.
 

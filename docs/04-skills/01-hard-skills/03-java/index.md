@@ -2,10 +2,10 @@
 title: Java
 ---
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" width="40" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-original.svg" width="40" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="40" />
+<img alt="Logo de Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40" />
+<img alt="Logo de Maven" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" width="40" />
+<img alt="Logo de Gradle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-original.svg" width="40" />
+<img alt="Logo de Springboot" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="40" />
 
 **Niveau : `Bon ⭐⭐⭐`**
 
@@ -13,12 +13,12 @@ title: Java
 
 ## Environnement
 
--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" width="20" /> **Maven**
--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-original.svg" width="20" /> **Gradle**
+-   <img alt="Logo de Maven" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" width="20" /> **Maven**
+-   <img alt="Logo de Gradle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-original.svg" width="20" /> **Gradle**
 
 ## Frameworks
 
--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="20" /> **Spring Boot**
+-   <img alt="Logo de Springboot" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="20" /> **Spring Boot**
     -   **Projet professionnel :** 80% des sites de l'[ABES](../../../03-experiences/01-abes/index.md)
     -   🎨 **Java Servlet Pages (JSP)**
 -   **🎨 JavaFX**

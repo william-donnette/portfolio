@@ -7,12 +7,12 @@ description: Alternance Développeur WEB FullStack
 
 ---
 
-# Alternance Développeur WEB FullStack
+## Alternance Développeur WEB FullStack
 
 🔗 **Site Web** : [DomData](https://domdata.pro/)
 🔗 **Site Web** : [A3CDigital](https://a3cdigital.com/)
 
-## 📌 Contexte de l'entreprise
+### 📌 Contexte de l'entreprise
 
 **DomData** est une agence web spécialisée dans le développement et la maintenance de sites internet, notamment sous WordPress, ainsi que dans la conception de solutions sur mesure pour le secteur immobilier. C'est l'un des secteurs d'activité de l'entreprise "mère" **A3CDigital**
 
@@ -22,7 +22,7 @@ Ayant fait mes preuves lors de ma précédente expérience en [stage à A3CDigit
 
 J'ai intégré l'entreprise en tant que **Développeur WEB FullStack** afin d'assurer la maintenance et l'évolution des sites web, mais aussi de développer des solutions innovantes pour l'estimation immobilière.
 
-## 🎯 Mes missions
+### 🎯 Mes missions
 
 :::info
 La start-up m'a demandé durant mon alternance de développer en **autonomie**, de A à Z, un **estimateur immobilier** capable d'être intégrer sur leurs sites d'acquisitions de vendeurs mais aussi sur d'autres sites clients et affiliateurs. Un véritable défi qui m'ont amenés à avoir des missions variées.
@@ -61,15 +61,15 @@ La start-up m'a demandé durant mon alternance de développer en **autonomie**, 
     -   🔗 [Estimer Immobilier Marseille](https://estimer-immobilier-marseille.fr/)
     -   🔗 [Estimer Immobilier Montpellier](https://estimer-immobilier-montpellier.fr/)...
 
-## 🔥 Expérience unique
+### 🔥 Expérience unique
 
-### Montée en compétences
+#### Montée en compétences
 
 Cette alternance m'a permis de faire **évoluer mes compétences techniques de manière drastique en développement web** ainsi que ma capacité à **m'organiser et relever des défis**.
 
 J'ai particulièrement apprécié le travail sur les modèles de **Machine Learning appliqués à l'estimation immobilière**.
 
-### Découverte technique
+#### Découverte technique
 
 Cette expérience à **consolider mes compétences en veille technologique**, tout en découvrant le secteur de **l'immobilier numérique**, du **marketing digital** et de l'optimisation **SEO/SEA**
 
