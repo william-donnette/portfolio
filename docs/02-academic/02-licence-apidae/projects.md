@@ -21,7 +21,7 @@ L'objectif était de mettre en pratique nos compétences en **JavaScript/TypeScr
 
 Rendu de la page de connexion du front-end :
 
-![Rendu de la page de connexion du front-end](/img/tp-node-recette.webp)
+![Rendu de la page de connexion du front-end](/img/tp-node-recette.webp 'Rendu projet Node.js de recettes')
 
 ### API REST en Node.js
 
@@ -51,7 +51,7 @@ Le projet consistait à développer un logiciel en **Java**, en mettant en œuvr
 
 Diagramme de classe UML :
 
-![Diagramme de classe UML](https://raw.githubusercontent.com/william-donnette/catalogue/refs/heads/master/rendu3/classes.jpg)
+![Diagramme de classe UML](https://raw.githubusercontent.com/william-donnette/catalogue/refs/heads/master/rendu3/classes.jpg 'Diagramme de classe UML')
 
 ---
 
