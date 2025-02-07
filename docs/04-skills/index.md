@@ -2,6 +2,8 @@
 title: 💡 Mes Compétences
 ---
 
+Découvrez l'ensemble de mes compétences. A la fois technique et autres...
+
 ---
 
 ## Compétences principales
