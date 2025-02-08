@@ -7,9 +7,9 @@ description: Découvrez le master Expert en Informatique et Système d'Informati
 
 ---
 
-# 🎓 Master Expert en Informatique et Système d'Information
+## 🎓 Master Expert en Informatique et Système d'Information
 
-## Pourquoi avoir choisi cette formation ?
+### Pourquoi avoir choisi cette formation ?
 
 C'était pour moi une suite logique de poursuivre mes études dans ce domaine qui me passionne. Il était aussi évident, de part ma formation précédente, de trouver une formation proposant l'alternance afin de continuer à acquérir de l'expérience professionnelle et développer mes compétences.
 

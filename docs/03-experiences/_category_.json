@@ -1,7 +1,9 @@
 {
 	"label": "💼 Expériences Professionnelles",
 	"link": {
-		"type": "generated-index"
+		"type": "generated-index",
+		"title": "💼 Expériences Professionnelles",
+		"description": "Découvrez en détails mes différentes expériences professionnelles."
 	},
 	"collapsed": false,
 	"collapsible": false

@@ -36,7 +36,7 @@ const projects: Array<Project> = [
 		technologies: ['Vue.js', 'Java Spring', 'PostgreSQL'],
 		links: {
 			website: 'https://theses.fr',
-			doc: '/docs/03-experiences/01-abes/index.md',
+			doc: '/docs/experiences/abes',
 		},
 	},
 	{

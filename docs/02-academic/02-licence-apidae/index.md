@@ -7,9 +7,9 @@ description: Découvrez la Licence Professionnelle Assistant de Projet Informati
 
 ---
 
-# 🎓 Licence Professionnelle Assistant de Projet Informatique, Développement d'Applications WEB/E-Business
+## 🎓 Licence Professionnelle Assistant de Projet Informatique, Développement d'Applications WEB/E-Business
 
-## Pourquoi avoir choisi cette formation ?
+### Pourquoi avoir choisi cette formation ?
 
 Après avoir acquis des bases solides en informatique, il me semblait naturel de poursuivre le cursus proposé par l'Université de Montpellier. Je me suis orienté vers une formation spécialisée dans le développement web et le e-business, un domaine en plein essor dans lequel je me sentais à l'aise.
 

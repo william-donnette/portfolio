@@ -2,11 +2,11 @@
 title: PHP
 ---
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" width="40" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" width="40" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="40" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" width="40" />
+<img alt="Logo de PHP" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" />
+<img alt="Logo de Composer" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" width="40" />
+<img alt="Logo de Apache" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" width="40" />
+<img alt="Logo de Laravel" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="40" />
+<img alt="Logo de Symfony" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" width="40" />
 
 **Niveau : `Très bon ⭐⭐⭐⭐`**
 
@@ -14,16 +14,16 @@ title: PHP
 
 ## Environnement
 
--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" width="20" /> **Composer**
--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" width="20" /> **Apache**
+-   <img alt="Logo de Composer" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" width="20" /> **Composer**
+-   <img alt="Logo de Apache" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" width="20" /> **Apache**
 
 ## Frameworks
 
--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="20" /> **Laravel**
+-   <img alt="Logo de Laravel" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="20" /> **Laravel**
     -   **Projet professionnel :** API interne [Domdata](../../../03-experiences/03-domdata/index.md)
     -   **Projet scolaire :** [Site vitrine](../../../02-academic/01-master-eisi/projects.md#-conception-dune-méthodologie-de-travail-et-dune-stratégie-marketing)
     -   **Projet personnel :** [Solution cloud sous forme de réseau social](../../../05-projects/05-smile.md)
--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" width="20" /> **Symfony**
+-   <img alt="Logo de Symfony" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" width="20" /> **Symfony**
     -   **Projet scolaire :** [Site de concerts](../../../02-academic/02-licence-apidae/projects.md#-développement-dun-site-web-de-concerts)
 
 ## Natif
