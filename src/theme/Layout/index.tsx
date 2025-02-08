@@ -7,7 +7,7 @@ export default function LayoutWrapper(props) {
 
 	return (
 		<>
-			{location.pathname.startsWith('/blog') && (
+			{/* {location.pathname.startsWith('/blog') && (
 				<Head>
 					<script
 						async
@@ -15,7 +15,14 @@ export default function LayoutWrapper(props) {
 						crossOrigin="anonymous"
 					></script>
 				</Head>
-			)}
+			)} */}
+			<Head>
+				<script
+					async
+					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7732822326275292"
+					crossOrigin="anonymous"
+				></script>
+			</Head>
 			<Layout {...props} />
 		</>
 	);

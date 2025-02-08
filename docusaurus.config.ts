@@ -62,8 +62,12 @@ const config: Config = {
 			},
 			items: [
 				{to: '/docs/intro', label: 'Curriculum Vitae', position: 'left'},
-				{to: '/docs/category/-projets-personnels', label: 'Mes Projets', position: 'left'},
-				// {to: '/blog', label: 'Blog', position: 'left'},
+				{to: '/blog', label: 'Blog', position: 'left'},
+				{
+					href: 'https://william-donnette.dev/#contact',
+					label: 'Contact',
+					position: 'left',
+				},
 				{
 					type: 'search',
 					position: 'right',
@@ -74,11 +78,6 @@ const config: Config = {
 					position: 'right',
 					download: true,
 					target: '_blank',
-				},
-				{
-					href: '/#contact',
-					label: 'Me Contacter',
-					position: 'right',
 				},
 			],
 		},
