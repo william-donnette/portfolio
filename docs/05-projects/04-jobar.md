@@ -47,7 +47,7 @@ npm install jobar
 
 -   Exemples d'utilisation : [GitHub - examples](https://github.com/william-donnette/jobar/tree/main/examples)
 
-[Dashboard Workflow Hello World](/img/dashboard-workflow-hello-world.png 'Dashboard Workflow Hello World')
+![Dashboard Workflow Hello World](/img/dashboard-workflow-hello-world.png 'Dashboard Workflow Hello World')
 
 ## 📂 Structure du projet
 
