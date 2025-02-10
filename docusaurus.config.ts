@@ -19,7 +19,8 @@ const config: Config = {
 	projectName: 'portfolio', // Usually your repo name.
 
 	onBrokenLinks: 'throw',
-	onBrokenMarkdownLinks: 'warn',
+	onBrokenMarkdownLinks: 'throw',
+	onBrokenAnchors: 'ignore',
 
 	// Even if you don't use internationalization, you can use this field to set
 	// useful metadata like html lang. For example, if your site is Chinese, you
@@ -64,7 +65,7 @@ const config: Config = {
 				{to: '/docs/intro', label: 'Curriculum Vitae', position: 'left'},
 				{to: '/blog', label: 'Blog', position: 'left'},
 				{
-					href: 'https://william-donnette.dev/#contact',
+					href: '/#contact',
 					label: 'Contact',
 					position: 'left',
 				},
