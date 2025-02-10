@@ -22,13 +22,13 @@ title: JavaScript / TypeScript
     -   **Projet professionnel :** ETL interne [SNCF Voyageurs](../../../03-experiences/02-sncf/index.md)
     -   **Projet scolaire :** [Site de recettes](../../../02-academic/02-licence-apidae/projects.md#-développement-dun-site-web-de-recettes)
     -   **Projet personnel :** [Site de solutions digitales pour l'immobilier](../../../05-projects/01-homkizz.md)
-    -   **Projet personnel :** [Solution cloud sous forme de réseau social](../../../05-projects/05-smile.md)
+    -   **Projet personnel :** [Solution cloud sous forme de réseau social](../../../05-projects/06-smile.md)
 
 ## Front-End
 
 -   <img alt="Logo de React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="20" /> **React.js**
     -   **Projet personnel :** [Site de solutions digitales pour l'immobilier](../../../05-projects/01-homkizz.md)
-    -   **Projet personnel :** [Solution cloud sous forme de réseau social](../../../05-projects/05-smile.md)
+    -   **Projet personnel :** [Solution cloud sous forme de réseau social](../../../05-projects/06-smile.md)
     -   **Projet personnel :** [Site de portefeuille patrimonial](../../../05-projects/02-wallet.md)
     -   <img alt="Logo de Next.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="20" /> Next.js
     -   🎨 Ant Design
@@ -50,7 +50,7 @@ title: JavaScript / TypeScript
 ## Mobile
 
 -   <img alt="Logo de React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="20" /> **React Native**
-    -   **Projet personnel :** [Réseau Social](../../../05-projects/04-birds.md)
+    -   **Projet personnel :** [Réseau Social](../../../05-projects/05-birds.md)
     -   🏗️ Expo
 
 ## Tests
