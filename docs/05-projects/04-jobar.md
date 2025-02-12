@@ -40,7 +40,7 @@ Avec **Jobar**, il est simple d'intégrer un moteur de workflows robuste dans un
 ### Installation
 
 ```sh
-npm install jobar
+npm create jobar-app@latest my-app
 ```
 
 ### Exemple d'utilisation
