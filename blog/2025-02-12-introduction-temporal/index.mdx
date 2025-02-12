@@ -1,0 +1,79 @@
+---
+title: "Découverte de Temporal.io : Orchestration de Workflows à l'Échelle"
+description: 'Découvrez Temporal.io, une plateforme puissante pour orchestrer des workflows robustes et évolutifs.'
+date: 2025-02-12
+slug: '/introduction-temporal'
+tags: [temporal, orchestration, workflow, développement]
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+
+<HorizontalDisplay />
+
+![Temporal](https://platformatory.io/blog/assets/blog-images/Introduction-to-temporal/temporal_logo.png)
+
+{/* truncate */}
+
+## Pourquoi Temporal.io ? 🚀
+
+Dans le monde du développement moderne, les applications nécessitent souvent des workflows complexes pour gérer des processus métier critiques. **Temporal.io** est une solution open-source qui permet d’orchestrer ces workflows de manière fiable, scalable et résiliente.
+
+#### 📌 Les principaux avantages de Temporal :
+
+-   **Fiabilité** : Garantit que les workflows s’exécutent sans perte de données, même en cas de panne.
+-   **Évolutivité** : Conçu pour gérer des milliers d’exécutions en parallèle.
+-   **Observabilité** : Permet de suivre en détail chaque étape de l’exécution des workflows.
+-   **Flexibilité** : Compatible avec plusieurs langages comme TypeScript, Go, Java et Python.
+
+<ArialInArticle />
+
+## Comment fonctionne Temporal ? 🔄
+
+Temporal repose sur une architecture **client-serveur** où :
+
+1. Les **Workers** exécutent les activités des workflows.
+2. Le **Temporal Server** assure la persistance et l’exécution fiable des tâches.
+3. L’**API** permet aux développeurs d’interagir avec les workflows.
+
+Voici une vidéo de démonstration de Temporal.io :
+
+<iframe
+	width="560"
+	height="315"
+	src="https://www.youtube.com/embed/dNVmRfWsNkM?si=kpIJXhVWbdc8kZFu"
+	title="YouTube video player"
+	frameborder="0"
+	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+	referrerpolicy="strict-origin-when-cross-origin"
+	allowfullscreen
+></iframe>
+
+### Cas d’usage 📊
+
+Temporal est utilisé dans de nombreux cas, notamment :
+
+-   **Gestion de paiements** (assurer la cohérence des transactions bancaires)
+-   **Traitement de vidéos** (orchestration de pipelines de rendu)
+-   **Automatisation d’infrastructure** (déploiements CI/CD fiables)
+
+A titre personnel, j'utilise Temporal aussi pour gérer mes tâches récurrentes (Cron & Schedulers...). Celà permet d'avoir une interface simple directement liée au code afin de mieux contrôler les évènements et les soucis de workflows souvent lié à de la synchronisation de données.
+
+![Temporal Dashboard Hello World](/img/dashboard-workflow-hello-world.png 'Temporal Dashboard Hello World')
+Présentation d'un workflow `Hello World` sur Temporal
+
+<ArialInArticle />
+
+## Aller plus loin 🔗
+
+Dans le prochain article, nous verrons comment installer **Temporal avec Docker** et configurer un environnement de développement efficace. [Lire l'article →](/blog/installation-temporal-docker)
+
+Découvrez aussi [Jobar](https://www.npmjs.com/package/jobar), un framework TypeScript léger que j'ai développé afin de simplifier la création d'API Express reliée à Temporal. [Lire l'article →](/blog/introduction-jobar)
+
+Si vous voulez explorer plus en détail, voici quelques liens utiles :
+
+-   🌍 [Site officiel de Temporal.io](https://temporal.io/)
+-   📖 [Documentation complète](https://docs.temporal.io/)
+-   🧑‍💻 [Github Temporal](https://github.com/temporalio)
+
+À très bientôt pour la suite ! 🚀

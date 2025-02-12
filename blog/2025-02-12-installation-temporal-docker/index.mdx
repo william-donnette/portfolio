@@ -1,0 +1,132 @@
+---
+title: 'Installer Temporal avec Docker : Guide Complet'
+description: 'Apprenez à déployer Temporal.io en local avec Docker et Docker Compose.'
+date: 2025-02-12
+slug: '/installation-temporal-docker'
+tags: [temporal, docker, orchestration, workflow, développement]
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+
+<HorizontalDisplay />
+
+![Temporal](https://platformatory.io/blog/assets/blog-images/Introduction-to-temporal/temporal_logo.png)
+
+{/* truncate */}
+
+## Déploiement de Temporal avec Docker 🐳
+
+Dans cet article, nous allons voir comment installer et exécuter **Temporal.io** en local avec Docker et Docker Compose. Cette approche permet de tester et développer facilement des workflows sans configuration complexe.
+
+👉 Dans le précédent article, nous avons présenté Temporal.io et ses avantages. [Lire l'article →](/blog/introduction-temporal)
+
+### 📌 Prérequis
+
+-   Avoir **Docker** et **Docker Compose** installés sur votre machine.
+-   Connaître les bases de Docker et des containers.
+
+<HorizontalDisplay />
+
+## Configuration avec Docker Compose ⚙️
+
+Voici un fichier `docker-compose.yml` permettant de déployer **Temporal**, une base de données PostgreSQL, et l'interface utilisateur Temporal UI :
+
+```yaml
+services:
+    postgresql:
+        image: postgres:15
+        container_name: temporal-postgresql
+        environment:
+            POSTGRES_PASSWORD: temporal
+            POSTGRES_USER: temporal
+        networks:
+            - temporal-network
+    temporal:
+        image: temporalio/auto-setup:latest
+        container_name: temporal
+        depends_on:
+            postgresql:
+                condition: service_healthy
+        environment:
+            - DB=postgres12
+            - POSTGRES_USER=temporal
+            - POSTGRES_PWD=temporal
+            - POSTGRES_SEEDS=postgresql
+        networks:
+            - temporal-network
+        ports:
+            - '7233:7233'
+    temporal-ui:
+        image: temporalio/ui:2.26.2
+        container_name: temporal-ui
+        depends_on:
+            - temporal
+        networks:
+            - temporal-network
+        ports:
+            - '8082:8080'
+networks:
+    temporal-network:
+        driver: bridge
+```
+
+### Démarrage des services 🚀
+
+Exécutez la commande suivante pour lancer Temporal et ses services associés :
+
+```sh
+docker compose up -d
+```
+
+Cela va démarrer :
+
+-   **Temporal Server** sur le port `7233`
+-   **Temporal UI** accessible sur [http://localhost:8082](http://localhost:8082)
+-   **PostgreSQL** utilisé comme base de données backend
+
+<ArialInArticle />
+
+## Vérification de l'installation ✅
+
+Vous pouvez vérifier si Temporal fonctionne correctement avec la commande suivante :
+
+```sh
+docker ps
+```
+
+Si tous les containers sont en cours d'exécution, vous pouvez maintenant interagir avec Temporal via l'UI ou l'outil en ligne de commande.
+
+Vous pouvez aussi ajouter le service Temporal Admin Tools qui permet d'administrer et débuguer Temporal avec ces quelques lignes:
+
+```yaml
+## Ajoute un nouveau namespace automatiquement à temporal
+temporal-admin-tools:
+    image: temporalio/admin-tools:1.25.1-tctl-1.18.1-cli-1.1.0
+    container_name: temporal-admin-tools
+    depends_on:
+        temporal:
+            condition: service_healthy
+    environment:
+        - TEMPORAL_ADDRESS=temporal:7233
+    networks:
+        - temporal-network
+    stdin_open: true
+    tty: true
+    entrypoint: >
+        /bin/sh -c "
+        tctl --ns new-namespace namespace describe || tctl --ns new-namespace namespace register;
+        "
+```
+
+## Aller plus loin 🔗
+
+Dans le prochain article, nous verrons comment intégrer **Jobar** avec Temporal pour orchestrer facilement des workflows dans une API Express. [Lire l'article →](/blog/introduction-jobar)
+
+### Liens utiles :
+
+-   🐳 [Documentation Docker de Temporal](https://docs.temporal.io/)
+-   📖 [Temporal sur GitHub](https://github.com/temporalio)
+-   🔍 [Installation avancée](https://docs.temporal.io/docs/server-setup)
+
+À bientôt pour la suite ! 🚀
