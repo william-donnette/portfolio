@@ -27,20 +27,20 @@ Avec **Jobar**, il est simple d'intégrer un moteur de workflows robuste dans un
 
 ## 🛠 Fonctionnalités principales
 
-✅ **Gestion simplifiée des workflows** avec Temporal.io  
-✅ **Création et exécution de tâches** dans des files d'attente dédiées  
-✅ **Encodage et décodage sécurisé des données** via un codec d'encryption  
-✅ **Logger intégré avec Winston** pour un suivi détaillé des événements  
-✅ **Exposition des tâches sur des routes HTTP** grâce à Express  
-✅ **Tests unitaires complets** avec Mocha  
-✅ **Architecture modulaire et extensible**
+-   🚀 **Gestion simplifiée des workflows** avec Temporal.io
+-   📌 **Création et exécution de tâches** dans des files d'attente dédiées
+-   🔒 **Encodage et décodage sécurisé des données** via un codec d'encryption
+-   📜 **Logger intégré avec Winston** pour un suivi détaillé des événements
+-   🌐 **Exposition des tâches sur des routes HTTP** grâce à Express
+-   🧪 **Tests unitaires complets** avec Mocha
+-   🛠️ **Architecture modulaire et extensible**
 
 ## 🚀 Installation et usage
 
 ### Installation
 
 ```sh
-npm install jobar
+npm create jobar-app@latest my-app
 ```
 
 ### Exemple d'utilisation
@@ -54,7 +54,7 @@ cd my-app && docker compose up -d
 
 -   Quelques exemples d'utilisation : [GitHub - examples](https://github.com/william-donnette/jobar/tree/main/examples)
 
-[Dashboard Workflow Hello World](/img/dashboard-workflow-hello-world.png 'Dashboard Workflow Hello World')
+![Dashboard Workflow Hello World](/img/dashboard-workflow-hello-world.png 'Dashboard Workflow Hello World')
 
 ## 📂 Structure du projet
 
@@ -74,6 +74,7 @@ jobar/
 -   Dépôt NPMjs : [https://www.npmjs.com/package/jobar](https://www.npmjs.com/package/jobar)
 -   Dépôt GitLab : [gitlab.com/william-donnette/jobar](https://gitlab.com/william-donnette/jobar)
 -   Dépôt GitHub : [github.com/william-donnette/jobar](https://github.com/william-donnette/jobar)
+-   Exemples d'utilisations : [https://github.com/william-donnette/jobar/tree/main/examples](https://github.com/william-donnette/jobar/tree/main/examples)
 
 ---
 
