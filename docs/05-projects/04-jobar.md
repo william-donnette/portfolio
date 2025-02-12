@@ -40,7 +40,7 @@ Avec **Jobar**, il est simple d'intégrer un moteur de workflows robuste dans un
 ### Installation
 
 ```sh
-npm create jobar-app@latest my-app
+npm install jobar
 ```
 
 ### Exemple d'utilisation
@@ -75,6 +75,9 @@ jobar/
 -   Dépôt GitLab : [gitlab.com/william-donnette/jobar](https://gitlab.com/william-donnette/jobar)
 -   Dépôt GitHub : [github.com/william-donnette/jobar](https://github.com/william-donnette/jobar)
 -   Exemples d'utilisations : [https://github.com/william-donnette/jobar/tree/main/examples](https://github.com/william-donnette/jobar/tree/main/examples)
+-   Dépôt NPMjs Create Jobar App : [https://www.npmjs.com/package/create-jobar-app](https://www.npmjs.com/package/create-jobar-app)
+-   Dépôt GitLab Create Jobar App : [gitlab.com/william-donnette/create-jobar-app](https://gitlab.com/william-donnette/create-jobar-app)
+-   Dépôt GitHub Create Jobar App : [github.com/william-donnette/create-jobar-app](https://github.com/william-donnette/create-jobar-app)
 
 ---
 
