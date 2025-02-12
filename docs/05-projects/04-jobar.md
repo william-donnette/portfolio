@@ -17,6 +17,8 @@ description: Framework léger pour orchestrer des workflows avec Temporal.io
 🔗 **GitHub** : [Dépôt GitHub](https://github.com/william-donnette/jobar)  
 🔗 **Exemples d'utilisation** : [GitHub - examples](https://github.com/william-donnette/jobar/tree/main/examples)
 
+**`✅ En ligne`**
+
 ---
 
 ## Un framework léger pour orchestrer des workflows avec Temporal.io
