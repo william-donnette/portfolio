@@ -45,7 +45,14 @@ npm install jobar
 
 ### Exemple d'utilisation
 
--   Exemples d'utilisation : [GitHub - examples](https://github.com/william-donnette/jobar/tree/main/examples)
+Vous pouvez directement tester Jobar avec **Docker**:
+
+```sh
+npm create jobar-app@latest my-app -- --template=hello-world
+cd my-app && docker compose up -d
+```
+
+-   Quelques exemples d'utilisation : [GitHub - examples](https://github.com/william-donnette/jobar/tree/main/examples)
 
 [Dashboard Workflow Hello World](/img/dashboard-workflow-hello-world.png 'Dashboard Workflow Hello World')
 
