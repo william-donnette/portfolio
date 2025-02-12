@@ -9,6 +9,7 @@ export default function LayoutWrapper(props) {
 		<>
 			{location.pathname.startsWith('/blog') && (
 				<Head>
+					<meta name="google-adsense-account" content="ca-pub-7732822326275292" />
 					<script
 						async
 						src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7732822326275292"
