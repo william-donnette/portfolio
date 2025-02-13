@@ -5,6 +5,8 @@ description: Découvrez le master Expert en Informatique et Système d'Informati
 
 #### `📅 2022 - 2024` `🏫 EPSI` `📜 Certification RNCP35584 Niveau 7` `🎓 BAC+5`
 
+🔗 **Diplôme sous blockchain** : [certificate.bcdiploma.com](https://certificate.bcdiploma.com/check/54A77658C204536B7B1CCF3A507A334135556DC30210F77556E48805F253DEFCQmkwdDQwYjd4SEtPdm1aOW42eWZHV2NaOEgrUUNqaVJ5Ync0aHlJOFU3SjMwRW1h)
+
 ---
 
 ## 🎓 Master Expert en Informatique et Système d'Information
