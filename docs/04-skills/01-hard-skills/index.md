@@ -94,10 +94,12 @@ Découvrez mes compétences techniques très variées...
 -   Shell
 -   <img alt="Logo de React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="20" /> React Native
 
-## Métrique
+## Observabilité
 
+-   <img alt="Logo de OpenTelemetry" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opentelemetry/opentelemetry-original.svg" width="20" /> OpenTelemetry
 -   <img alt="Logo de Prometheus" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" width="20" /> Prometheus
 -   <img alt="Logo de Grafana" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" width="20" /> Grafana
+-   Temporal
 
 ## Orchestration
 
@@ -106,15 +108,15 @@ Découvrez mes compétences techniques très variées...
 
 ## Outils de développement
 
--   Node.js
--   Yarn
--   Next.js
--   Nuxt.js
+-   <img alt="Logo de Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="20" /> Node.js
+-   <img alt="Logo de Yarn" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg" width="20" /> Yarn
+-   <img alt="Logo de Vite.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" width="20" /> Vite.js
+-   <img alt="Logo de Next.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="20" /> Next.js
+-   <img alt="Logo de Nuxt.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" width="20" />Nuxt.js
+-   <img alt="Logo de Maven" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" width="20" /> Maven
+-   <img alt="Logo de Gradle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-original.svg" width="20" /> Gradle
 -   Expo
--   Maven
--   Gradle
 -   Metro
--   Vite
 
 ## SEO
 
@@ -131,7 +133,3 @@ Découvrez mes compétences techniques très variées...
 -   Matomo
 -   Google Analytics
 -   Google Tag Manager
-
-## Workflow
-
--   Temporal
