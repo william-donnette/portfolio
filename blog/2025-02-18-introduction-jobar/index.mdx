@@ -1,0 +1,99 @@
+---
+title: "Jobar Framework : Simplifiez l'Orchestration de Workflows avec Temporal"
+description: "Découvrez Jobar, une librairie TypeScript facilitant l'intégration de Temporal dans une API Express."
+date: 2025-02-18
+slug: '/introduction-jobar'
+tags: [jobar, temporal, framework, typescript, express, développement, open-source]
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+
+<HorizontalDisplay />
+
+![Temporal](https://platformatory.io/blog/assets/blog-images/Introduction-to-temporal/temporal_logo.png)
+
+{/* truncate */}
+
+## Jobar : Une passerelle entre Temporal et Express 🚀
+
+Après avoir découvert **Temporal.io** et vu comment l'installer avec **Docker**, il est temps de s'intéresser à **Jobar**. Jobar est une librairie **TypeScript** que j'ai créée avec un objectif clair : simplifier l'intégration de **Temporal.io** dans une API **Express** tout en proposant une architecture stable et conforme aux recommandations du Temporal TypeScript SDK.
+
+Temporal est une solution extrêmement puissante pour orchestrer des workflows distribués. Cependant, son intégration dans un projet existant peut s'avérer complexe et nécessiter une structure bien pensée. C'est là que Jobar intervient en proposant un framework léger et structuré qui facilite cette transition. Avec Jobar, il est possible de créer des **workflows** et de les exposer en **API REST** en quelques lignes de code, tout en bénéficiant de la fiabilité et de la scalabilité de Temporal.
+
+👉 Si tu souhaites lire l'article complet sur **Temporal**. [L'article est juste ici →](/blog/introduction-temporal)
+
+<ArialInArticle />
+
+## Un framework conçu pour la simplicité et la robustesse
+
+L'un des principaux défis lorsqu'on adopte Temporal est de structurer correctement son projet. Jobar repose sur une **architecture modulaire**, alignée avec les bonnes pratiques de Temporal et adaptée aux besoins des développeurs. Il ne s'agit pas d'une simple surcouche, mais bien d'un **framework pensé pour une intégration fluide et efficace**.
+
+Par défaut, Jobar offre une **gestion des workflows** simplifiée. Les tâches, appelées **activities** dans Temporal, sont automatiquement orchestrées et sécurisées. La communication entre Temporal et l'API Express est optimisée, permettant d'exposer chaque workflow sous forme d'endpoint HTTP sans complexité supplémentaire.
+
+Le framework intègre également une **gestion des erreurs centralisée**, garantissant une robustesse accrue en cas d'échec des workflows. De plus, un **système de logs avancé basé sur Winston** permet de suivre chaque étape du processus avec une visibilité optimale.
+
+#### En Bref ⚡
+
+Si vous hésitez encore à utiliser **Jobar** et **Temporal**, voici quelques points clés qui vous convaincront :
+
+-   🚀 **Orchestration fiable** : plus besoin de gérer manuellement la reprise des tâches en cas d'échec.
+-   ⚙️ **Architecture modulaire** : parfaitement alignée avec le Temporal TypeScript SDK.
+-   🌐 **Facilité d'intégration** : exposer un workflow en API Express devient un jeu d'enfant.
+-   📊 **Scalabilité** : Jobar permet de gérer de nombreux workflows simultanément sans effort supplémentaire.
+-   🔍 **Observabilité avancée** : suivi des exécutions et des logs grâce à Winston et Temporal UI.
+-   🛠 **Open-source et extensible** : contribuez et améliorez l'outil en fonction de vos besoins.
+
+<ArialInArticle />
+
+## Mise en place rapide et intuitive
+
+L'un des avantages de Jobar est sa simplicité d'installation. En quelques commandes, vous pouvez déployer un projet fonctionnel avec **Temporal et Jobar** :
+
+```sh
+npm install jobar
+# ou
+yarn add jobar
+```
+
+Si vous souhaitez partir d'une base prête à l'emploi, vous pouvez également utiliser la commande suivante qui génère un projet préconfiguré :
+
+```sh
+npm create jobar-app@latest my-app -- --template=hello-world
+```
+
+Une fois en place, il suffit de définir un **workflow** et de l'exposer via Express. Voici un exemple simple d’un workflow de connexion utilisateur :
+
+```typescript
+import {Task} from 'jobar';
+import {login} from '../workflows';
+
+const exampleTask = new Task(login, {
+	setWorkflowId: (req) => `workflow-login-${req.body.username}`,
+	isExposed: true,
+	method: 'post',
+	endpoint: 'login',
+});
+```
+
+<HorizontalDisplay />
+
+## Une communauté ouverte et en pleine expansion
+
+Jobar est **open-source** et ouvert aux contributions. Que vous soyez intéressé par l'ajout de nouvelles fonctionnalités, l'amélioration de la documentation ou la correction de bugs, vous êtes les bienvenus ! En rejoignant le projet, vous participez à l'évolution d'un outil pensé pour simplifier la vie des développeurs utilisant **Temporal.io**.
+
+Vous pouvez retrouver Jobar et contribuer sur **GitHub** :
+
+-   📦 [NPM Jobar](https://www.npmjs.com/package/jobar)
+-   🐙 [GitHub Jobar](https://github.com/william-donnette/jobar)
+-   📚 [Documentation officielle de Temporal.io TypeScript SDK](https://docs.temporal.io/develop/typescript/)
+
+## Conclusion 🎯
+
+Jobar offre une approche pragmatique et efficace pour intégrer **Temporal.io** dans vos projets **TypeScript** et **Express**. Son **architecture modulaire**, son **respect des standards de Temporal**, et sa **simplicité d'utilisation** en font un outil incontournable pour ceux qui souhaitent exploiter la puissance de Temporal sans la complexité habituellement associée.
+
+👉 Si vous n'avez pas encore installé Temporal, consultez mon guide dédié : [Installer Temporal avec Docker →](/blog/installation-temporal-docker).
+
+Grâce à Jobar, vous pouvez enfin vous concentrer sur ce qui compte vraiment : la logique métier de vos workflows, tout en profitant d'une infrastructure stable et performante. Rejoignez-moi et simplifiez votre orchestration dès aujourd'hui ! 🚀
+
+<ArialInArticle />
