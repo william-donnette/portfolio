@@ -159,6 +159,23 @@ const config: Config = {
 			jsLoader: 'matomo.js',
 		},
 	} satisfies Preset.ThemeConfig,
+	headTags: [
+		{
+			tagName: 'meta',
+			attributes: {
+				name: 'google-adsense-account',
+				content: 'ca-pub-7732822326275292',
+			},
+		},
+		{
+			tagName: 'script',
+			attributes: {
+				async: 'true',
+				src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7732822326275292',
+				crossOrigin: 'anonymous',
+			},
+		},
+	],
 };
 
 export default config;
