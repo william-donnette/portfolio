@@ -167,14 +167,6 @@ const config: Config = {
 				content: 'ca-pub-7732822326275292',
 			},
 		},
-		{
-			tagName: 'script',
-			attributes: {
-				async: 'true',
-				src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7732822326275292',
-				crossOrigin: 'anonymous',
-			},
-		},
 	],
 };
 
