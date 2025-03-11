@@ -7,6 +7,7 @@ tags: ['cloud-native', 'opentelemetry', 'observabilité', 'cncf', 'montpellier']
 
 import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
 import ArialInArticle from '@site/src/components/ads/arial-in-article';
+import ArialMultiplex from '@site/src/components/ads/arial-multiplex';
 
 <HorizontalDisplay />
 
@@ -34,36 +35,21 @@ Lors des différentes conférences et échanges, plusieurs points ont retenu mon
 
 ## Une démonstration convaincante 🎯
 
-Pendant la conférence, une démo en live a illustré comment instrumenter une application Node.js avec OpenTelemetry. Voici les grandes étapes :
-
-1. **Installation du SDK** :
-    ```sh
-    npm install @opentelemetry/sdk-node @opentelemetry/api
-    ```
-2. **Ajout de la télémétrie aux requêtes HTTP** :
-    ```javascript
-    const {NodeTracerProvider} = require('@opentelemetry/sdk-trace-node');
-    const provider = new NodeTracerProvider();
-    provider.register();
-    ```
-3. **Exportation vers Jaeger pour visualisation** :
-    ```sh
-    docker run -d --name jaeger -p 16686:16686 -p 14268:14268 jaegertracing/all-in-one:latest
-    ```
+Pendant la conférence, une démo en live a illustré comment instrumenter une application Node.js avec OpenTelemetry. Voici le lien de la [démo](https://killercoda.com/clement/scenario/opentelemetry-instrumentation-demo).
 
 <ArialInArticle />
 
 ## Mon ressenti après l’événement 📝
 
-Jusqu’ici, je connaissais OpenTelemetry de nom, mais sans en mesurer l’intérêt concret. Après cette introduction et la démo, je vois clairement son utilité pour tout projet nécessitant une bonne observabilité, notamment en environnement cloud-native.
+Jusqu’ici, je connaissais OpenTelemetry de nom, mais sans en mesurer l’intérêt concret. Après cette introduction et la démo, je vois clairement son utilité pour tout projet nécessitant **une bonne observabilité**.
 
-Je vais sûrement explorer davantage OpenTelemetry et tester son intégration sur mes propres projets. Si tu l’as déjà utilisé, je serais curieux d’avoir ton retour d’expérience en commentaire ! 😉
+Je vais sûrement explorer davantage OpenTelemetry et tester son intégration sur mes propres projets. 😉
 
 ## Ressources utiles 📚
 
 -   [Site officiel d’OpenTelemetry](https://opentelemetry.io/)
 -   [Présentation CNCF d’OpenTelemetry](https://www.cncf.io/projects/opentelemetry/)
--   [Démo OpenTelemetry avec Jaeger](https://opentelemetry.io/docs/instrumentation/js/getting-started/)
+-   [Démo OpenTelemetry par Clément Duveau](https://killercoda.com/clement/scenario/opentelemetry-instrumentation-demo)
 
 ---
 
