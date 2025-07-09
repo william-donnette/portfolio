@@ -205,10 +205,10 @@ async function main() {
 		saveArticleToFile(articleName, content.replaceAll('```mdx', '').replaceAll('```', ''));
 		console.log(`Nouvel Article : ${articleName}`);
 		console.log(articleName);
-		exit(0);
+		process.exit(0);
 	} catch (err) {
 		console.error('Erreur dans main:', err);
-		exit(1);
+		process.exit(1);
 	}
 }
 
