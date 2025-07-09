@@ -203,8 +203,8 @@ async function main() {
 		const date = new Date().toISOString().split('T')[0];
 		const articleName = `${date}-${normalizeString(slug)}`;
 		saveArticleToFile(articleName, content.replaceAll('```mdx', '').replaceAll('```', ''));
-		console.log(`Nouvel Article : ${slug}`);
-		console.log(slug);
+		console.log(`Nouvel Article : ${articleName}`);
+		console.log(articleName);
 		exit(0);
 	} catch (err) {
 		console.error('Erreur dans main:', err);
