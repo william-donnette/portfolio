@@ -3,9 +3,9 @@ include:
     - 'templates/.deploy.yml'
 
 stages:
+    - generate
     - register
     - deploy
-    - generate
 
 variables:
     ACTION:
