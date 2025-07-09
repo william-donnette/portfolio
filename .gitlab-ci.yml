@@ -24,7 +24,7 @@ generate-article:
     before_script:
         - apk update
         - apk upgrade
-        - apk add --no-cache nodejs npm git bash
+        - apk add --no-cache nodejs npm git bash curl
         - git config --global user.email "support@sport-up.io"
         - git config --global user.name "sportup-support"
         - git remote remove origin || true
