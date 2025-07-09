@@ -1,5 +1,5 @@
 #!/bin/bash
-ENV MISTRAL_API_KEY=gS75nCSjLGyPsmjldV4WxYyvHVYSOPdK
+export MISTRAL_API_KEY=gS75nCSjLGyPsmjldV4WxYyvHVYSOPdK
 touch .env
 echo MISTRAL_API_KEY=$MISTRAL_API_KEY > .env
 # Générer l'article
