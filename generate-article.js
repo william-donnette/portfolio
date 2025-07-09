@@ -18,7 +18,6 @@ function readMarkdownFile(fullPath) {
 function readMarkdownFiles(dir) {
 	return new Promise(async (resolve, reject) => {
 		let combinedContent = '';
-		console.log('ici');
 		try {
 			const items = await new Promise((resolve, reject) => {
 				fs.readdir(dir, {withFileTypes: true}, (err, items) => {
@@ -29,7 +28,6 @@ function readMarkdownFiles(dir) {
 					}
 				});
 			});
-			console.log('là');
 			for (const item of items) {
 				const fullPath = path.join(dir, item.name);
 				if (item.isDirectory()) {
@@ -39,7 +37,6 @@ function readMarkdownFiles(dir) {
 					combinedContent += content + '\n\n';
 				}
 			}
-			console.log('bas');
 			resolve(combinedContent);
 		} catch (err) {
 			console.error(`Erreur lors de la lecture du dossier ${dir}:`, err);
@@ -207,10 +204,12 @@ async function main() {
 		const articleName = `${date}-${normalizeString(slug)}`;
 		saveArticleToFile(articleName, content.replaceAll('```mdx', '').replaceAll('```', ''));
 		console.log(`Nouvel Article : ${slug}`);
+		console.log(slug);
+		exit(0);
 	} catch (err) {
 		console.error('Erreur dans main:', err);
+		exit(1);
 	}
-	console.log('finito');
 }
 
 main();
