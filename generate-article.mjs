@@ -52,7 +52,6 @@ export function saveArticleToFile(articleName, content) {
 	}
 	const filePath = path.join(directory, 'index.mdx');
 	fs.writeFileSync(filePath, content);
-	console.log(`Article enregistré sous ${filePath}`);
 }
 
 export async function generateArticle(messages) {
@@ -190,9 +189,8 @@ async function main() {
 
 	try {
 		const resume = await readMarkdownFiles('docs');
-		console.log(resume);
 		const messages = await readBlogArticles(resume);
-		console.log("Nombre d'exemples préchargés : " + messages.length / 2);
+		console.log("Nombre d'exemples préchargés : " + Math.floor(messages.length / 2));
 
 		messages.push({
 			role: 'user',
