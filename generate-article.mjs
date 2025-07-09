@@ -80,8 +80,9 @@ export async function generateArticle(messages) {
 		const response2 = await axios.post(
 			apiUrl,
 			{
-				model: 'mistral-small-latest',
+				model: 'mistral-medium-latest',
 				messages,
+				tools: [{type: 'web_search'}],
 			},
 			{
 				headers: {
