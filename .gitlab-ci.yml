@@ -5,3 +5,21 @@ include:
 stages:
     - register
     - deploy
+    - generate
+
+inputs:
+    ACTION:
+        description: 'Action à exécuter'
+        value: 'none'
+        options:
+            - 'none'
+            - 'generate_article'
+
+generate_article:
+    stage: generate
+    script:
+        - npm install
+        - chmod +x ./generate_article.sh
+        - ./generate_article.sh
+    rules:
+        - if: $ACTION == "generate_article"
