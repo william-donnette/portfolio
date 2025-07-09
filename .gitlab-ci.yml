@@ -20,7 +20,7 @@ generate_article:
     stage: generate
     script:
         - npm install
-        - chmod +x ./generate_article.sh
-        - ./generate_article.sh
+        - chmod +x ./generate-article.sh
+        - ./generate-article.sh
     rules:
         - if: $ACTION == "generate_article"
