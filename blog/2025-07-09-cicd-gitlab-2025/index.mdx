@@ -1,0 +1,99 @@
+---
+title: "CI/CD en 2025 : Comment j'ai automatisé le déploiement de mes projets avec GitLab CI"
+description: "Découvrez comment j'ai mis en place une pipeline CI/CD complète pour mes projets comme Hom'Kizz et Jobar, et comment cela a transformé mon workflow de développement"
+date: 2025-03-25
+slug: "/cicd-gitlab-2025"
+tags: ["devops", "cicd", "gitlab", "automatisation", "développement"]
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+import ArialMultiplex from '@site/src/components/ads/arial-multiplex';
+
+![CI/CD](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)
+
+<HorizontalDisplay />
+
+{/* truncate */}
+
+## CI/CD en 2025 : Comment j'ai automatisé le déploiement de mes projets avec GitLab CI 🚀
+
+En tant que développeur fullstack passionné par l'automatisation et les bonnes pratiques DevOps, j'ai récemment mis en place une pipeline CI/CD complète pour mes projets comme [Hom'Kizz](https://homkizz.com/fr-FR) et [Jobar](https://www.npmjs.com/package/jobar). Cette expérience m'a permis de transformer radicalement mon workflow de développement et d'améliorer la qualité de mes livraisons.
+
+### Pourquoi j'ai choisi GitLab CI ? 🤔
+
+Lors de mon alternance à la [SNCF Voyageurs](https://william-donnette.dev/03-experiences/02-sncf), j'ai découvert l'importance de l'intégration continue pour garantir la qualité des livraisons. Depuis, j'ai toujours cherché à automatiser au maximum mes processus de déploiement.
+
+J'ai choisi GitLab CI pour plusieurs raisons :
+- **Intégration native** avec GitLab, que j'utilise déjà pour héberger mes projets
+- **Flexibilité** avec des runners auto-scalables
+- **Coût** plus abordable que d'autres solutions comme GitHub Actions
+- **Fonctionnalités avancées** comme les pipelines multi-projets
+
+### Mon expérience avec GitLab CI 🛠️
+
+J'ai commencé par mettre en place une pipeline simple pour [Jobar](https://www.npmjs.com/package/jobar), mon framework pour orchestrer des workflows avec Temporal. Voici un exemple de mon fichier `.gitlab-ci.yml` :
+
+yaml
+stages:
+  - test
+  - build
+  - deploy
+
+test:
+  stage: test
+  script:
+    - npm install
+    - npm test
+
+build:
+  stage: build
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - dist/
+
+deploy:
+  stage: deploy
+  script:
+    - npm run deploy
+  only:
+    - main
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Les avantages que j'ai constatés ⚡
+
+1. **Gain de temps** : Plus besoin de faire manuellement les déploiements
+2. **Qualité améliorée** : Les tests sont exécutés automatiquement avant chaque déploiement
+3. **Traçabilité** : Chaque modification est tracée et associée à un déploiement
+4. **Confiance** : Je sais que mon code est testé et déployé de manière fiable
+
+### Les défis que j'ai rencontrés 🌍
+
+- **Configuration initiale** : Il faut un peu de temps pour bien configurer les runners et les pipelines
+- **Dépendance aux outils** : Certains projets nécessitent des configurations spécifiques
+- **Maintenance** : Il faut régulièrement mettre à jour les configurations
+
+### Pour aller plus loin 📚
+
+Si vous souhaitez en savoir plus sur GitLab CI et l'intégration continue, voici quelques ressources utiles :
+
+- [Documentation GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
+- [GitLab CI/CD Templates](https://gitlab.com/gitlab-org/gitlab/-/tree/master/lib/gitlab/ci/templates)
+- [GitLab Runners](https://docs.gitlab.com/runner/)
+- [GitLab Auto DevOps](https://docs.gitlab.com/ee/topics/autodevops/)
+
+<ArialInArticle />
+
+## Conclusion 🎯
+
+L'intégration continue avec GitLab CI a complètement transformé mon workflow de développement. En automatisant les tests et les déploiements, j'ai pu me concentrer sur ce qui compte vraiment : développer des fonctionnalités de qualité.
+
+Si vous avez des questions ou des retours sur ce sujet, n'hésitez pas à me contacter sur [Twitter](https://twitter.com/william_donnette) ou à laisser un commentaire ci-dessous.
+
+À bientôt pour de nouvelles découvertes technologiques ! 🚀
+
+<ArialMultiplex />
