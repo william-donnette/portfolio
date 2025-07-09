@@ -20,7 +20,29 @@ generate_article:
     stage: generate
     script:
         - npm install
-        - chmod +x ./generate_article.sh
-        - ./generate_article.sh
+
+        # Execution du Script js
+        - export BRANCH_NAME=$(node generate-article.js $@| tail -n 1)
+
+        # Créer une nouvelle branche
+        - git checkout -b "$BRANCH_NAME"
+
+        # Ajouter le nouveau fichier à l'index git
+        - git add .
+
+        # Commiter les changements
+        - git commit -m "Ajout d'un nouvel article"
+
+        # Pousser la nouvelle branche sur le dépôt distant
+        - git push origin "$BRANCH_NAME"
+
+        # Créer une Merge Request
+        - curl --request POST \
+            --header "PRIVATE-TOKEN: $CI_JOB_TOKEN" \
+            --form "source_branch=$BRANCH_NAME" \
+            --form "target_branch=main" \
+            --form "title=Ajout d'un nouvel article $BRANCH_NAME" \
+            --form "description=Ajout d'un nouvel article $BRANCH_NAME" \
+            "https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/merge_requests"
     rules:
         - if: $ACTION == "generate_article"
