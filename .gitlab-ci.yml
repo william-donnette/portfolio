@@ -25,6 +25,9 @@ generate-article:
         # Execution du Script js
         - export BRANCH_NAME=$(node generate-article.mjs $@| tail -n 1)
 
+        - git config --global user.email "willdonn17@gmail.com"
+        - git config --global user.name "William Donnette"
+
         # Créer une nouvelle branche
         - git checkout -b "$BRANCH_NAME"
 
