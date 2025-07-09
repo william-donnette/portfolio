@@ -34,6 +34,7 @@ generate-article:
         # Execution du Script js
         - export BRANCH_NAME=$(node generate-article.mjs $@| tail -n 1)
         - echo $BRANCH_NAME
+        - ls -al blog
 
         # Créer une nouvelle branche
         - git checkout -b "$BRANCH_NAME"
