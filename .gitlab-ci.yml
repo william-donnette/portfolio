@@ -10,12 +10,12 @@ stages:
 variables:
     ACTION:
         description: 'Action à exécuter'
-        value: 'none'
+        value: 'generate-article'
         options:
             - 'none'
-            - 'generate_article'
+            - 'generate-article'
 
-generate_article:
+generate-article:
     image: node:18-alpine
     stage: generate
     script:
@@ -23,7 +23,7 @@ generate_article:
         - npm install
 
         # Execution du Script js
-        - export BRANCH_NAME=$(node generate-article.js $@| tail -n 1)
+        - export BRANCH_NAME=$(node generate-article.mjs $@| tail -n 1)
 
         # Créer une nouvelle branche
         - git checkout -b "$BRANCH_NAME"
@@ -40,4 +40,4 @@ generate_article:
         # Créer une Merge Request
         - curl --request POST --header "PRIVATE-TOKEN:$CI_JOB_TOKEN" --form "source_branch=$BRANCH_NAME" --form "target_branch=main" --form "title=Ajout d'un nouvel article $BRANCH_NAME" --form "description=Ajout d'un nouvel article $BRANCH_NAME" "https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/merge_requests"
     rules:
-        - if: $ACTION == "generate_article"
+        - if: $ACTION == "generate-article"
