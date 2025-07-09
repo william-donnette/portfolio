@@ -16,7 +16,7 @@ variables:
             - 'generate-article'
     TOPIC:
         description: 'Idée de thème à aborder'
-        value: ''
+        value: 'Sunny Tech 2025 et les web components'
 
 generate-article:
     image: docker:latest
@@ -52,6 +52,6 @@ generate-article:
         - git push origin "$BRANCH_NAME"
 
         # Créer une Merge Request
-        - curl --request POST --header "PRIVATE-TOKEN:$CI_JOB_TOKEN" --form "source_branch=$BRANCH_NAME" --form "target_branch=main" --form "title=Ajout d'un nouvel article $BRANCH_NAME" --form "description=Ajout d'un nouvel article $BRANCH_NAME" "https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/merge_requests"
+        - curl --request POST --header "PRIVATE-TOKEN:$OAUTH_TOKEN" --form "source_branch=$BRANCH_NAME" --form "target_branch=main" --form "title=Ajout d'un nouvel article $BRANCH_NAME" --form "description=Ajout d'un nouvel article $BRANCH_NAME" "https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/merge_requests"
     rules:
         - if: $ACTION == "generate-article"
