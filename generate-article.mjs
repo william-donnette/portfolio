@@ -1,4 +1,5 @@
 import axios from 'axios';
+import 'dotenv/config';
 import * as fs from 'fs';
 import * as path from 'path';
 import {fileURLToPath} from 'url';
@@ -55,7 +56,7 @@ export function saveArticleToFile(articleName, content) {
 }
 
 export async function generateArticle(messages) {
-	const apiKey = 'gS75nCSjLGyPsmjldV4WxYyvHVYSOPdK';
+	const apiKey = process.env.MISTRAL_API_KEY;
 	const apiUrl = 'https://api.mistral.ai/v1/chat/completions';
 	try {
 		const response = await axios.post(

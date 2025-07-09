@@ -26,6 +26,8 @@ generate-article:
         - git config --global user.name "sportup-support"
         - git remote remove origin || true
         - git remote add origin "https://oauth2:$OAUTH_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git"
+        - touch .env
+        - echo MISTRAL_API_KEY=$MISTRAL_API_KEY > .env
     script:
         - npm install
 
