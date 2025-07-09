@@ -1,12 +1,9 @@
 #!/bin/bash
 
 # Générer l'article
-export MY_VARIABLE=$(node generate-article.js $@| tail -n 1)
+export BRANCH_NAME=$(node generate-article.js $@| tail -n 1)
 
-echo $MY_VARIABLE
-
-# Récupérer la date actuelle pour le nom de la branche
-BRANCH_NAME="article-$(date +%Y-%m-%d)"
+echo $BRANCH_NAME
 
 # Créer une nouvelle branche
 git checkout -b "$BRANCH_NAME"
@@ -22,7 +19,7 @@ git push origin "$BRANCH_NAME"
 
 # Créer une Merge Request
 curl --request POST \
-     --header "PRIVATE-TOKEN: $GITLAB_API_TOKEN" \
+     --header "PRIVATE-TOKEN: $CI_JOB_TOKEN" \
      --form "source_branch=$BRANCH_NAME" \
      --form "target_branch=main" \
      --form "title=Ajout d'un nouvel article" \
