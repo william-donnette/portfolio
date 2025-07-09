@@ -19,6 +19,7 @@ generate_article:
     image: node:18-alpine
     stage: generate
     script:
+        - apk update && apk add git
         - npm install
 
         # Execution du Script js
