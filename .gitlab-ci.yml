@@ -18,15 +18,19 @@ variables:
 generate-article:
     image: node:18-alpine
     stage: generate
+    before_script:
+        - apk update
+        - apk upgrade
+        - apk add --no-cache nodejs npm git bash
+        - git config --global user.email "support@sport-up.io"
+        - git config --global user.name "sportup-support"
+        - git remote remove origin || true
+        - git remote add origin "https://oauth2:$OAUTH_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git"
     script:
-        - apk update && apk add git
         - npm install
 
         # Execution du Script js
         - export BRANCH_NAME=$(node generate-article.mjs $@| tail -n 1)
-
-        - git config --global user.email "willdonn17@gmail.com"
-        - git config --global user.name "William Donnette"
 
         # Créer une nouvelle branche
         - git checkout -b "$BRANCH_NAME"
