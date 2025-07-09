@@ -10,13 +10,14 @@ stages:
 variables:
     ACTION:
         description: 'Action à exécuter'
-        value: 'generate-article'
+        value: 'none'
         options:
             - 'none'
             - 'generate-article'
     TOPIC:
         description: 'Idée de thème à aborder'
-        value: 'Sunny Tech 2025 et les web components'
+
+        value: ''
 
 generate-article:
     image: docker:latest
