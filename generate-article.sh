@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Générer l'article
-export BRANCH_NAME=$(node generate-article.js $@| tail -n 1)
+export BRANCH_NAME=$(node generate-article.mjs $@| tail -n 1)
 
 echo $BRANCH_NAME
 
