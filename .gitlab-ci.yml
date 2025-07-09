@@ -14,6 +14,9 @@ variables:
         options:
             - 'none'
             - 'generate-article'
+    TOPIC:
+        description: 'Idée de thème à aborder'
+        value: ''
 
 generate-article:
     image: docker:latest
@@ -32,7 +35,7 @@ generate-article:
         - npm install
 
         # Execution du Script js
-        - export BRANCH_NAME=$(node generate-article.mjs $@| tail -n 1)
+        - export BRANCH_NAME=$(node generate-article.mjs $TOPIC | tail -n 1)
         - echo $BRANCH_NAME
         - ls -al blog
 
