@@ -14,11 +14,11 @@ server:production:deploy:
         - apk add openssh-client
         - eval $(ssh-agent -s)
     script:
-        - ssh -i /root/.ssh/private_key -l debian $SERVER_IP_ADDRESS "cd $DOCKER_CONFIG_PATH/$DOCKER_CONTAINER_PREFIX &&
-          docker-compose stop || true &&
-          docker-compose rm -f || true &&
-          docker-compose pull || true &&
-          docker-compose up -d &&
+        - ssh -i /root/.ssh/private_key.ppk -l debian $SERVER_IP_ADDRESS "cd $DOCKER_CONFIG_PATH/$DOCKER_CONTAINER_PREFIX &&
+          docker compose stop || true &&
+          docker compose rm -f || true &&
+          docker compose pull || true &&
+          docker compose up -d &&
           docker run --env-file=./.env algolia/docsearch-scraper"
     only:
         - main
