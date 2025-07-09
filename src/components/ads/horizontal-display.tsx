@@ -6,7 +6,7 @@ const HorizontalDisplay: FunctionComponent<HorizontalDisplayProps> = () => {
 	useEffect(() => {
 		const adsbygoogle = (window as any).adsbygoogle ?? [];
 		adsbygoogle.push({});
-	});
+	}, []);
 
 	return (
 		<ins

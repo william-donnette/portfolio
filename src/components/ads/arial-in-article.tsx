@@ -6,7 +6,7 @@ const ArialInArticle: FunctionComponent<ArialInArticleProps> = () => {
 	useEffect(() => {
 		const adsbygoogle = (window as any).adsbygoogle ?? [];
 		adsbygoogle.push({});
-	});
+	}, []);
 
 	return (
 		<ins

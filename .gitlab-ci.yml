@@ -5,3 +5,54 @@ include:
 stages:
     - register
     - deploy
+    - generate
+
+variables:
+    ACTION:
+        description: 'Action à exécuter'
+        value: 'none'
+        options:
+            - 'none'
+            - 'generate-article'
+    TOPIC:
+        description: 'Idée de thème à aborder'
+
+        value: ''
+
+generate-article:
+    image: docker:latest
+    stage: generate
+    before_script:
+        - apk update
+        - apk upgrade
+        - apk add --no-cache nodejs npm git bash curl
+        - git config --global user.email "support@sport-up.io"
+        - git config --global user.name "sportup-support"
+        - git remote remove origin || true
+        - git remote add origin "https://oauth2:$OAUTH_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git"
+        - touch .env
+        - echo MISTRAL_API_KEY=$MISTRAL_API_KEY > .env
+    script:
+        - npm install
+
+        # Execution du Script js
+        - export BRANCH_NAME=$(node generate-article.mjs $TOPIC | tail -n 1)
+        - echo $BRANCH_NAME
+        - ls -al blog
+
+        # Créer une nouvelle branche
+        - git checkout -b "$BRANCH_NAME"
+
+        # Ajouter le nouveau fichier à l'index git
+        - git add .
+
+        # Commiter les changements
+        - git commit -m "Ajout d'un nouvel article"
+
+        # Pousser la nouvelle branche sur le dépôt distant
+        - git push origin "$BRANCH_NAME"
+
+        # Créer une Merge Request
+        - curl --request POST --header "PRIVATE-TOKEN:$OAUTH_TOKEN" --form "source_branch=$BRANCH_NAME" --form "target_branch=main" --form "title=Ajout d'un nouvel article $BRANCH_NAME" --form "description=Ajout d'un nouvel article $BRANCH_NAME" "https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/merge_requests"
+    rules:
+        - if: $ACTION == "generate-article"
