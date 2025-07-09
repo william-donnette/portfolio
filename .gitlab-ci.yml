@@ -16,7 +16,7 @@ variables:
             - 'generate-article'
 
 generate-article:
-    image: node:18-alpine
+    image: docker:latest
     stage: generate
     before_script:
         - apk update
