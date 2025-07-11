@@ -1,0 +1,816 @@
+
+title: 👋 Qui suis-je ? description: Apprenez-en plus sur William Donnette, ses passions et ce qui le distingue.
+👋 Qui suis-je ?
+Un passionné du web et des nouvelles technologies
+Je m'appelle William Donnette, développeur web passionné par la conception d'applications modernes et performantes.
+
+Mes stacks principales incluent TypeScript, avec des environnements comme Node.js et des frameworks tels que React.js... Je suis également très à l'aise avec des outils comme Docker et les workflows CI/CD, qui me permettent de livrer des solutions robustes et bien structurées.
+
+Dans mon quotidien, j'aime relever les défis techniques et explorer de nouvelles façons d'optimiser les performances et l'expérience utilisateur.
+
+Ce que les gens disent de moi
+Mes proches et collègues me décrivent comme :
+
+Curieux : Toujours en quête de nouvelles connaissances et découvertes, un trait essentiel dans le monde en constante évolution des développeurs.
+Rigoureux : J'accorde une attention particulière à la qualité du code et à la précision dans l'exécution des projets.
+Polyvalent : Je sais m'adapter rapidement à différents projets et technologies, que ce soit pour concevoir une interface utilisateur ou optimiser une infrastructure.
+Gentil et bienveillant : Toujours prêt à aider et à partager mes connaissances avec les autres. Travailler en collaboration est pour moi une source de motivation et d'inspiration.
+Mes centres d'intérêts
+Je suis animé au quotidien par :
+
+Le sport : Notamment le cyclisme et l'escalade, des activités qui m'apportent à la fois un challenge physique et une véritable bouffée d'air frais.
+Le développement d'applications : C'est une véritable révélation pour moi, une passion profonde que je perçois comme une forme d'art.
+La finance : C'est pour moi un moyen de me fixer des objectifs et de m'intéresser aux actualités de notre société
+Les nouvelles technologies : Je suis fasciné par leur potentiel et les opportunités qu'elles offrent pour améliorer l'avenir.
+Les voyages & l'art : J'adore aussi sortir de mon quotidien et apprécier la diversité de ce monde.
+Pourquoi collaborer avec moi ?
+Si vous cherchez un développeur curieux, rigoureux et bienveillant, capable de travailler efficacement en équipe tout en relevant des défis techniques, je suis la personne qu'il vous faut. Passionné par les projets innovants, je m'investis pleinement pour construire des solutions dont je suis fier.
+
+title: 2022 - Master EISI description: Découvrez le master Expert en Informatique et Système d'Information (EISI) et l'école EPSI.
+📅 2022 - 2024 🏫 EPSI 📜 Certification RNCP35584 Niveau 7 🎓 BAC+5
+🔗 Diplôme sous blockchain : certificate.bcdiploma.com
+
+🎓 Master Expert en Informatique et Système d'Information
+Pourquoi avoir choisi cette formation ?
+C'était pour moi une suite logique de poursuivre mes études dans ce domaine qui me passionne. Il était aussi évident, de part ma formation précédente, de trouver une formation proposant l'alternance afin de continuer à acquérir de l'expérience professionnelle et développer mes compétences.
+
+Le Master Expert en Informatique et Système d'Information (EISI) de l'EPSI a donc été tout de suite un choix d'excellence.
+
+Les Compétences
+Cette formation couvre des domaines variés, notamment :
+
+🧩 Analyse et conception de stratégies S.I. en lien avec la stratégie business.
+💻 Développement, intégration et maintenance de solutions applicatives (mobiles, embarquées, IA, ERP, cloud...).
+🔒 Sécurisation et configuration de serveurs et applications.
+🤖 Intelligence Artificielle et Big Data : collecte, nettoyage, transformation, automatisation, mise à disposition de flux de données en masse
+📊 Gestion de projet et mise en place des méthodes agiles
+🌳 Démarche multiculturelle et RSE
+L'Ecole
+De plus, l'EPSI (Ecole Privée des Sciences Informatiques) est une école de référence dans la formation des professionnels de l'informatique. Présente dans plusieurs villes en France, elle offre un environnement stimulant et connecté aux besoins des entreprises, idéal pour se préparer à relever les défis du numérique.
+
+L'Alternance
+C'est d'ailleurs grâce à leur carnet d'adresse que j'ai pu postulé dans une entreprise qui me convenait. Après un an dans une startup, je voulais découvrir un nouvel horizon, celui des grosses entreprises avec notamment du travail organisationnel entre équipes. C'est pendant ces 2 ans de formation que j'ai réalisé mon alternance à la SNCF Voyageurs
+
+title: Projets Réalisés
+Projets Réalisés
+Au cours du Master Expert en Informatique et Système d'Information (EISI), plusieurs projets variés ont permis de mettre en pratique les compétences techniques et stratégiques acquises. Voici un aperçu des réalisations marquantes que j'ai pu réalisé seul, ou en groupe.
+
+1er Semestre
+
+📱 Développement d'une Application Mobile
+Le principe était de créer dans le cadre d'une partiel en groupe, une application simple relié à des APIs qui proposait une fonctionnalité de réalité augmenté. Les APIs étant reliées à des services ERP du type 🌟 Salesforce.
+
+Application mobile React Native utilisant Expo
+📁 Code source de l'application mobile
+📚 Documentation React Native
+📚 Documentation Expo
+APIs en C# reliés à l'IAM Keycloak
+📁 Code source de la 1ère API
+📁 Code source de la 2ème API
+Utilisation du SSO par 🌟 Keycloak
+CI/CD et déploiement sur serveur Debian
+Utilisation de Gitlab CI 📚 Documentation Gitlab CI
+Utilisation de Docker 📚 Documentation Docker
+Utilisation d'un serveur self-managed Debian chez 🌟 Infomaniak
+2ème Semestre
+
+🤖 Développement de modèles d'IA
+Le principe était de créer dans le cadre d'une partiel en groupe, un modèle de Machine Learning capable de prédire les prochaines élections présidentielles. Le principe n'étant pas d'avoir un modèle opérationnel mais une démarche construite sur la récupération des données publiques, les hypothèses, le nettoyage de ses données ainsi que des observations statistiques.
+
+Récupération de données publiques
+Data Scraping & Data Mining de Data.gouv et de l'INSEE
+Netoyage et Transformation de données
+Utilisation de l'ETL 🌟 Talend
+Utilisation de l'outil de Data Visualisation 🌟 Orange Data Mining
+Développement de Workflows Python 📚 Documentation Python
+Création d'un modèle de Machine Learning
+📁 Code source 🚫 Non disponible
+📁 Code source de l'API Flask utilisant l'IA
+📁 Code source d'autres entrainements ML
+📁 Code source d'autres entrainements ML
+3ème Semestre
+
+💡 Conception d'une Méthodologie de Travail et d'une Stratégie Marketing
+Le principe était qu'en seulement quelques jours, en groupe, nous réfléchissions à une méthodologie de travail réaliste à présenter à l'oral et de définir une démarche marketing pour la vendre potentiellement à des entreprises avec un support concret.
+
+Conception d'une méthodologie de Travail
+Inspiration des méthodologies agiles actuelles (SCRUM...)
+Rédaction de PowerPoints
+Conception d'un site vitrine en PHP Laravel et Vue.js
+📁 Code source du site vitrine
+📚 Documentation Laravel
+📚 Documentation Vue.js
+📈 Conception d'une stratégie S.I.
+Le principe était de concevoir dans le cadre d'un partiel en groupe une stratégie de S.I. pour une entreprise fictive souhaitant s'aggrandir et adapter ses processus internes. Dans le cadre d'une fusion-acquisition, l'entreprise s'aggrandit et souhaite mettre à niveau tous ses processus, créer de nouveaux pôles de gestion de la qualité et de l'amélioration continue ainsi que de remettre à niveau l'ensemble des logiciels obsolètes qu'elle utilise.
+
+Conception d'une stratégie S.I. en accord avec la stratégie buisness
+Rédaction de rapports complets
+Analyse de l'existant
+Analyse des besoins
+Rédaction de cahier des charges
+Conduite du changement
+Mise en place de démarches RSE
+Priorisation de la sécurité informatique
+Réorganisation des différents pôles
+4ème Semestre
+
+🌍 Conception d'une stratégie S.I. internationale
+Le principe était de concevoir dans le cadre d'un partiel en groupe une stratégie de S.I. mais aussi marketing pour une entreprise fictive souhaitant s'internationaliser et adapter ses processus internes en conséquence. Dans le cadre d'une fusion-acquisition, l'entreprise s'aggrandit dans plusieurs autres pays culturellement différents et souhaite mettre à niveau tous ses processus internes et même revoir sa culture d'entreprise. Elle possède tout de même une base déjà solide.
+
+Conception d'une stratégie S.I. en accord avec l'internationalisation
+Rédaction de rapports complets
+Analyse de l'existant
+Analyse des besoins
+Rédaction de cahier des charges
+Conduite du changement
+Mise en place de démarches RSE
+Priorisation de la sécurité informatique
+Mise en place de politique de télétravail
+Mise en place de politiques multiculturelles
+title: 2021 - Licence APIDAE description: Découvrez la Licence Professionnelle Assistant de Projet Informatique, Développement d'Applications WEB/E-Business (APIDAE) à l'Université de Montpellier.
+📅 2021 - 2022 🏫 Université de Montpellier 📜 Certification RNCP Niveau 6 🎓 BAC+3
+🎓 Licence Professionnelle Assistant de Projet Informatique, Développement d'Applications WEB/E-Business
+Pourquoi avoir choisi cette formation ?
+Après avoir acquis des bases solides en informatique, il me semblait naturel de poursuivre le cursus proposé par l'Université de Montpellier. Je me suis orienté vers une formation spécialisée dans le développement web et le e-business, un domaine en plein essor dans lequel je me sentais à l'aise.
+
+La Licence Professionnelle Assistant de Projet Informatique, Développement d'Applications WEB/E-Business (APIDAE) permet de répondre aux enjeux actuels du numérique en alliant maîtrise des technologies informatiques et compréhension des problématiques liées à la gestion de projets.
+
+Les Compétences
+Durant cette année, j'ai développé des compétences variées et complémentaires, notamment :
+
+🧩 Architecture et conception de bases de données
+💻 Développement et intégration d'API
+🌐 Développement de sites d'applications (web, jeux, logiciels...)
+📊 Adoption des méthodes agiles : Scrum, Pair Programming, Design Patterns, Clean Code, Xtrem Programming...
+L'Alternance
+Cette formation en alternance m'a permis de vivre une première expérience professionnelle en tant que Développeur Web FullStack chez DomData, renforçant ainsi mes acquis théoriques par la pratique. J'ai pu travailler sur des projets ambitieux, notamment :
+
+Un Tremplin Vers l'Avenir
+Grâce à cette formation et à l'expérience acquise, j'ai pu consolider mon projet professionnel et me préparer à relever les défis du développement web et de la gestion de projets informatiques.
+
+J'avais enfin trouvé ma voie !
+
+title: Projets Réalisés
+Projets Réalisés
+Au cours de la Licence Professionnelle APIDAE, plusieurs projets variés ont permis de mettre en pratique les compétences techniques et organisationnelles acquises. Voici un aperçu des réalisations marquantes que j'ai pu réaliser seul ou en groupe.
+
+🍜 Développement d'un site web de recettes
+L'objectif était de mettre en pratique nos compétences en JavaScript/TypeScript en créant une API REST en Node.js ainsi qu'un front-end en Vue.js, l'application devait contenir une stratégie d'authentification efficace utilisant passport et les tokens JWT.
+
+Site web en Vue.js
+🌐 Lien hébergement Netlify (API non fonctionnelle en permanence)
+📁 Code source du projet Vue.js
+📚 Documentation Vue.js
+📚 Documentation TailwindCSS
+Rendu de la page de connexion du front-end :
+
+Rendu de la page de connexion du front-end
+
+API REST en Node.js
+Utilisation de RestDB pour la base de données
+🌐 Lien hébergement Heroku (Fonctionnel à durée limitée)
+📁 Code source de l'API Node.js
+📚 Documentation Node.js
+Documentation APIDOC
+🌐 Lien hébergement Heroku (Fonctionnel à durée limitée)
+📁 Code source de l'API Node.js
+📚 Développement d'un logiciel de logistique
+Le projet consistait à développer un logiciel en Java, en mettant en œuvre des principes d'architecture logicielle, de base de données et des design patterns.
+
+Logiciel de logistique Java
+Utilisation de 🌟 StarUML
+Utilisation de 🌟 Oracle SQL Developer
+📁 Code source du logiciel de logistique
+📚 Documentation Java
+📚 Documentation Design Patterns
+Diagramme de classe UML :
+
+Diagramme de classe UML
+
+🎸 Développement d'un site web de concerts
+L'objectif était de mettre en pratique nos compétences sur le framework Symfony en PHP en intégrant les différentes notions importantes de ce dernier.
+
+Site web en PHP Symfony
+📁 Code source du site Symfony
+📚 Documentation Symfony
+🎮 Développement d'un jeu du Morpion Multi-Joueur en LAN
+Le projet consistait à développer un jeu multi-joueur, en utilisant les Socket par Java.
+
+Jeu en Java avec Thread/Socket
+📁 Projet Java Morpion Multi-Joueur
+📚 Documentation Java
+🕹 Développement d'un Jeu du Tamagoshi
+Le projet consistait à développer un jeu en Java, en mettant en œuvre des principes d'architecture logicielle et des design patterns.
+
+Jeu en Java
+📁 Projet Java Tamagoshi
+📚 Documentation Java
+title: 2019 - DUT Informatique description: Découvrez le diplôme universitaire de technologie en informatique à l'Université de Montpellier.
+📅 2019 - 2021 🏫 Université de Montpellier 📜 Certification RNCP Niveau 5 🎓 BAC+2
+🎓 Diplôme Universitaire de Technologie en Informatique
+Pourquoi le DUT Informatique ?
+Depuis mon enfance, l'aéronautique m'a toujours fasciné. L'ingénierie derrière un avion, la complexité des systèmes embarqués et l'innovation constante du domaine ont nourri ma curiosité. Naturellement, cette passion m'a d'abord orienté vers les classes préparatoires aux grandes écoles d'ingénieurs, un parcours réputé pour sa rigueur et son intensité théorique.
+
+La mise en pratique
+Du coup, pourquoi avoir choisi le DUT ?
+Au fil de mes recherches et de mes premières expériences, j'ai réalisé que ce qui me motivait réellement était la mise en application concrète de la théorie. J'avais besoin de voir mes connaissances se transformer en projets, en solutions réelles. C'est ainsi que mon choix s'est porté sur le Diplôme Universitaire de Technologie (DUT) en Informatique, une formation plus professionnalisante qui offrait une solide base en programmation et en ingénierie logicielle, tout en gardant une ouverture vers les systèmes embarqués appliqués à l'aéronautique.
+
+Un stage en entreprise en tant que Développeur Web chez A3CDigital m'a permis de mettre en pratique les compétences acquises, en développant des applications web et en travaillant sur des projets concrets.
+
+Le cursus
+L'Université de Montpellier s'est imposée comme une évidence grâce à son programme structuré, complet, proposant des débouchés intéressants et combinant un apprentissage approfondi des fondamentaux informatiques et une pédagogie favorisant la pratique.
+
+La suite
+Aujourd'hui, ce choix s'est avéré déterminant. En plus de me donner une meilleure clarté sur mon avenir professionnel, j'ai pu explorer différents domaines, affiner mes compétences et, surtout, réaliser que mon véritable intérêt résidait dans le développement web. Cette prise de conscience a orienté mes choix académiques et professionnels par la suite, me poussant à approfondir mes connaissances en conception et développement d'applications web.
+
+title: Projets Réalisés
+Projets Réalisés
+Durant mon DUT Informatique, j'ai eu l'opportunité de mener à bien plusieurs projets variés, seuls ou en groupe, qui m'ont permis de découvrir les multiples domaine de l'informatique, que ce soit en développement, en réseau et infrastructure, en gestion de projet, ou en gestion d'entreprise.
+
+🛍️ Développement d'une boutique en ligne de livre
+Le principe était de développer en PHP natif un petit site internet mettant en place quelques logiques WEB dans le but de simuler une boutique en ligne proposant des livres comme Amazon. Il était nécessaire d'utiliser un model dit MVC pour le faire fonctionner.
+
+Site web en PHP
+📁 Code source du site PHP
+📚 Documentation PHP
+:::warning
+Les projets suivants étant des forks d'exercices pratiques de l'IUT de Montpellier, les codes sources ne sont pas directement disponible.
+:::
+
+🏦 Développement de logiciel bancaire
+Le principe était de développer en Java un petit logiciel de gestion de comptes bancaires afin de découvrir Java.
+
+Logiciel Compte Bancaire en Java
+📁 Code source 🚫 Non disponible
+📚 Documentation Java
+🎒 Développement de logiciel de gestion d'un service de scolarité
+Le principe était de développer en Java un petit logiciel de gestion du service scolarité afin de découvrir Java.
+
+Logiciel Service Scolarité en Java
+📁 Code source 🚫 Non disponible
+📚 Documentation Java
+🛠️ Adoption des méthodes agiles et des design patterns
+Ces projets m'ont permis de mettre en application des concepts avancés en Java, de travailler en équipe ou encore d'améliorer ma capacité à gérer un projet.
+
+Projets en tout genre
+📁 Code source de Design Patterns (Avion) 🚫 Non disponible
+📁 Code source de Design Patterns (Voiture) 🚫 Non disponible
+📁 Code source de Design Patterns (Personne) 🚫 Non disponible
+🎮 Développement d'un Escape Game virtuel
+Le principe était de développer en JavaFX un petit jeu d'Escape Game sur le thème que l'on souhaitait.
+
+Escape Game en JavaFX
+📁 Code source du jeu JavaFX 🚫 Non disponible
+📚 Documentation JavaFX
+♟️ Développement d'un Sudoku
+Le principe était de développer en Java un petit jeu de Sudoku et de s'initier aux principes de l'algorithmie.
+
+Sudoku en Java
+📁 Code source du jeu Java 🚫 Non disponible
+📚 Documentation Java
+title: 2024 - 📚 ABES description: Développeur FullStack
+📅 2024 - Présent 📍 Montpellier, France
+Développeur FullStack
+🔗 Site Web : abes.fr
+🔗 Github Open Source : abes-esr
+
+📌 Contexte de l'entreprise
+L'Agence Bibliographique de l'Enseignement Supérieur (ABES) joue un rôle clé dans la gestion et la diffusion des ressources bibliographiques de l'enseignement supérieur français. Elle développe et maintient des plateformes facilitant l'accès aux données scientifiques et académiques.
+
+L'ABES gère des applications vieillissantes avec une forte volumétrie de flux et entreprend un processus de modernisation via le projet de réinformatisation : Projet 2024 - 2028.
+
+Tous les projets de l'ABES sont open source et disponibles sur leur dépôt officiel GitHub : ABES GitHub.
+
+🎯 Mes missions
+🔧 Maintenance et évolution de sites web bibliographiques
+
+Theses.fr : plateforme de référencement des thèses universitaires.
+Sudoc : système universitaire de documentation.
+Licences Nationales : accès aux ressources électroniques acquises pour les établissements français.
+et plus encore (voir le github officiel)...
+💻 Développement de nouvelles fonctionnalités et refonte d'interfaces
+
+Front-End en Vue.js & TypeScript.
+Back-End en Java Spring Boot.
+🐳 Dockerisation et déploiement d'applications
+
+📌 Gestion de projet en méthodologie SCRUM via Jira
+
+🔥 Expérience unique
+Découverte du monde bibliothécaire et de l'Open-Source
+Cette expérience me permet de consolider mes compétences en développement web tout en évoluant dans un environnement agile et collaboratif. Travailler au sein de l'ABES, c'est aussi contribuer à un service public essentiel pour la communauté universitaire française, en développant des solutions open source qui favorisent la diffusion et l'accessibilité de la connaissance.
+
+title: 2022 - 🚆 SNCF Voyageurs description: Alternance Référent Technique HASTUS
+📅 2022 - 2024 📍 Montpellier, France
+Alternance Référent Technique HASTUS
+🔗 Site Web : sncf.com
+🔗 Site Web : sncf-voyageurs.com
+
+📌 Contexte de l'entreprise
+Dans le cadre du projet OSCAR, la SNCF se prépare à l'arrivée de la concurrence et revoit entièrement la stratégie de son Système d'Information (S.I.) pour la planification du plan de transport.
+
+Elle déploie ainsi un nouveau progiciel, HASTUS, destiné à remplacer sept logiciels existants et à optimiser la gestion des ressources ferroviaires.
+
+J'ai rejoint l'équipe SNCF Occitanie, en charge de mettre en production ce nouvel outil et d'accompagner les collaborateurs dans l'adoption des nouveaux processus.
+
+🎯 Mes missions
+💾 Développement d'un ETL interne (JavaScript/TypeScript Node.js)
+
+Extraction, transformation et chargement de données pour alimenter le progiciel Hastus.
+📊 Qualité des données (Collecte, Nettoyage, Standardisation)
+
+Assurer la cohérence des données avant leur intégration dans le système.
+📖 Conduite du changement et formations
+
+Accompagnement des équipes dans la prise en main d'HASTUS.
+Organisation d'ateliers et rédaction de guides utilisateurs.
+📝 Rédaction de rapports et fiches process (BPMN)
+
+Formalisation des nouveaux workflows métiers pour assurer la transition vers le nouvel outil.
+🔥 Expérience unique
+Contexte à forte répercussion
+Cette expérience m'a permis d'évoluer dans un contexte de transformation numérique majeur, où la gestion des données et la conduite du changement étaient au cœur des enjeux.
+
+Projet d'envergure
+J'ai acquis des compétences solides en développement back-end (Node.js), en gestion de données et en méthodes agiles, mais surtout, cette expérience m'a permis de découvrir la gestion de projet à grande échelle en collaborant avec de nombreux acteurs du monde ferroviaire ainsi qu'avec une multitude d'équipes issues de différentes activités et régions à travers toute la France. Une immersion unique au cœur d'un acteur clé du transport public en France.
+
+Développement personnel
+Sur le plan personnel, cette expérience m'a également permis de découvrir le monde du transport ferroviaire et son rôle crucial dans le service public, une véritable fierté d'avoir contribué à un projet d'envergure nationale. Elle m'a aussi offert l'opportunité de voyager à travers notre beau pays, en allant à la rencontre des équipes terrain pour mieux comprendre leurs besoins et les accompagner dans cette transformation.
+
+Merci à la SNCF et toutes les personnes qui m'ont beaucoup apportées ! 🚆✨
+
+title: 2021 - 🏡 DomData description: Alternance Développeur WEB FullStack
+📅 2021 - 2022 📍 Montpellier, France
+Alternance Développeur WEB FullStack
+🔗 Site Web : DomData
+🔗 Site Web : A3CDigital
+
+📌 Contexte de l'entreprise
+DomData est une agence web spécialisée dans le développement et la maintenance de sites internet, notamment sous WordPress, ainsi que dans la conception de solutions sur mesure pour le secteur immobilier. C'est l'un des secteurs d'activité de l'entreprise "mère" A3CDigital
+
+:::info
+Ayant fait mes preuves lors de ma précédente expérience en stage à A3CDigital, la start-up m'a proposé un contrat ciblant plus particulièrement leur nouveau secteur d'activité dans l'immobilier.
+:::
+
+J'ai intégré l'entreprise en tant que Développeur WEB FullStack afin d'assurer la maintenance et l'évolution des sites web, mais aussi de développer des solutions innovantes pour l'estimation immobilière.
+
+🎯 Mes missions
+:::info
+La start-up m'a demandé durant mon alternance de développer en autonomie, de A à Z, un estimateur immobilier capable d'être intégrer sur leurs sites d'acquisitions de vendeurs mais aussi sur d'autres sites clients et affiliateurs. Un véritable défi qui m'ont amenés à avoir des missions variées.
+:::
+
+🔌 Développement de plugins WordPress (PHP MVC natif)
+
+Création de modules personnalisés pour enrichir les fonctionnalités des sites d'acquisitions.
+🗄️ Architecture et gestion de base de données (MariaDB)
+
+Optimisation des performances et structuration des données.
+📊 Développement Front-End d'estimateur immobilier (JavaScript)
+
+Création d'une interface utilisateur dynamique et interactive.
+🔍 Développement Back-End d'API d'estimation immobilière (PHP Laravel, RubixML)
+
+Mise en place d'un modèle de Machine Learning pour affiner les prédictions immobilières.
+📑 Data Mining et Data Scraping de données immobilières
+
+Collecte et structuration de grandes quantités de données issues de sources variées.
+📈 Mise en place de Web Analyse (Google Analytics, Google Tag Manager)
+
+Suivi des performances et analyse des comportements utilisateurs.
+🛠️ Maintenance et évolution de sites web (WordPress)
+
+Retrouvez encore l'estimateur que j'ai développé sur les différents sites :
+🔗 Estimer Immobilier
+🔗 Estimer Immobilier Paris
+🔗 Estimer Immobilier Lyon
+🔗 Estimer Immobilier Marseille
+🔗 Estimer Immobilier Montpellier...
+🔥 Expérience unique
+Montée en compétences
+Cette alternance m'a permis de faire évoluer mes compétences techniques de manière drastique en développement web ainsi que ma capacité à m'organiser et relever des défis.
+
+J'ai particulièrement apprécié le travail sur les modèles de Machine Learning appliqués à l'estimation immobilière.
+
+Découverte technique
+Cette expérience à consolider mes compétences en veille technologique, tout en découvrant le secteur de l'immobilier numérique, du marketing digital et de l'optimisation SEO/SEA
+
+Une immersion enrichissante dans un environnement dynamique, où j'ai pu allier développement web, gestion de données et analyse marketing. 🚀
+
+title: 2021 - 🚀 A3CDigital description: Stage Développeur WEB
+📅 Printemps 2021 📍 Montpellier, France
+Stage Développeur WEB
+🔗 Site Web : A3CDigital
+🔗 Site Web : DoctoWeb
+🔗 Site Web : E-Juriste
+
+📌 Contexte de l'entreprise
+A3CDigital est une agence web spécialisée dans la création et la maintenance de sites internet sous WordPress, ainsi que dans le développement de solutions personnalisées pour ses clients ainsi que dans le référencement web pour des domaines spécifiques tel que la médecine et la justice qui ont leurs propres réglementation en terme de publicité et de RGPD.
+
+Ce stage a été ma première expérience professionnelle en tant que développeur, où j'ai pu découvrir l'univers du développement web en travaillant sur des projets concrets pour des clients du secteur médical et du bien-être.
+
+🎯 Mes missions
+🛠️ Maintenance et évolution de sites web (WordPress)
+
+🔗 Bilan Fertilité : mise à jour et optimisation des performances.
+🔗 IVF France : correction de bugs et amélioration des fonctionnalités.
+🔌 Développement de plugins WordPress (PHP MVC natif)
+
+Création et intégration de modules personnalisés pour répondre aux besoins spécifiques des clients.
+🔥 Expérience unique
+Première Expérience
+Ce stage a marqué mon premier pas dans le monde du développement web, me permettant de comprendre les enjeux techniques et fonctionnels liés aux sites web d'entreprise.
+
+J'ai découvert WordPress en profondeur, appris à développer des plugins en PHP et compris l'importance d'une bonne maintenance pour assurer la stabilité et l'évolution des plateformes en production.
+
+Une première immersion formatrice qui a confirmé ma volonté de poursuivre dans le développement web et d'approfondir mes compétences techniques. 🚀
+
+title: Docker
+<img alt="Logo de Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="40" /> <img alt="Logo de Traefik" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/traefikproxy/traefikproxy-original.svg" width="40" /> <img alt="Logo de Portainer" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/portainer/portainer-original.svg" width="40" /> <img alt="Logo de Prometheus" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" width="40" /> <img alt="Logo de Grafana" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" width="40" />
+Niveau : Très bon ⭐⭐⭐⭐
+
+Gestion
+Installation de Docker
+Rédaction de Dockerfile
+Rédaction de docker-compose.yml
+Maintenance des services (conteneurs, images, volumes, networks...)
+Gestion de repository (Gitlab, Docker Hub, Sonatype Nexus)
+Conception de Système d'Information
+Environnement
+<img alt="Logo de Traefik" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/traefikproxy/traefikproxy-original.svg" width="20" /> Traefik : Loadbalancer
+<img alt="Logo de Portainer" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/portainer/portainer-original.svg" width="20" /> Portainer : Docker Dashboard
+<img alt="Logo de Prometheus" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" width="20" /> Prometheus : System Metric
+<img alt="Logo de Grafana" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" width="20" /> Grafana : Metric Dashboard
+Uptime Kuma : System Status
+Projets
+Ensemble des projets de l'ABES
+Ensemble de mes projets personnels
+title: JavaScript / TypeScript
+<img alt="Logo de JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" /> <img alt="Logo de TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" /> <img alt="Logo de Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" /> <img alt="Logo de Next.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="40" /> <img alt="Logo de React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" /> <img alt="Logo de Nuxt.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" width="40" /> <img alt="Logo de Vue.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="40" /> <img alt="Logo de Angular.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="40" /> <img alt="Logo de Prisma" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" width="40" />
+Niveau : Expert ⭐⭐⭐⭐⭐
+
+Environnement
+<img alt="Logo de Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="20" /> Node.js
+Projet professionnel : ETL interne SNCF Voyageurs
+Projet scolaire : Site de recettes
+Projet personnel : Site de solutions digitales pour l'immobilier
+Projet personnel : Solution cloud sous forme de réseau social
+Front-End
+<img alt="Logo de React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="20" /> React.js
+Projet personnel : Site de solutions digitales pour l'immobilier
+Projet personnel : Solution cloud sous forme de réseau social
+Projet personnel : Site de portefeuille patrimonial
+<img alt="Logo de Next.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="20" /> Next.js
+🎨 Ant Design
+🔌 Refine
+<img alt="Logo de Vue.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="20" /> Vue.js
+Projet professionnel : 🔗 Maintenance Theses.fr
+Projet scolaire : Site de recettes
+<img alt="Logo de Nuxt.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" width="20" /> Nuxt.js
+🎨 Vuetify
+<img alt="Logo de Angular.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="20" /> Angular.js
+Projet Freelance : 🔗 Intégration de maquettes recrut-innov.fr
+Back-End
+<img alt="Logo de Prisma" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" width="20" /> Prisma
+🧰 Express
+🧰 Passport
+Mobile
+<img alt="Logo de React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="20" /> React Native
+Projet personnel : Réseau Social
+🏗️ Expo
+Tests
+-   🧪 [Cypress](https://www.cypress.io/)
+-   🧪 [Mocha](https://mochajs.org/)
+title: Java
+<img alt="Logo de Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40" /> <img alt="Logo de Maven" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" width="40" /> <img alt="Logo de Gradle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-original.svg" width="40" /> <img alt="Logo de Springboot" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="40" />
+Niveau : Bon ⭐⭐⭐
+
+Environnement
+<img alt="Logo de Maven" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" width="20" /> Maven
+<img alt="Logo de Gradle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-original.svg" width="20" /> Gradle
+Frameworks
+<img alt="Logo de Springboot" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="20" /> Spring Boot
+Projet professionnel : 80% des sites de l'ABES
+🎨 Java Servlet Pages (JSP)
+🎨 JavaFX
+Projet scolaire : Jeu d'Escape Game
+Projets
+Logiciels :
+Projet scolaire : Logiciel de logistique
+Projet scolaire : Logiciel bancaire
+Projet scolaire : Logiciel service scolarité
+Jeux :
+Projet scolaire : Jeu du Tamagoshi
+Projet scolaire : Jeu du Morpion en LAN
+title: PHP
+<img alt="Logo de PHP" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" /> <img alt="Logo de Composer" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" width="40" /> <img alt="Logo de Apache" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" width="40" /> <img alt="Logo de Laravel" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="40" /> <img alt="Logo de Symfony" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" width="40" />
+Niveau : Très bon ⭐⭐⭐⭐
+
+Environnement
+<img alt="Logo de Composer" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" width="20" /> Composer
+<img alt="Logo de Apache" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" width="20" /> Apache
+Frameworks
+<img alt="Logo de Laravel" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="20" /> Laravel
+Projet professionnel : API interne Domdata
+Projet scolaire : Site vitrine
+Projet personnel : Solution cloud sous forme de réseau social
+<img alt="Logo de Symfony" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" width="20" /> Symfony
+Projet scolaire : Site de concerts
+Natif
+Projet professionnel : Plugins Wordpress Domdata et A3CDigital
+Projet scolaire : Site gestion bibliothécaire MVC
+Projet personnel : API Réseau Social
+Tests
+PHPUnit
+XDebug
+title: Python
+<img alt="Logo de Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" /> <img alt="Logo de Flask" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" width="40" /> <img alt="Logo de Jupyter" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" width="40" /> <img alt="Logo de Anaconda" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" width="40" /> <img alt="Logo de Pandas" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="40" /> <img alt="Logo de NumPy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="40" /> <img alt="Logo de ScikitLearn" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" width="40" /> <img alt="Logo de Tensorflow" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="40" />
+Niveau : Bon ⭐⭐⭐
+
+Back-End
+<img alt="Logo de Flask" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" width="20" /> Flask
+Projet personnel : Site de solutions d'estimation pour l'immobilier
+Intelligence Artificielle
+Machine Learning & Deep Learning
+Projet scolaire : Développement de modèles d'IA : prédiction élection présidentielle
+Projet personnel : Développement de modèles d'IA : prédiction estimation immobilière
+<img alt="Logo de Tensorflow" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="20" /> Tensorflow
+Outils
+<img alt="Logo de Jupyter" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" width="20" /> Jupyter
+<img alt="Logo de Anaconda" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" width="20" /> Anaconda
+Google Colab
+Data
+<img alt="Logo de Pandas" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="20" /> Pandas
+<img alt="Logo de NumPy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="20" /> NumPy
+<img alt="Logo de ScikitLearn" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" width="20" /> ScikitLearn
+title: SQL
+<img alt="Logo de PostgreSQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" /> <img alt="Logo de MariaDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" width="40" /> <img alt="Logo de MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" /> <img alt="Logo de SQLDeveloper" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqldeveloper/sqldeveloper-original.svg" width="40" />
+Niveau : Très bon ⭐⭐⭐⭐
+
+Base de Données
+<img alt="Logo de MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="20" /> MySQL
+<img alt="Logo de PostgreSQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="20" /> PostgreSQL
+Pour tous mes projets personnels
+<img alt="Logo de MariaDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" width="20" /> MariaDB
+Projet professionnel : Conception d'une base de données à Domdata
+Outils
+<img alt="Logo de SQLDeveloper" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqldeveloper/sqldeveloper-original.svg" width="20" /> SQLDeveloper
+Projet professionnel : Maintenance de bases de données à l'ABES
+PostgresAdmin
+title: 🔧 Hard Skills description: Découvrez mes compétences techniques très variées...
+Découvrez mes compétences techniques très variées...
+
+Back as a Service (BaaS)
+Hasura
+Strapi
+Cloud
+Google
+Owncloud
+CI / CD
+<img alt="Logo de Gitlab" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="20" /> Gitlab CI
+<img alt="Logo de Github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="20" /> Gihub Actions
+Database
+<img alt="Logo de MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="20" /> MySQL
+<img alt="Logo de MariaDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" width="20" /> MariaDB
+<img alt="Logo de PostgreSQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="20" /> PostgreSQL
+<img alt="Logo de MongoDB" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="20" /> MongoDB
+Data
+Talend
+Orange Data Mining
+PowerBy
+<img alt="Logo de Pandas" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="20" /> Pandas
+<img alt="Logo de NumPy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="20" /> NumPy
+<img alt="Logo de ScikitLearn" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" width="20" /> ScikitLearn
+Environnement de travail
+Microsoft 365
+ERP
+<img alt="Logo de SalesForce" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" width="20" /> SalesForce
+Odoo
+Frameworks
+<img alt="Logo de React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="20" /> React.js
+<img alt="Logo de Vue.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="20" /> Vue.js
+<img alt="Logo de Angular.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" width="20" /> Angular.js
+<img alt="Logo de Laravel" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="20" /> Laravel
+<img alt="Logo de Symfony" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" width="20" /> Symfony
+<img alt="Logo de Springboot" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="20" /> Springboot
+Gestion de projet
+<img alt="Logo de Jira" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" width="20" /> Jira
+<img alt="Logo de Trello" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-original.svg" width="20" /> Trello
+Git
+<img alt="Logo de Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="20" /> Git CLI
+<img alt="Logo de Gitlab" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="20" /> Gitlab
+<img alt="Logo de Github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="20" /> Gihtub
+Gestion des environnements (prod, staging, dev, features, hotfix...)
+IAM
+Keycloak
+IDE
+<img alt="Logo de VSCode" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="20" /> VSCode
+<img alt="Logo de IntelliJ" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" width="20" /> IntelliJ
+Invite de commande
+<img alt="Logo de Debian" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" width="20" /> Debian
+<img alt="Logo de Linux" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="20" /> Linux
+Languages
+<img alt="Logo de HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="20" /> HTML5
+<img alt="Logo de CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="20" /> CSS3
+<img alt="Logo de SASS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="20" /> SASS
+<img alt="Logo de JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="20" /> JavaScript
+<img alt="Logo de TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="20" /> TypeScript
+<img alt="Logo de Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="20" /> Java
+<img alt="Logo de PHP" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="20" /> PHP
+<img alt="Logo de Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="20" /> Python
+SQL
+Shell
+<img alt="Logo de React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="20" /> React Native
+Observabilité
+<img alt="Logo de OpenTelemetry" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opentelemetry/opentelemetry-original.svg" width="20" /> OpenTelemetry
+<img alt="Logo de Prometheus" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" width="20" /> Prometheus
+<img alt="Logo de Grafana" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" width="20" /> Grafana
+Temporal
+Orchestration
+<img alt="Logo de Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="20" /> Docker
+<img alt="Logo de Jenkins" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" width="20" /> Jenkins
+Outils de développement
+<img alt="Logo de Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="20" /> Node.js
+<img alt="Logo de Yarn" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg" width="20" /> Yarn
+<img alt="Logo de Vite.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" width="20" /> Vite.js
+<img alt="Logo de Next.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="20" /> Next.js
+<img alt="Logo de Nuxt.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" width="20" />Nuxt.js
+<img alt="Logo de Maven" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" width="20" /> Maven
+<img alt="Logo de Gradle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-original.svg" width="20" /> Gradle
+Expo
+Metro
+SEO
+Google Search Console
+UI/UX
+<img alt="Logo de TailwindCSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="20" /> TailwindCSS
+<img alt="Logo de AntDesign" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/antdesign/antdesign-original.svg" width="20" /> Ant Design
+<img alt="Logo de Vuetify" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuetify/vuetify-original.svg" width="20" /> Vuetify
+Web Analyse
+Matomo
+Google Analytics
+Google Tag Manager
+title: ☕ Soft Skills
+🤝 Travail en équipe & Communication
+⏳ Gestion du temps & Organisation (SCRUM)
+🚀 Autonomie & Prise d'initiative
+🔍 Curiosité & Veille technologique
+🧩 Adaptabilité technique & sociale
+title: 💡 Mes Compétences
+Découvrez l'ensemble de mes compétences. A la fois technique et autres...
+
+Compétences principales
+🖥️ Développement Web FullStack
+📊 Gestion de projet Agile (Scrum, Kanban)
+🏗️ Architecture logicielle & Conception d'applications
+🤖 Data Science & Machine Learning
+✅ Qualité de code & Bonnes pratiques
+⚙️ Automatisation & DevOps
+title: 🏠 Hom'Kizz description: Solutions digitales pour le secteur de l'immobilier
+🏠 Hom'Kizz
+<img alt="Logo de Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="40" /> <img alt="Logo de Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" /> <img alt="Logo de Next.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="40" /> <img alt="Logo de React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" /> <img alt="Logo de TailwindCSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="40" /> <img alt="Logo de AntDesign" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/antdesign/antdesign-original.svg" width="40" /> <img alt="Logo de Gitlab" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="40" />
+🔗 Site Web : homkizz.com
+
+🚧 WIP
+
+Solutions digitales pour le secteur de l'immobilier avec Next.js
+Sans nul doute, le plus gros projet que j'ai réalisé jusqu'ici.
+Il m'a amené énormément de connaissances techniques mais aussi de notions pour la gestion d'un projet web complexe.
+
+Avec l'aide d'un ami, nous développons ce site à des fins commerciales afin de proposer aux acteurs de l'immobilier des solutions digitales pertinentes notamment dans l'acquisition de clientèles et dans leur gestion.
+
+Ce projet est en ligne à l'adresse suivante: homkizz.com. Il est tout de même en phase de développement et n'est pas encore 100% fonctionnel.
+
+Il est entièrement sous Docker sur un serveur Debian self-managed.
+Nous avons donc conçu son fonctionnement interne par nos propres soins, en passant par la sécurisation, la configuration, la CI/CD etc... Avec l'aide de technologies avancées comme Next.js et React.js, nous utilisons notre savoir et des outils clés comme Refine pour proposer une solution robuste et évolutive. Nous utilisons des services utiles comme Hasura, Temporal pour le back-end, Keycloak pour la gestion de l'authentification ou encore Ant Design et TailwindCSS pour la partie front-end. Ce projet nous a aussi permis de découvrir le monde du SEO et de l'analyse web avec la mise en place de Matomo. De plus, mes connaissances en Machine Learning nous permette de proposer grâce à de nombreuses données un outil d'estimation fiable.
+
+C'est un projet d'envergure que nous souhaitons développer dans les années à venir.
+
+<img alt="Logo de Gitlab" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="20" /> Gitlab de la Team
+title: 👛 Wallet description: Application portefeuille de patrimoine financier en React Native
+👛 Wallet
+<img alt="Logo de Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" /> <img alt="Logo de React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" />
+🚧 WIP
+
+Portefeuille de patrimoine financier en React Native
+Grand fan de l'investissement financier, je suis mon premier client pour avoir une application capable de suivre mon patrimoine mois par mois et quitter enfin ce fichier Excel interminable.
+
+Un peu comme le fait l'application Finary, je souhaite avoir une application qui suit mon patrimoine mois par mois et me fasse le bilan de mon patrimoine financier, de mon budget et de ma stratégie à adopter pour réussir mes objectifs.
+
+Dans ce contexte là et souhaitant me refamiliariser avec React Native et Expo qui a bien évolué depuis 2021, je me suis lancé dans ce petit projet annexe qui serait capable, avec des données mensuelles, de faire le bilan de mon portefeuille mais aussi de mes intérêts et me classer mes investissements.
+
+Les données ne sont pas récupérées automatiquement sur les comptes bancaires mais saisies à la main dans l'interface.
+
+Pour le moment le projet n'est qu'à ces prémices et restera un petit projet de détente. 😎
+
+Le code est quant à lui Open Source :
+
+📁 Code source de l'application
+title: 👔 Portfolio description: Site web de présentation de mes compétences et de mon travail
+👔 Portfolio
+<img alt="Logo de Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" /> <img alt="Logo de React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" /> <img alt="Logo de Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="40" /> <img alt="Logo de Gitlab" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="40" />
+✅ En ligne
+
+Portfolio avec Docusaurus
+Ayant l'envie de pouvoir présenter facilement mon travail et mes compétences tout en utilisant une solution scalable et entièrement personnalisable, j'ai utilisé Docusaurus qui permet de gérer facilement de la documentation et qui s'adapte très bien à de la présentation.
+
+Ce choix m'a permis de bien maîtrisé cette librairie qui est devenue un standard dans la documentation de projet et de mettre à jour rapidement mes informations tout en gardant le contrôle avec la puissance de React.
+
+La CI/CD est entièrement automatisée avec Gitlab CI en utilisant leur registry d'images Docker
+
+Le code est Open Source :
+
+📁 Code source de l'application
+title: ⚡ Jobar description: Framework léger pour orchestrer des workflows avec Temporal.io
+⚡ Jobar
+<img alt="Logo de Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" /> <img alt="Logo de TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" /> <img alt="Logo de Temporal" src="https://temporal.io/favicon.ico" width="40" /> <img alt="Logo de GitLab" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="40" /> <img alt="Logo de GitHub" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40" /> <img alt="Logo de Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="40" />
+🔗 NPM : Jobar sur npmjs.com
+🔗 GitLab : Dépôt GitLab
+🔗 GitHub : Dépôt GitHub
+🔗 Exemples d'utilisation : GitHub - examples
+
+✅ En ligne
+
+Un framework léger pour orchestrer des workflows avec Temporal.io
+Jobar est une librairie TypeScript que j'ai conçue pour faciliter l'orchestration des workflows avec Temporal.io. Elle fournit une interface, ainsi qu'une architecture intuitive pour gérer les tâches, les files d'attente et l'exécution des workflows de manière fluide.
+
+Avec Jobar, il est simple d'intégrer un moteur de workflows robuste dans une application Node.js, tout en bénéficiant d'une gestion avancée des logs et de la sécurité des données grâce à des codecs d'encryptage. De plus, elle permet d'exposer les tâches sur des routes HTTP via Express et est entièrement testée avec Mocha.
+
+🛠 Fonctionnalités principales
+🚀 Gestion simplifiée des workflows avec Temporal.io
+📌 Création et exécution de tâches dans des files d'attente dédiées
+🔒 Encodage et décodage sécurisé des données via un codec d'encryption
+📜 Logger intégré avec Winston pour un suivi détaillé des événements
+🌐 Exposition des tâches sur des routes HTTP grâce à Express
+🧪 Tests unitaires complets avec Mocha
+🛠️ Architecture modulaire et extensible
+🚀 Installation et usage
+Installation
+npm install jobar
+Exemple d'utilisation
+Vous pouvez directement tester Jobar avec Docker:
+
+npm create jobar-app@latest my-app -- --template=hello-world
+cd my-app && docker compose up -d
+Quelques exemples d'utilisation : GitHub - examples
+Dashboard Workflow Hello World
+
+📂 Structure du projet
+jobar/
+├── src/
+│   ├── jobar.ts  # Classe principale
+│   ├── crypto/    # Modules de cryptographie
+│   ├── models/    # Gestion des tâches et files d'attente
+│   ├── utils/     # Fonctions utilitaires (logs, formatage, etc.)
+│   └── index.ts   # Point d'entrée
+📖 Ressources
+Documentation officielle : Temporal.io
+Dépôt NPMjs : https://www.npmjs.com/package/jobar
+Dépôt GitLab : gitlab.com/william-donnette/jobar
+Dépôt GitHub : github.com/william-donnette/jobar
+Exemples d'utilisations : https://github.com/william-donnette/jobar/tree/main/examples
+Dépôt NPMjs Create Jobar App : https://www.npmjs.com/package/create-jobar-app
+Dépôt GitLab Create Jobar App : gitlab.com/william-donnette/create-jobar-app
+Dépôt GitHub Create Jobar App : github.com/william-donnette/create-jobar-app
+💡 En développement actif – toute contribution est la bienvenue ! 🚀
+
+title: 🦜 Birds description: Réseau social en React Native
+🦜 Birds
+<img alt="Logo de Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" /> <img alt="Logo de React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" /> <img alt="Logo de PHP" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" />
+📅 2020 🗃️ Archivé
+
+Réseau social en React Native
+Avec un très bon ami de DUT, nous nous sommes lancer comme défi de développer notre propre réseau social nommé Birds, le principe était de découvrir le monde du développement d'applications mobile avec React Native et Expo.
+
+Mais pas seulement, nous voulions mettre en place ce que l'on apprenait en cours et les connaissances que mon ami possédait déjà.
+
+Pendant ce projet personnel, nous avons découvert de nombreuses technologies que nous ne connaissions pas comme la mise en place d'un serveur websocket.
+
+Avec un back-end en PHP, nous avons mis en place les modèles d'architecture de code MVC que nous avions vu en cours.
+
+Nous avons finalement fini par abandonner ce projet au détriment d'autres. Le syndrome du nouveau développeur, notre créativité nous poussait à multiplier les projets. 😶‍🌫️
+
+📁 Code source de l'application 🚫 Non disponible
+📁 Code source de l'API 🚫 Non disponible
+title: 😁 Smile description: Service cloud tourné autour du réseau social en React
+😁 Smile
+<img alt="Logo de Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" /> <img alt="Logo de React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" /> <img alt="Logo de PHP" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" /> <img alt="Logo de TailwindCSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="40" />
+📅 2021 🗃️ Archivé
+
+Service cloud orienté réseau social en React
+Dans la continuité du projet Birds, avec le même ami, nous voulions améliorer notre idée de départ mais en intégrant encore de nouveaux concepts technologiques. Nous voulions créer le premier réseau social tourné autour du cloud et du partage de fichiers. (Un peu comme le fait Google Photos pour partager des albums facilement...)
+
+Pour se faire, nous voulions avant tout mettre l'accent sur la partie web en se restreignant à React.js
+
+Cela nous a permis de mieux comprendre des concepts complexes de React comme les contextes, les hooks etc...
+
+Le fait de se concentrer uniquement sur la partie web nous a permis de découvrir plus en détail plein d'autres subtilité de ce vaste univers.
+
+Nous avons découvert TailwindCSS pour la gestion du CSS et de l'UX/UI.
+Aussi tout le monde su SEO, la search console, les sitemaps...
+
+Le back-end était toujours quant à lui en PHP.
+
+Le projet a finalement été abandonné, on s'est bien rendu compte que malgré l'enthousiasme, le projet était trop gros. 😅
+
+📁 Code source websocket 🚫 Non disponible
+📁 Code source front-end 🚫 Non disponible
+📁 Code source back-end 🚫 Non disponible Parfait ! Maintenant, écris un article de blog pour une application docusaurus en MDX en tant que William Donnette sur le thème : {{TOPIC}}. Trouve un sujet pertinent et précis selon ce que tu peux trouver sur mon profil sur le web mais aussi et surtout sur les actualités. N'invente rien, si tu n'es pas sûr que cela existe alors ne le fait pas. Relis bien les urls du prompt. Essaye de faire des liens avec mon profil quand cela est possible, ne force surtout pas les choses. Tu ne dois pas faire un article similaire à un autre qui existant, soit inventif. L'article doit être écrit à la première personne, comme si c'était moi qui le racontais. Ajoute des hyperliens pertinents vers d'autres articles et sites web. L'article doit être facile à lire et apporter une valeur ajoutée au lecteur. Il doit contenir des emojis pour améliorer son rendu et sa facilité de lecture. Il sera publié sur https://william-donnette.dev/blog. Surtout n'écris aucun commentaire autre que le contenu de l'article. N'encapsule pas le contenu dans des balises mdx même si le format doit être du mdx. Aucune mention au fait que cet article est généré automatiquement, aucune mention pour dire que c'est le début ou la fin de l'article. Ajoute des publicités grâce aux imports React dans du MDX. Sépare une première partie de l'article par un truncate pour marquer la partie résumé. N'hésite pas à mettre quelques images ou intégrer des vidéos Youtube sur des sujets bien précis. Pense bien à mettre les métadonnées afin que l'article soit bien référencé. Vérifie bien que les liens vers des sources externes comme les images, vidéos, site web sont corrects et redirigent bien vers une ressource cohérente. Appuie toi sur mon expérience, mes compétences et mes projets mais sans trop en faire. Il faut surtout que ce soit lié à l'actualité et que le lecteur ressente de l'intérêt à lire l'article. N'hésite pas à faire des parties assez longues. L'utilisateur doit apprendre au moins quelque chose en lisant cet article. N'hésite pas à faire des recherches sur internet, wikipédia ou les sites officiels pour ajouter du détail constructif et de l'actualité aux propos. 

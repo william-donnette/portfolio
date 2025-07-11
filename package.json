@@ -21,6 +21,7 @@
 		"clsx": "^2.0.0",
 		"docusaurus-plugin-matomo": "^0.0.8",
 		"lucide-react": "^0.474.0",
+		"openai": "^5.9.0",
 		"prism-react-renderer": "^2.3.0",
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0"
