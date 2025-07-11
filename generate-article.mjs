@@ -159,7 +159,7 @@ async function main() {
 	const date = new Date().toISOString().split('T')[0];
 	const articleName = `${date}-${normalizeString(slug)}`;
 	saveArticleToFile(articleName, content);
-	console.log('Nouvel article:', articleName);
+	console.log(articleName);
 }
 
 main().catch((err) => {
