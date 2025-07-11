@@ -1,0 +1,79 @@
+---
+title: 'Sunny Tech 2025 : Comment j’ai trouvé le sens de la vie grâce à WebAssembly'
+description: 'Retour sur ma conférence à Sunny Tech 2025 : exploration de WebAssembly, de ses usages réels au-delà du buzz, et pourquoi cette techno change (vraiment) la donne.'
+date: 2025-06-07
+slug: '/sunny-tech-2025-conference-webassembly'
+image: /img/webassembly-life.avif
+tags: [webassembly, sunny-tech, conférence, wasm, javascript, techno]
+authors: [william-donnette]
+keywords: [webassembly, wasm, sunny tech, conférence, javascript, optimisation, expériences, développeur, fullstack]
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+import ArialMultiplex from '@site/src/components/ads/arial-multiplex';
+
+![WebAssembly à Sunny Tech !](/img/webassembly-life.avif 'WebAssembly à Sunny Tech')
+
+<HorizontalDisplay />
+
+Début juin, j’ai eu la chance d’intervenir lors de la Sunny Tech 2025 à Montpellier, un événement incontournable pour tous ceux qui vibrent pour les nouvelles technologies. Mon sujet ? « Comment j’ai trouvé le sens de la vie grâce à WebAssembly ». Derrière ce titre un peu provoc’, beaucoup de retour d’expérience, de concret… et un vrai coup de cœur pour une techno trop souvent sous-estimée.  
+
+<!--truncate-->
+
+## Pourquoi (encore) parler de WebAssembly en 2025 ? 🤔
+
+On vous en parle depuis des années : [WebAssembly](https://webassembly.org/) (« WASM » pour les intimes) promet monts et merveilles. Mais concrètement, qui l’utilise vraiment en dehors de quelques niche projects ou des grosses boîtes genre [Figma](https://www.figma.com/blog/how-we-built-the-figma-plugin-platform/)? Et pourquoi persister ?
+
+Ces derniers temps, comme chez ABES ou DomData, j’ai vu WASM changer la donne sur plusieurs axes :
+
+- **📈 Performances natives** sur le web et ailleurs (Node.js, Deno…)
+- **🚦 Portabilité des modules** écrits dans différents langages (Rust, C++, Go…)
+- **🔒 Sécurité accrue** via la sandbox d’exécution  
+- **🌍 Approche fullstack & edge computing** (si tu n’as pas vu [l’intégration WASM dans Next.js](https://nextjs.org/docs/pages/building-your-application/configuring/wasm), jette-y un œil !)
+
+<ArialInArticle />
+
+## Exécution multi-langage : Javascript ne règne plus seul 👑
+
+Lors de la conférence, j’ai montré en live la compilation d’une fonctionnalité Python en bytecode WASM, pouvant ensuite tourner côté front ou back, avec un bridge TypeScript ultra-rapide. L’effet « wow » était là !  
+Un petit exemple ?  
+```typescript
+import init, { runPython } from 'my-py-wasm-lib';
+
+await init();
+const result = runPython(`
+def carre(x):
+    return x * x
+carre(7)
+`);
+console.log(result); // 👉 49
+```
+Imaginez cette puissance dans vos applis !  
+[Ce talk vidéo de Lin Clark sur WASM t’éclairera sur l’écosystème](https://www.youtube.com/watch?v=1hpg-A5rVuQ).
+
+<ArialMultiplex />
+
+## Le sens de la vie (pour un dev) : Rendre l’impossible possible 🦸‍♂️
+
+Ce qui m’a « donné du sens » avec WebAssembly, c’est d’avoir réussi à :
+
+- **Réutiliser des librairies natives historiques** (Pensée émue pour OpenCV, SQLite…)
+- **Créer des modules métiers performants** partagés entre plusieurs stack backend ET frontend
+- **Sécuriser les plugins utilisateurs** sur des apps sensibles (bientôt un article là-dessus !)
+
+Ma conclusion sur scène : *WASM c’est comme (re)découvrir le web*.  
+Envie d’aller plus loin ? Je t’invite à lire [mon expérience de Docker et Next.js sur ce blog](/blog/docker-nextjs-multistage-build), parfaite pour amplifier tes workflows modernes.
+
+<ArialInArticle />
+
+## Ressources et inspirations 🌐
+
+- [Documentation officielle WebAssembly](https://webassembly.org/docs/)
+- [Pourquoi WASM va au-delà du web, par Mozilla](https://hacks.mozilla.org/2019/03/why-webassembly-is-a-game-changer-for-the-web-and-beyond/)
+- [WebAssembly & sécurité des plugins (YouTube)](https://www.youtube.com/watch?v=MsOCbUaB9ag)
+
+Feel free si tu veux discuter WASM, TypeScript ou projets hybrides !  
+À très vite pour un debrief concret sur l’intégration Cloud/WebAssembly.
+
+<HorizontalDisplay />
