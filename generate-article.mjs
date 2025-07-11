@@ -50,8 +50,29 @@ function extractSlug(mdxContent) {
 async function generateArticle(messages) {
 	// Appel unique avec système + instructions + conversation
 	const response = await openai.responses.create({
-		model: 'gpt-4.1',
+		model: 'gpt-4.1-mini',
 		input: messages,
+		text: {
+			format: {
+				type: 'text',
+			},
+		},
+		reasoning: {},
+		tools: [
+			{
+				type: 'web_search_preview',
+				user_location: {
+					type: 'approximate',
+					country: 'FR',
+					city: 'Montpellier',
+				},
+				search_context_size: 'medium',
+			},
+		],
+		temperature: 1,
+		max_output_tokens: 3000,
+		top_p: 1,
+		store: true,
 	});
 
 	console.log(response.output_text);
