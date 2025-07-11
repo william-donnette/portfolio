@@ -1,162 +1,100 @@
-import axios from 'axios';
 import 'dotenv/config';
 import * as fs from 'fs';
+import OpenAI from 'openai';
 import * as path from 'path';
 import {fileURLToPath} from 'url';
 
-function readMarkdownFile(fullPath) {
-	return new Promise((resolve, reject) => {
-		fs.readFile(fullPath, 'utf8', (err, content) => {
-			if (err) {
-				reject(err);
-			} else {
-				resolve(content);
-			}
-		});
-	});
+const openai = new OpenAI({
+	apiKey: process.env.OPENAI_API_KEY,
+});
+
+async function readMarkdownFile(fullPath) {
+	return fs.promises.readFile(fullPath, 'utf8');
 }
 
-function readMarkdownFiles(dir) {
-	return new Promise(async (resolve, reject) => {
-		let combinedContent = '';
-		try {
-			const items = await new Promise((resolve, reject) => {
-				fs.readdir(dir, {withFileTypes: true}, (err, items) => {
-					if (err) {
-						reject(err);
-					} else {
-						resolve(items);
-					}
-				});
-			});
-			for (const item of items) {
-				const fullPath = path.join(dir, item.name);
-				if (item.isDirectory()) {
-					combinedContent += await readMarkdownFiles(fullPath);
-				} else if (item.isFile() && path.extname(item.name).toLowerCase() === '.md') {
-					const content = await readMarkdownFile(fullPath);
-					combinedContent += content + '\n\n';
-				}
-			}
-			resolve(combinedContent);
-		} catch (err) {
-			console.error(`Erreur lors de la lecture du dossier ${dir}:`, err);
-			reject(err);
+async function readMarkdownFiles(dir) {
+	let combined = '';
+	const items = await fs.promises.readdir(dir, {withFileTypes: true});
+	for (const item of items) {
+		const full = path.join(dir, item.name);
+		if (item.isDirectory()) {
+			combined += await readMarkdownFiles(full);
+		} else if (item.isFile() && path.extname(item.name).toLowerCase() === '.md') {
+			combined += (await readMarkdownFile(full)) + '\n\n';
 		}
-	});
+	}
+	return combined;
 }
 
 export function saveArticleToFile(articleName, content) {
-	const directory = path.join(path.dirname(fileURLToPath(import.meta.url)), 'blog', encodeURIComponent(articleName));
-	if (!fs.existsSync(directory)) {
-		fs.mkdirSync(directory, {recursive: true});
-	}
-	const filePath = path.join(directory, 'index.mdx');
-	fs.writeFileSync(filePath, content);
+	const dir = path.join(path.dirname(fileURLToPath(import.meta.url)), 'blog', encodeURIComponent(articleName));
+	fs.mkdirSync(dir, {recursive: true});
+	fs.writeFileSync(path.join(dir, 'index.mdx'), content);
 }
 
-export async function generateArticle(messages) {
-	const apiKey = process.env.MISTRAL_API_KEY;
-	const apiUrl = 'https://api.mistral.ai/v1/chat/completions';
-	try {
-		const response = await axios.post(
-			apiUrl,
-			{
-				model: 'mistral-small-latest',
-				messages,
-			},
-			{
-				headers: {
-					Authorization: `Bearer ${apiKey}`,
-					'Content-Type': 'application/json',
-				},
-			}
-		);
+function extractSlug(mdxContent) {
+	const frontmatterMatch = mdxContent.match(/^---\n([\s\S]*?)\n---/);
+	if (!frontmatterMatch) return null;
 
-		const newMessage = response.data.choices[0].message;
-		const content = newMessage.content;
-		messages.push(newMessage, {role: 'user', content: "Dis-moi en une phrase le slug de l'article que tu viens de rédiger. Rien de plus."});
-
-		const response2 = await axios.post(
-			apiUrl,
-			{
-				model: 'mistral-small-latest',
-				messages,
-			},
-			{
-				headers: {
-					Authorization: `Bearer ${apiKey}`,
-					'Content-Type': 'application/json',
-				},
-			}
-		);
-
-		const slug = response2.data.choices[0].message.content;
-		return {slug, content};
-	} catch (error) {
-		console.error("Erreur lors de la génération de l'article:", error);
-		throw error;
-	}
-}
-
-function readBlogArticle(indexFilePath, title) {
-	return new Promise((resolve, reject) => {
-		fs.readFile(indexFilePath, 'utf8', (err, buffer) => {
-			if (err) {
-				reject(err);
-			} else {
-				resolve([
-					{role: 'user', content: `Parfait ! Rédige-moi un article intitulé ${title}`},
-					{role: 'assistant', content: buffer},
-				]);
-			}
-		});
-	});
-}
-
-async function readBlogArticles(resume) {
-	const blogDir = './blog';
-	let messages = [
-		{
-			role: 'user',
-			content: resume,
-		},
-	];
-	try {
-		const items = await new Promise((resolve, reject) => {
-			fs.readdir(blogDir, {withFileTypes: true}, (err, items) => {
-				if (err) {
-					reject(err);
-				} else {
-					resolve(items);
-				}
-			});
-		});
-
-		for (const item of items) {
-			if (item.isDirectory()) {
-				const indexFilePath = path.join(blogDir, item.name, 'index.mdx');
-				const article = await readBlogArticle(indexFilePath, item.name);
-				messages.push(...article);
-			}
+	const frontmatterLines = frontmatterMatch[1].split('\n');
+	for (const line of frontmatterLines) {
+		const match = line.match(/^slug:\s*(.+)$/);
+		if (match) {
+			return match[1].trim();
 		}
-		return messages;
-	} catch (err) {
-		console.error('Erreur lors de la lecture du dossier blog:', err);
-		throw err;
 	}
+
+	return null;
+}
+
+async function generateArticle(messages) {
+	// Appel unique avec système + instructions + conversation
+	const response = await openai.responses.create({
+		model: 'gpt-4.1',
+		input: messages,
+	});
+
+	console.log(response.output_text);
+	// Le contenu généré
+	const content = response.output_text;
+
+	const slug = extractSlug(content);
+
+	if (!slug) {
+		throw new Error('No slug in gereated content');
+	}
+
+	return {slug, content};
+}
+
+async function readBlogArticle(indexFilePath) {
+	const buffer = await fs.promises.readFile(indexFilePath, 'utf8');
+	return buffer;
+}
+
+async function readRandomBlogArticle() {
+	const blogDir = './blog';
+	const items = await fs.promises.readdir(blogDir, {withFileTypes: true});
+
+	const item = items.filter((item) => item.isDirectory())[Math.floor(Math.random() * items.length)];
+
+	const indexPath = path.join(blogDir, item.name, 'index.mdx');
+	const article = await readBlogArticle(indexPath);
+
+	return article;
 }
 
 function normalizeString(str) {
-	let normalized = str.toLowerCase();
-	normalized = normalized.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-	normalized = normalized.replace(/\s+/g, '-');
-	normalized = normalized.replace(/[^a-z0-9-]/g, '');
-	return normalized;
+	return str
+		.toLowerCase()
+		.normalize('NFD')
+		.replace(/[\u0300-\u036f]/g, '')
+		.replace(/\s+/g, '-')
+		.replace(/[^a-z0-9-]/g, '');
 }
 
 async function main() {
-	const args = process.argv;
+	const args = process.argv.slice(2);
 	const topics = [
 		'Technologie, Veille Techno Découverte et analyse des dernières tendances technologiques.',
 		"Technologie, Nouvel Outil Présentation d'outils récents pour les développeurs et professionnels de la tech.",
@@ -184,31 +122,47 @@ async function main() {
 		"Cybersécurité, Sécurité des Réseaux Présentation des meilleures pratiques pour sécuriser les réseaux d'entreprise.",
 		'DevOps, Surveillance et Logging Importance de la surveillance et du logging dans les environnements DevOps et outils populaires pour le faire.',
 	];
+	const topic = args.length ? args.join(' ') : topics[Math.floor(Math.random() * topics.length)];
+	console.log('Topic :', topic);
 
-	const topic = args.length > 2 ? args.slice(2).join(' ') : topics[Math.floor(Math.random() * topics.length)];
-	console.log('Topic : ' + topic);
+	// const resume = await readMarkdownFiles('docs');
+	const contextPrompt =
+		"Tu es un assistant rédactionnel spécialisé en SEO pour William Donnette, développeur fullstack passionné par les nouvelles technologies, spécialisé en TypeScript (React, Next.js, Node.js), Docker, CI/CD, Java, PHP et Python. Il a travaillé sur des projets variés, notamment chez ABES, SNCF, DomData et A3CDigital.\n\nObjectif :\nGénérer un article de blog au format MDX destiné au site https://william-donnette.dev/blog. L'article doit être :\n";
+	const objectifs = [
+		"Écrit à la première personne (comme si c'était William qui parle).",
+		"Basé sur des faits vérifiables dans son parcours, ses projets, ses compétences ou l'actualité tech.",
+		'Facile à lire, structuré, pertinent, jamais redondant avec des contenus existants.',
+		'Enrichi de liens externes utiles (sites officiels, documentations, vidéos YouTube...).',
+		'Accompagné de visuels (images, emojis, vidéos intégrées).',
+		"Intégrant des publicités natives via composants React :\n\n```mdx\nimport HorizontalDisplay from '@site/src/components/ads/horizontal-display';\nimport ArialInArticle from '@site/src/components/ads/arial-in-article';\nimport ArialMultiplex from '@site/src/components/ads/arial-multiplex';\n```\n\nContraintes de rendu :\n\nLe fichier doit être écrit uniquement en MDX sans bloc de commentaires.",
+		'Ajouter un bloc de métadonnées en haut avec : title, slug, description, image, tags, authors, keywords, date.',
+		"Inclure une balise <!--truncate--> après quelques lignes d'introduction pour gérer le résumé.",
+		'Ne jamais mentionner que le texte a été généré automatiquement.',
+		'Ne pas encapsuler le contenu global dans une balise MDX.',
+		"Ne pas surjouer les liens avec le parcours : s'ils sont naturels, ils doivent être subtilement intégrés.",
+		'Ne vends pas à suivre les réseauc sociaux',
+		"Essaye de pousser l'utilisateur à aller sur un autre article de https://william-donnette.dev/blog",
+	];
 
-	try {
-		const resume = await readMarkdownFiles('docs');
-		const messages = await readBlogArticles(resume);
-		console.log("Nombre d'exemples préchargés : " + Math.floor(messages.length / 2));
+	const prompt = `Rédige un article sur {{TOPIC}}`;
 
-		messages.push({
-			role: 'user',
-			content: `Parfait ! Maintenant, écris un article de blog pour une application docusaurus en MDX en tant que William Donnette sur le thème : ${topic}. Trouve un sujet pertinent et précis selon ce que tu peux trouver sur mon profil sur le web mais aussi et surtout sur les actualités. Tu ne dois pas faire un article similaire à un autre qui existant, soit inventif. L'article doit être écrit à la première personne, comme si c'était moi qui le racontais. Ajoute des hyperliens pertinents vers d'autres articles et sites web. L'article doit être facile à lire et apporter une valeur ajoutée au lecteur. Il doit contenir des emojis pour améliorer son rendu et sa facilité de lecture. Il sera publié sur https://william-donnette.dev/blog. Surtout n'écris aucun commentaire autre que le contenu de l'article. N'encapsule pas le contenu dans des balises mdx même si le format doit être du mdx. Aucune mention au fait que cet article est généré automatiquement, aucune mention pour dire que c'est le début ou la fin de l'article. Ajoute des publicités grâce aux imports React dans du MDX. Sépare une première partie de l'article par un truncate pour marquer la partie résumé. N'hésite pas à mettre quelques images ou intégrer des vidéos Youtube sur des sujets bien précis. Pense bien à mettre les métadonnées afin que l'article soit bien référencé. Vérifie bien que les liens vers des sources externes comme les images, vidéos, site web sont corrects et redirigent bien vers une ressource cohérente. Appuie toi sur mon expérience, mes compétences et mes projets mais sans trop en faire. Il faut surtout que ce soit lié à l'actualité et que le lecteur ressente de l'intérêt à lire l'article. N'hésite pas à faire des parties assez longues. L'utilisateur doit apprendre au moins quelque chose en lisant cet article. N'hésite pas à faire des recherches sur internet, wikipédia ou les sites officiels pour ajouter du détail constructif et de l'actualité aux propos.`,
-		});
+	const article = await readRandomBlogArticle();
 
-		const {slug, content} = await generateArticle(messages);
-		const date = new Date().toISOString().split('T')[0];
-		const articleName = `${date}-${normalizeString(slug)}`;
-		saveArticleToFile(articleName, content.replaceAll('```mdx', '').replaceAll('```', ''));
-		console.log(`Nouvel Article : ${articleName}`);
-		console.log(articleName);
-		process.exit(0);
-	} catch (err) {
-		console.error('Erreur dans main:', err);
-		process.exit(1);
-	}
+	const systemPrompt = contextPrompt + objectifs.join('\n') + "\n\nVoici un exemple d'article :\n\n" + article;
+
+	const messages = [
+		{role: 'system', content: systemPrompt},
+		{role: 'user', content: prompt.replace('{{TOPIC}}', topic)},
+	];
+
+	const {slug, content} = await generateArticle(messages);
+	const date = new Date().toISOString().split('T')[0];
+	const articleName = `${date}-${normalizeString(slug)}`;
+	saveArticleToFile(articleName, content);
+	console.log('Nouvel article:', articleName);
 }
 
-main();
+main().catch((err) => {
+	console.error(err);
+	process.exit(1);
+});

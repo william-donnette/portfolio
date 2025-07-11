@@ -1,0 +1,77 @@
+---
+title: "Sunny Tech 2025 : L'API viewTransition, une révolution pour le web ?"
+description: "Découverte de l'API viewTransition présentée à Sunny Tech 2025 : vers des transitions fluides et accessibles entre pages pour le web moderne."
+date: 2025-03-21
+slug: '/sunny-tech-2025-api-viewtransition'
+tags: [sunny-tech, viewtransition, api, web, frontend, animation]
+image: /img/sunny-tech.png
+authors: [william-donnette]
+keywords: [API ViewTransition, web animation, Sunny Tech, innovation frontend, performance, accessibilité]
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+import ArialMultiplex from '@site/src/components/ads/arial-multiplex';
+
+![Sunny Tech](/img/sunny-tech.png 'Sunny Tech')
+
+<HorizontalDisplay />
+
+J’ai eu la chance de participer à la conférence **Sunny Tech 2025** cette année à Montpellier, et l’une des annonces qui m’a le plus marqué concerne une nouveauté pour l’avenir du web frontend : l’**API `viewTransition`**. Cette session, animée par l’équipe web du Sunny Tech ([voir la présentation officielle](https://sunny-tech.io/sessions/cm5s9sj1n00owqy3mhgnsczu2/)), a soulevé une question brûlante : *l’API viewTransition va-t-elle révolutionner l’expérience utilisateur sur le web* ?
+
+<!--truncate-->
+
+## L’enjeu : des transitions harmonieuses nativement 🌐✨
+
+En tant que développeur fullstack, j’ai souvent jonglé avec les transitions d’une page à l’autre, notamment sur des applications React ou Next.js. Actuellement, la plupart des transitions animées entre vues nécessitent des librairies JavaScript externes, des hacks CSS, ou des architectures assez élaborées pour obtenir un rendu fluide – tout ça coûte souvent en complexité, en performance, et même parfois en accessibilité.
+
+C’est dans ce contexte que l’API [`viewTransition`](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API) débarque.
+
+<ArialInArticle />
+
+## viewTransition, kézako ? 👀
+
+L’API viewTransition a pour objectif de **permettre aux développeurs web de réaliser facilement des transitions animées entre deux états visuels** : navigation entre pages, changements de sections, ou même modifications profondes dans le DOM.
+
+L’atout majeur ? C’est **natif**, c’est-à-dire pris en charge par le navigateur. Concrètement, on peut enfin imaginer des effets “crossfade” (fondu enchaîné), des déplacements d’éléments ou des zooms fluides de _page à page_, sans perdre en performance ni en accessibilité. Voici une introduction en vidéo :
+
+## Comment ça marche ? Quelques lignes suffisent 🤏
+
+En pratique, il suffit de **wrapper** la mutation du DOM à travers la méthode `startViewTransition`, disponible désormais dans [Chrome et Edge](https://caniuse.com/?search=viewtransition). Exemple très basique :
+
+```js
+document.startViewTransition(() => {
+	main.innerHTML = '<h1>Nouveau contenu !</h1>';
+});
+```
+
+Le navigateur capture l’avant/après et fait le reste, en laissant la main au développeur pour personnaliser la transition via CSS ou JavaScript. Si vous voulez tester, je vous encourage à [jouer avec cette démo](https://view-transition-example.vercel.app/card).
+
+<ArialMultiplex />
+
+## Ce que ça change pour mon métier 👨‍💻
+
+En ayant travaillé sur des gros projets réactifs (SNCF, ABES, DomData), je vois un intérêt immédiat :
+
+-   **Abandonner des solutions lourdes** type React Transition Group ou des bridges JavaScript-CSS complexes,
+-   **Moins de tech-debt**, car on se repose sur le moteur du navigateur,
+-   **Accessibilité améliorée** — le rendu reste compatible native screen readers,
+-   **Design System plus cohérent**, en utilisant les mêmes transitions partout, et facilement personnalisables.
+
+Dans une app Next.js ou React, il n’est plus utopique de rendre chaque changement de route doux, même dans des environnements avec SSR ou des contraintes server/client.
+
+<ArialInArticle />
+
+## Limites et perspectives 👀
+
+Attention : la spec évolue et tout n’est pas encore possible. Certaines animations complexes (ex : anim d’éléments entre containers différents) ne sont pas encore triviales. Et le support navigateur [reste partiel](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API#browser_compatibility). Mais le rythme d’adoption est impressionnant.
+
+À surveiller particulièrement : l’arrivée sur Firefox. Les tests montrent déjà de vrais gains de performance et de simplicité sur Chrome Canary.
+
+## Pour aller plus loin 🚀
+
+-   [Présentation de la session Sunny Tech 2025](https://sunny-tech.io/sessions/cm5s9sj1n00owqy3mhgnsczu2/)
+-   [Introduction à View Transitions – Google Developers](https://developer.chrome.com/docs/web-platform/view-transitions?hl=fr)
+-   [Documentation MDN officielle](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API)
+
+<ArialMultiplex />
