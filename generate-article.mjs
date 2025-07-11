@@ -157,6 +157,7 @@ async function main() {
 		'Accompagné de visuels (images, emojis, vidéos intégrées).',
 		"Intégrant des publicités natives via composants React :\n\n```mdx\nimport HorizontalDisplay from '@site/src/components/ads/horizontal-display';\nimport ArialInArticle from '@site/src/components/ads/arial-in-article';\nimport ArialMultiplex from '@site/src/components/ads/arial-multiplex';\n```\n\nContraintes de rendu :\n\nLe fichier doit être écrit uniquement en MDX sans bloc de commentaires.",
 		'Ajouter un bloc de métadonnées en haut avec : title, slug, description, image, tags, authors, keywords, date.',
+		'Les métadonnées title, et slug sont obligatoires',
 		"Inclure une balise <!--truncate--> après quelques lignes d'introduction pour gérer le résumé.",
 		'Ne jamais mentionner que le texte a été généré automatiquement.',
 		'Ne pas encapsuler le contenu global dans une balise MDX.',
