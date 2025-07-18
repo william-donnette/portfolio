@@ -2,18 +2,19 @@ import {Project} from './type';
 
 const projects: Array<Project> = [
 	{
-		id: 'homkizz',
-		title: "🏠 Hom'Kizz",
+		id: 'sportup',
+		title: "⚽ Sport'Up",
 		status: 'wip',
 		type: 'personnel',
-		description: "Solutions digitales pour le secteur de l'immobilier avec Next.js, React et Machine Learning pour l'estimation immobilière.",
-		image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80',
-		technologies: ['Next.js', 'React', 'Docker', 'TailwindCSS', 'Machine Learning', 'PostgreSQL'],
+		description:
+			'Application de réservation de créneaux sportifs. Stack moderne avec gestion IAM, paiements via Stripe, et automatisation des créneaux.',
+		image: '/img/sport-up.png',
+		technologies: ['React', 'Stripe', 'NodeJS', 'PostgreSQL', 'Ant Design', 'TypeScript', 'React Native', 'Refine', 'Hasura', 'Keycloak'],
 		links: {
-			website: 'https://homkizz.com/fr-FR',
-			doc: '/docs/projects/homkizz',
+			doc: '/docs/projects/sportup',
 		},
 	},
+
 	{
 		id: 'etl-sncf',
 		title: '🚂 ETL SNCF',
@@ -39,6 +40,7 @@ const projects: Array<Project> = [
 			doc: '/docs/experiences/abes',
 		},
 	},
+
 	{
 		id: 'app-mobile-ar',
 		title: '📱 Réalité Augmentée',
@@ -49,6 +51,19 @@ const projects: Array<Project> = [
 		technologies: ['React Native', 'Expo', 'C#', 'Keycloak'],
 		links: {
 			doc: '/docs/academic/master-eisi/projects#-développement-dune-application-mobile',
+		},
+	},
+	{
+		id: 'homkizz',
+		title: "🏠 Hom'Kizz",
+		status: 'wip',
+		type: 'personnel',
+		description: "Solutions digitales pour le secteur de l'immobilier avec Next.js, React et Machine Learning pour l'estimation immobilière.",
+		image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80',
+		technologies: ['Next.js', 'React', 'Docker', 'TailwindCSS', 'Machine Learning', 'PostgreSQL'],
+		links: {
+			website: 'https://homkizz.com/fr-FR',
+			doc: '/docs/projects/homkizz',
 		},
 	},
 	{
