@@ -105,6 +105,12 @@ async function readRandomBlogArticle() {
 	return article;
 }
 
+async function getBlogArticles() {
+	const blogDir = './blog';
+	const items = await fs.promises.readdir(blogDir, {withFileTypes: true});
+	return items.filter((item) => item.isDirectory()).map((item) => item.name);
+}
+
 function normalizeString(str) {
 	return str
 		.toLowerCase()
@@ -164,13 +170,21 @@ async function main() {
 		"Ne pas surjouer les liens avec le parcours : s'ils sont naturels, ils doivent être subtilement intégrés.",
 		'Ne vends pas à suivre les réseauc sociaux',
 		"Essaye de pousser l'utilisateur à aller sur un autre article de https://william-donnette.dev/blog",
+		"Mets l'article à la date du jour",
 	];
 
 	const prompt = `Rédige un article sur {{TOPIC}}`;
 
 	const article = await readRandomBlogArticle();
+	const articleTopicsAlreadyWritten = await getBlogArticles();
 
-	const systemPrompt = contextPrompt + objectifs.join('\n') + "\n\nVoici un exemple d'article :\n\n" + article;
+	const systemPrompt =
+		contextPrompt +
+		objectifs.join('\n') +
+		"\n\nVoici un exemple d'article :\n\n" +
+		article +
+		"\n\nVoici les slugs des articles déjà rédigés, tu peux t'en inspirer mais ne fait surtout pas de doublons :\n\n" +
+		articleTopicsAlreadyWritten.join('\n');
 
 	const messages = [
 		{role: 'system', content: systemPrompt},
