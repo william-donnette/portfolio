@@ -21,15 +21,15 @@ title: JavaScript / TypeScript
 -   <img alt="Logo de Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="20" /> **Node.js**
     -   **Projet professionnel :** ETL interne [SNCF Voyageurs](../../../03-experiences/02-sncf/index.md)
     -   **Projet scolaire :** [Site de recettes](../../../02-academic/02-licence-apidae/projects.md#-développement-dun-site-web-de-recettes)
-    -   **Projet personnel :** [Site de solutions digitales pour l'immobilier](../../../05-projects/01-homkizz.md)
-    -   **Projet personnel :** [Solution cloud sous forme de réseau social](../../../05-projects/06-smile.md)
+    -   **Projet personnel :** [Site de solutions digitales pour l'immobilier](../../../05-projects/02-homkizz.md)
+    -   **Projet personnel :** [Solution cloud sous forme de réseau social](../../../05-projects/07-smile.md)
 
 ## Front-End
 
 -   <img alt="Logo de React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="20" /> **React.js**
-    -   **Projet personnel :** [Site de solutions digitales pour l'immobilier](../../../05-projects/01-homkizz.md)
-    -   **Projet personnel :** [Solution cloud sous forme de réseau social](../../../05-projects/06-smile.md)
-    -   **Projet personnel :** [Site de portefeuille patrimonial](../../../05-projects/02-wallet.md)
+    -   **Projet personnel :** [Site de solutions digitales pour l'immobilier](../../../05-projects/02-homkizz.md)
+    -   **Projet personnel :** [Solution cloud sous forme de réseau social](../../../05-projects/07-smile.md)
+    -   **Projet personnel :** [Site de portefeuille patrimonial](../../../05-projects/05-wallet.md)
     -   <img alt="Logo de Next.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="20" /> Next.js
     -   🎨 Ant Design
     -   🔌 Refine
@@ -50,7 +50,7 @@ title: JavaScript / TypeScript
 ## Mobile
 
 -   <img alt="Logo de React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="20" /> **React Native**
-    -   **Projet personnel :** [Réseau Social](../../../05-projects/05-birds.md)
+    -   **Projet personnel :** [Réseau Social](../../../05-projects/06-birds.md)
     -   🏗️ Expo
 
 ## Tests

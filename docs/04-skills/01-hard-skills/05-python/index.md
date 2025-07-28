@@ -18,13 +18,13 @@ title: Python
 ## Back-End
 
 -   <img alt="Logo de Flask" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" width="20" /> **Flask**
-    -   **Projet personnel :** [Site de solutions d'estimation pour l'immobilier](../../../05-projects/01-homkizz.md)
+    -   **Projet personnel :** [Site de solutions d'estimation pour l'immobilier](../../../05-projects/02-homkizz.md)
 
 ## Intelligence Artificielle
 
 -   **Machine Learning & Deep Learning**
     -   **Projet scolaire :** [Développement de modèles d'IA : prédiction élection présidentielle](../../../02-academic/01-master-eisi/projects.md#-développement-de-modèles-dia)
-    -   **Projet personnel :** [Développement de modèles d'IA : prédiction estimation immobilière](../../../05-projects/01-homkizz.md)
+    -   **Projet personnel :** [Développement de modèles d'IA : prédiction estimation immobilière](../../../05-projects/02-homkizz.md)
     -   <img alt="Logo de Tensorflow" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="20" /> **Tensorflow**
 
 ## Outils
