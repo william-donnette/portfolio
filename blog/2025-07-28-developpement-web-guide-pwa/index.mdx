@@ -1,0 +1,145 @@
+---
+title: "Guide complet pour créer des Progressive Web Apps (PWA) et leurs avantages"
+slug: '/developpement-web-guide-pwa'
+description: "Découvrez comment créer une Progressive Web App (PWA), leurs avantages et pourquoi elles deviennent incontournables face aux applications natives."
+image: /img/pwa-guide-cover.png
+tags: ['pwa', 'progressive-web-app', 'web-development', 'typescript', 'react', 'nextjs', 'web-app']
+authors: [william-donnette]
+keywords: ['Progressive Web Apps', 'PWA', 'développement web', 'applications natives', 'React', 'Next.js']
+date: 2024-06-14
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+import ArialMultiplex from '@site/src/components/ads/arial-multiplex';
+
+![Progressive Web Apps](https://web.dev/images/progressive-web-apps/pwa-splash.png)
+
+<HorizontalDisplay />
+
+{/* truncate */}
+
+## Pourquoi s'intéresser aux Progressive Web Apps (PWA) ? 🚀
+
+Au fil de mes projets, notamment en développement React et Next.js, j'ai vu émerger une solution qui combine aussi bien le potentiel du web que les fonctionnalités des applications natives : les Progressive Web Apps (PWA). Ces applications web "progressives" offrent une expérience utilisateur riche, performante et fiable, même en conditions réseau instables.
+
+Qu'est-ce qu'une PWA exactement, et pourquoi peuvent-elles changer la donne dans le développement d'applications modernes ? Je vous partage mon guide pratique pour créer vos propres PWA et les avantages majeurs qu'elles offrent comparées aux applications natives.
+
+## Qu'est-ce qu'une PWA ? 🌐
+
+Une Progressive Web App est une application web qui utilise des technologies modernes (Service Workers, manifest JSON, HTTPS) pour offrir une expérience utilisateur proche des applications mobiles natives. Elle s'installe facilement, fonctionne hors connexion, et peut envoyer des notifications push, tout en étant accessible depuis un simple navigateur.
+
+Les principaux critères qui définissent une PWA selon Google :
+
+- Progressive : fonctionne pour tous les utilisateurs, sur n'importe quel navigateur.
+- Responsive : adaptée à toutes tailles d'écrans (mobiles, tablettes, desktops).
+- Connectivity independent : fonctionne même hors ligne grâce au caching.
+- App-like : ressemble à une application native avec une navigation fluide.
+- Fresh : se met à jour automatiquement.
+- Safe : servie via HTTPS.
+- Discoverable : facilement trouvable via moteurs de recherche.
+- Re-engageable : push notifications pour fidéliser l'utilisateur.
+- Installable : peut être ajoutée à l'écran d'accueil.
+- Linkable : accessible via une URL.
+
+<ArialInArticle />
+
+## Comment créer une PWA ? Guide étape par étape 🛠️
+
+### 1. Préparer le manifeste (manifest.json)
+
+C'est un fichier JSON qui décrit votre application : nom, icônes, couleur, page d'accueil, orientation, affichage (mode plein écran)... Ce fichier permet au navigateur de comprendre comment lancer et afficher votre PWA.
+
+```json
+{
+  "name": "Mon Application PWA",
+  "short_name": "PWA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d6efd",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+```
+
+### 2. Implémenter un Service Worker
+
+Le Service Worker agit comme un proxy réseau permettant de gérer le cache, les mises à jour en arrière-plan, et la gestion hors-ligne. Il s'enregistre via JavaScript et écoute les événements de fetch et install.
+
+Un exemple simple avec Workbox (bibliothèque recommandée) sous Next.js :
+
+```javascript
+import { Workbox } from 'workbox-window';
+
+if ('serviceWorker' in navigator) {
+  const wb = new Workbox('/sw.js');
+  wb.register();
+}
+```
+
+### 3. Servir votre site en HTTPS
+
+La sécurité est une exigence : les PWA doivent être servies via HTTPS pour fonctionner (sauf en localhost).
+
+### 4. Optimiser l'expérience utilisateur
+
+- Design responsive et accessibilité
+- Gestion intelligente du cache pour offline
+- Notifications push pour re-engager l'utilisateur
+- Icônes adaptées pour toutes les résolutions
+
+### 5. Tester votre PWA
+
+Utilisez les outils Chrome DevTools et Lighthouse pour analyser et valider la conformité PWA :
+
+- Audit PWA pour score & recommandations
+- Tester la mise en cache, le offline, installation
+
+## Avantages des PWA vs applications natives 📱
+
+| Avantages                 | PWA                                      | Applications natives                   |
+|---------------------------|------------------------------------------|--------------------------------------|
+| Installation rapide       | Pas besoin d'App store                    | Téléchargement souvent lourd          |
+| Mises à jour automatiques | Transparentes pour l'utilisateur          | Dépend des stores                     |
+| Compatibilité multiplateforme | Fonctionne sur tous les OS et navigateurs | Développement spécifique à chaque OS |
+| Coût de développement    | Moins élevé, base web unique               | Développement natif souvent plus cher |
+| Distribution             | Facile (URL partagée)                      | Stores avec validation et approbation |
+| Fonctionnalités natives   | Accès limité mais croissant (GPS, caméra, notifications) | Accès complet aux fonctionnalités du système |
+
+<ArialInArticle />
+
+## Mon expérience avec les PWA
+
+Dans mes projets, j'ai particulièrement apprécié la simplicité à créer une PWA avec Next.js en utilisant des plugins comme `next-pwa`. Cela m'a permis de booster les performances et d'améliorer l'engagement utilisateur sur des applications web classiques.
+
+Ces apps hybrides offrent un excellent compromis quand on vise une large audience sur mobiles sans passer par les contraintes de déploiement natives.
+
+---
+
+Pour continuer sur la thématique des performances web, je vous recommande la lecture de mon article sur [l'implémentation de l'API ViewTransition](https://william-donnette.dev/blog/2025-07-11-sunny-tech-2025-api-viewtransition), idéale pour améliorer la fluidité des transitions sur le web.
+
+<ArialMultiplex />
+
+## Ressources utiles pour aller plus loin 📚
+
+- [Google Developers – Progressive Web Apps](https://web.dev/progressive-web-apps/)
+- [Mozilla MDN - Service Workers](https://developer.mozilla.org/fr/docs/Web/API/Service_Worker_API)
+- [Next.js Documentation - PWA](https://nextjs.org/docs/advanced-features/progressive-web-app)
+- [Workbox Library](https://developers.google.com/web/tools/workbox/)
+- [Lighthouse (Chrome DevTools)](https://developers.google.com/web/tools/lighthouse)
+
+---
+
+Les Progressive Web Apps représentent selon moi l'avenir du web, un pont entre accessibilité, performance et expérience mobile. N'hésitez pas à expérimenter et à partager vos retours sur vos réalisations PWA ! 😉
+
