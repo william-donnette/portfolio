@@ -1,147 +1,84 @@
 ---
-title: "Développement Web : Guide complet pour créer des Progressive Web Apps (PWA)"
-description: "Découvrez comment créer des Progressive Web Apps, leurs avantages par rapport aux applications natives, et pourquoi adopter ce format pour vos projets web."
-date: 2025-08-22
-slug: '/developpement-web-guide-pwa'
-image: /img/pwa-guide.png
-tags: [développement-web, pwa, progressive-web-app, javascript, react, nextjs]
-authors: [william-donnette]
-keywords: [PWA, Progressive Web Apps, développement web, applications web, React, Next.js, Service Workers, web manifest]
+title: 'Pourquoi j’ai choisi une PWA pour Sport’Up avec Expo'
+slug: '/pwa-sportup'
+description: 'Retour d’expérience sur le choix des Progressive Web Apps : accessibilité, installation rapide, offline, SEO… et pourquoi elles complètent parfaitement les applications natives.'
+image: /img/web.jpg
+tags: \[pwa, expo, react-native, web, mobile, développement, typescript]
+authors: \[william-donnette]
+keywords: \[Progressive Web Apps, Expo, React Native Web, offline, SEO, mobile, Sport’Up]
+date: 2025-08-18
 ---
 
 import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
 import ArialInArticle from '@site/src/components/ads/arial-in-article';
 import ArialMultiplex from '@site/src/components/ads/arial-multiplex';
 
-![Progressive Web Apps Guide](/img/pwa-guide.png "Progressive Web Apps")
+![Progressive Web Apps Guide](/img/web.jpg 'Progressive Web Apps')
 
 <HorizontalDisplay />
 
-{/* truncate */}
+<!--truncate-->
 
-## Introduction aux Progressive Web Apps (PWA) 🌐📲
+Lorsque j’ai lancé **Sport’Up**, j’ai choisi d’aller au-delà des applications mobiles natives pour proposer aussi une **Progressive Web App (PWA)**.
+Avec le recul, ce choix ne concernait pas uniquement mon projet : il illustre une tendance de fond dans le développement web moderne. Les PWA apportent un **équilibre intéressant** entre l’accessibilité du web et la richesse des apps natives.
 
-En tant que développeur fullstack, j'ai souvent été amené à travailler sur des projets web où l'expérience utilisateur et les performances sont des priorités. Les **Progressive Web Apps (PWA)** représentent une évolution majeure dans le développement web, combinant la richesse des applications natives avec la facilité d'accès du web.
+Dans cet article, je reviens sur les **principaux bénéfices** d’une PWA, pourquoi elles s’imposent comme une alternative sérieuse aux autres technologies, et comment elles transforment l’expérience utilisateur.
 
-Les PWA offrent une alternative intéressante aux applications mobiles traditionnelles en permettant aux utilisateurs d'accéder rapidement à des fonctionnalités avancées, même hors ligne, sans passer par un store. Dans cet article, je vous guide pas à pas pour comprendre ce qu'est une PWA, comment en créer une et quels sont ses avantages par rapport aux applications natives.
+# 1. L’installation simplifiée : l’app sans store 📲
 
-<ArialInArticle />
+Les **app stores** restent incontournables, mais ils introduisent de la friction : validation, téléchargement, mises à jour obligatoires…
+Une PWA contourne tout cela : un simple bouton “Ajouter à l’écran d’accueil” et l’utilisateur a une icône prête à l’emploi, avec une interface plein écran comme une vraie application.
 
-## Qu'est-ce qu'une Progressive Web App ? 🧐
+C’est particulièrement puissant dans les cas où l’on cherche à convaincre rapidement un nouvel utilisateur d’essayer son service. Moins de clics = plus de chances d’adoption.
 
-Une Progressive Web App est une application web qui utilise les technologies modernes du web pour offrir une expérience proche d'une application mobile native. Elle peut être installée sur l'écran d'accueil d'un appareil mobile ou même sur un desktop, fonctionne hors ligne, et se charge rapidement.
+# 2. L’expérience offline : un vrai plus en mobilité 🚉
 
-Les principales composantes d'une PWA sont :
+Le monde n’est pas 100 % connecté, et c’est encore plus vrai quand on pense aux transports, aux zones rurales ou simplement aux bâtiments mal couverts.
+Grâce aux **service workers** et au cache, une PWA peut fonctionner **même sans connexion** : afficher les dernières données consultées, permettre une navigation de base, voire synchroniser les actions dès que le réseau revient.
 
-- **Le Service Worker** : Un script qui s'exécute en arrière-plan pour gérer le cache, les notifications push, et la synchronisation en arrière-plan.
-- **Le Web App Manifest** : Un fichier JSON qui contient les métadonnées de l'application (nom, icône, couleur dominante, etc.) nécessaires pour l'installation.
-- **La connexion sécurisée HTTPS** : Pour garantir la sécurité des échanges entre le client et le serveur.
-- **Le design responsive** : Pour une expérience utilisateur optimale sur tous types d'appareils.
+Cette résilience apporte un confort proche du natif et rassure l’utilisateur qui garde accès à son contenu, quelles que soient les conditions.
 
-## Pourquoi choisir une PWA plutôt qu'une application native ? 🤔
+# 3. Le SEO et le partage : un levier de croissance 🌍
 
-Voici quelques raisons majeures qui m'ont convaincu de privilégier les PWA dans mes projets :
+Contrairement à une app native qui reste invisible aux moteurs de recherche, une PWA est **indexée par Google** et peut apparaître dans les résultats de recherche.
+C’est une énorme différence : une offre, un service ou un contenu devient accessible **via une simple URL**.
 
-- **Facilité d'accès** : Pas besoin de passer par les stores (Apple App Store, Google Play), l'utilisateur peut installer la PWA directement depuis le navigateur.
-- **Maintenance simplifiée** : Une seule base de code pour toutes les plateformes (web, mobile, desktop), ce qui réduit le temps de développement et de maintenance.
-- **Mises à jour instantanées** : Les mises à jour sont transparentes pour l'utilisateur sans nécessiter de téléchargement manuel.
-- **Performance améliorée** : Grâce au caching intelligent via Service Workers, les PWA se chargent rapidement et fonctionnent même en mode hors ligne.
-- **Coût réduit** : Développement et déploiement plus économiques par rapport aux applications natives qui demandent des versions spécifiques.
-
-## Comment créer une PWA ? Le guide pratique 👨‍💻
-
-1. **Configurer un Web App Manifest**
-
-Créez un fichier `manifest.json` pour définir les icônes, le nom de l’application, la couleur du thème, etc.
-
-```json
-{
-  "name": "Mon Super PWA",
-  "short_name": "SuperPWA",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#317EFB",
-  "icons": [
-    {
-      "src": "/icons/icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/icons/icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
-}
-```
-
-2. **Installer un Service Worker**
-
-Enregistrez un service worker dans votre application pour gérer le cache et la disponibilité hors ligne :
-
-```js
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js').then(registration => {
-      console.log('Service Worker enregistré avec le scope:', registration.scope);
-    }).catch(error => {
-      console.error('Échec de l\'enregistrement du Service Worker:', error);
-    });
-  });
-}
-```
-
-3. **Gérer le cache dans le Service Worker**
-
-Exemple simple d'un service worker pour mettre en cache les ressources essentielles :
-
-```js
-const CACHE_NAME = 'mon-pwa-cache-v1';
-const urlsToCache = [
-  '/',
-  '/index.html',
-  '/css/styles.css',
-  '/js/app.js'
-];
-
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(urlsToCache))
-  );
-});
-
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => response || fetch(event.request))
-  );
-});
-```
-
-4. **Rendre l'application responsive et rapide**
-
-Utilisez des frameworks modernes comme [React](https://reactjs.org/) ou [Next.js](https://nextjs.org/) pour construire l’interface utilisateur. N'oubliez pas d'optimiser les images, la performance et le SEO pour un meilleur engagement.
-
----
-
-Vous pouvez aussi générer facilement une PWA si vous utilisez Next.js, grâce au plugin [next-pwa](https://github.com/shadowwalker/next-pwa), qui facilite la configuration d'un service worker et la gestion du cache.
-
-## Quelques ressources utiles pour aller plus loin 📚
-
-- [Introducing Progressive Web Apps (Google Developers)](https://web.dev/progressive-web-apps/)
-- [Service Workers: an Introduction (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
-- [Web App Manifest (MDN)](https://developer.mozilla.org/en-US/docs/Web/Manifest)
-- [Next.js with PWA Example](https://github.com/vercel/next.js/tree/canary/examples/progressive-web-app)
+Cela change aussi la manière dont on partage : au lieu d’envoyer “télécharge l’app sur tel store”, on envoie juste un lien cliquable. Rapide, fluide, universel.
 
 <ArialInArticle />
 
-## Conclusion ⚡
+# 4. Une seule base de code : économie et rapidité ⚡
 
-Les Progressive Web Apps représentent une véritable opportunité pour les développeurs web souhaitant offrir une expérience utilisateur fluide, rapide et accessible sans les contraintes des stores d'applications mobiles. Depuis qu'elles gagnent en maturité, je les considère comme un excellent choix pour de nombreux projets, surtout lorsque l'accessibilité et la rapidité sont des critères clés.
+Le développement mobile multiplateforme est déjà bien servi par React Native ou Flutter. Avec une PWA, on va encore plus loin : **le même codebase peut tourner sur le web, Android et iOS**.
 
-Si vous souhaitez approfondir la thématique du développement web, n'hésitez pas à consulter mon article sur [l'introduction à Temporal, un moteur de workflows robuste pour vos applications](https://william-donnette.dev/blog/introduction-temporal).
+Dans mon cas, avec Expo et React Native Web, j’ai pu mutualiser une grande partie de mes composants. Résultat : moins de coûts de maintenance, un **time-to-market** plus rapide et des mises à jour continues déployées instantanément côté web.
+
+# 5. PWA et natif : une stratégie complémentaire 🧩
+
+La question n’est pas de remplacer le natif par la PWA, mais de les combiner intelligemment.
+
+-   **Le natif** reste idéal pour accéder au matériel (capteurs, Bluetooth, NFC) et pour les fonctionnalités les plus avancées.
+-   **La PWA** brille pour l’accessibilité, le SEO et les usages rapides.
+
+Cette complémentarité ouvre la porte à des **stratégies hybrides** : attirer via le web, fidéliser via l’app native, tout en conservant une cohérence d’expérience.
+
+# 6. Pour qui les PWA sont-elles pertinentes ? 🎯
+
+Les PWA ne sont pas une baguette magique, mais elles répondent particulièrement bien à certains besoins :
+
+-   Les startups cherchant à **valider un marché** rapidement.
+-   Les plateformes qui veulent toucher un public **le plus large possible** sans se limiter aux stores.
+-   Les services nécessitant un **accès rapide et léger**, par exemple dans l’événementiel, la réservation ou la consultation d’informations.
+
+👉 C’est exactement ce que j’ai cherché avec Sport’Up : toucher les utilisateurs là où ils se trouvent, sans les forcer à franchir des étapes supplémentaires.
+
+# Conclusion : la PWA, une option stratégique 🚀
+
+Les Progressive Web Apps ne sont plus un gadget technique : elles s’imposent comme une **brique incontournable** dans la boîte à outils des développeurs.
+Elles ne remplacent pas les applications natives, mais elles les **complètent** et ouvrent des perspectives nouvelles en matière d’accessibilité, de SEO et d’expérience utilisateur.
+
+Si vous hésitez encore entre web, mobile ou hybride, je vous conseille de tester une PWA. C’est une façon simple et rapide de mesurer l’intérêt de vos utilisateurs, tout en gardant la possibilité d’évoluer vers le natif.
+
+👉 Pour aller plus loin côté backend et orchestration, vous pouvez découvrir mon article sur [Temporal et la gestion des workflows](/blog/introduction-temporal), un outil clé pour fiabiliser les processus derrière ce type d’applications.
 
 <ArialMultiplex />
