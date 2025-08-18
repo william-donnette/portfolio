@@ -1,0 +1,84 @@
+---
+title: 'Pourquoi j’ai choisi une PWA pour Sport’Up avec Expo'
+slug: '/pwa-sportup'
+description: 'Retour d’expérience sur le choix des Progressive Web Apps : accessibilité, installation rapide, offline, SEO… et pourquoi elles complètent parfaitement les applications natives.'
+image: /img/web.jpg
+tags: \[pwa, expo, react-native, web, mobile, développement, typescript]
+authors: \[william-donnette]
+keywords: \[Progressive Web Apps, Expo, React Native Web, offline, SEO, mobile, Sport’Up]
+date: 2025-08-18
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+import ArialMultiplex from '@site/src/components/ads/arial-multiplex';
+
+![Progressive Web Apps Guide](/img/web.jpg 'Progressive Web Apps')
+
+<HorizontalDisplay />
+
+<!--truncate-->
+
+Lorsque j’ai lancé **Sport’Up**, j’ai choisi d’aller au-delà des applications mobiles natives pour proposer aussi une **Progressive Web App (PWA)**.
+Avec le recul, ce choix ne concernait pas uniquement mon projet : il illustre une tendance de fond dans le développement web moderne. Les PWA apportent un **équilibre intéressant** entre l’accessibilité du web et la richesse des apps natives.
+
+Dans cet article, je reviens sur les **principaux bénéfices** d’une PWA, pourquoi elles s’imposent comme une alternative sérieuse aux autres technologies, et comment elles transforment l’expérience utilisateur.
+
+# 1. L’installation simplifiée : l’app sans store 📲
+
+Les **app stores** restent incontournables, mais ils introduisent de la friction : validation, téléchargement, mises à jour obligatoires…
+Une PWA contourne tout cela : un simple bouton “Ajouter à l’écran d’accueil” et l’utilisateur a une icône prête à l’emploi, avec une interface plein écran comme une vraie application.
+
+C’est particulièrement puissant dans les cas où l’on cherche à convaincre rapidement un nouvel utilisateur d’essayer son service. Moins de clics = plus de chances d’adoption.
+
+# 2. L’expérience offline : un vrai plus en mobilité 🚉
+
+Le monde n’est pas 100 % connecté, et c’est encore plus vrai quand on pense aux transports, aux zones rurales ou simplement aux bâtiments mal couverts.
+Grâce aux **service workers** et au cache, une PWA peut fonctionner **même sans connexion** : afficher les dernières données consultées, permettre une navigation de base, voire synchroniser les actions dès que le réseau revient.
+
+Cette résilience apporte un confort proche du natif et rassure l’utilisateur qui garde accès à son contenu, quelles que soient les conditions.
+
+# 3. Le SEO et le partage : un levier de croissance 🌍
+
+Contrairement à une app native qui reste invisible aux moteurs de recherche, une PWA est **indexée par Google** et peut apparaître dans les résultats de recherche.
+C’est une énorme différence : une offre, un service ou un contenu devient accessible **via une simple URL**.
+
+Cela change aussi la manière dont on partage : au lieu d’envoyer “télécharge l’app sur tel store”, on envoie juste un lien cliquable. Rapide, fluide, universel.
+
+<ArialInArticle />
+
+# 4. Une seule base de code : économie et rapidité ⚡
+
+Le développement mobile multiplateforme est déjà bien servi par React Native ou Flutter. Avec une PWA, on va encore plus loin : **le même codebase peut tourner sur le web, Android et iOS**.
+
+Dans mon cas, avec Expo et React Native Web, j’ai pu mutualiser une grande partie de mes composants. Résultat : moins de coûts de maintenance, un **time-to-market** plus rapide et des mises à jour continues déployées instantanément côté web.
+
+# 5. PWA et natif : une stratégie complémentaire 🧩
+
+La question n’est pas de remplacer le natif par la PWA, mais de les combiner intelligemment.
+
+-   **Le natif** reste idéal pour accéder au matériel (capteurs, Bluetooth, NFC) et pour les fonctionnalités les plus avancées.
+-   **La PWA** brille pour l’accessibilité, le SEO et les usages rapides.
+
+Cette complémentarité ouvre la porte à des **stratégies hybrides** : attirer via le web, fidéliser via l’app native, tout en conservant une cohérence d’expérience.
+
+# 6. Pour qui les PWA sont-elles pertinentes ? 🎯
+
+Les PWA ne sont pas une baguette magique, mais elles répondent particulièrement bien à certains besoins :
+
+-   Les startups cherchant à **valider un marché** rapidement.
+-   Les plateformes qui veulent toucher un public **le plus large possible** sans se limiter aux stores.
+-   Les services nécessitant un **accès rapide et léger**, par exemple dans l’événementiel, la réservation ou la consultation d’informations.
+
+👉 C’est exactement ce que j’ai cherché avec Sport’Up : toucher les utilisateurs là où ils se trouvent, sans les forcer à franchir des étapes supplémentaires.
+
+# Conclusion : la PWA, une option stratégique 🚀
+
+Les Progressive Web Apps ne sont plus un gadget technique : elles s’imposent comme une **brique incontournable** dans la boîte à outils des développeurs.
+Elles ne remplacent pas les applications natives, mais elles les **complètent** et ouvrent des perspectives nouvelles en matière d’accessibilité, de SEO et d’expérience utilisateur.
+
+Si vous hésitez encore entre web, mobile ou hybride, je vous conseille de tester une PWA. C’est une façon simple et rapide de mesurer l’intérêt de vos utilisateurs, tout en gardant la possibilité d’évoluer vers le natif.
+
+👉 Pour aller plus loin côté backend et orchestration, vous pouvez découvrir mon article sur [Temporal et la gestion des workflows](/blog/introduction-temporal), un outil clé pour fiabiliser les processus derrière ce type d’applications.
+
+<ArialMultiplex />
