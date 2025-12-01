@@ -1,11 +1,11 @@
-include:
-    - 'templates/.register.yml'
-    - 'templates/.deploy.yml'
+# include:
+#     - 'templates/.register.yml'
+#     - 'templates/.deploy.yml'
 
 stages:
     - generate
-    - register
-    - deploy
+    # - register
+    # - deploy
 
 variables:
     ACTION:
@@ -16,7 +16,6 @@ variables:
             - 'generate-article'
     TOPIC:
         description: 'Idée de thème à aborder'
-
         value: ''
 
 generate-article:

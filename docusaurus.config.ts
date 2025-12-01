@@ -53,7 +53,7 @@ const config: Config = {
 
 	themeConfig: {
 		// Replace with your project's social card
-		image: 'img/profile.webp',
+		image: 'img/P1355187.jpg',
 		navbar: {
 			title: 'William Donnette',
 			logo: {
