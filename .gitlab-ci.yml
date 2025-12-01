@@ -1,10 +1,10 @@
-# include:
-#     - 'templates/.register.yml'
+include:
+    - 'templates/.register.yml'
 #     - 'templates/.deploy.yml'
 
 stages:
     - generate
-    # - register
+    - register
     # - deploy
 
 variables:
