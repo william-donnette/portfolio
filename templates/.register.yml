@@ -6,10 +6,10 @@
 
 # Register la dernière image de main
 image:latest:register:
-    image: docker:18.09.7-dind
+    image: docker:27-dind
     stage: register
     services:
-        - docker:18.09.7-dind
+        - docker:27-dind
     variables:
         ENVIRONMENT: 'production'
         VERSION: $CI_COMMIT_TAG
