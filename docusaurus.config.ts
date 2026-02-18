@@ -149,7 +149,7 @@ const config: Config = {
 		},
 		algolia: {
 			appId: 'ZV7NSE3BF9',
-			apiKey: '72cbda1599ca44ddbd1b62735d0b54c5',
+			apiKey: process.env.ALGOLIA_SEARCH_API_KEY || '72cbda1599ca44ddbd1b62735d0b54c5',
 			indexName: 'portfolio_search',
 		},
 		matomo: {
@@ -165,6 +165,14 @@ const config: Config = {
 			attributes: {
 				name: 'google-adsense-account',
 				content: 'ca-pub-7732822326275292',
+			},
+		},
+		{
+			tagName: 'meta',
+			attributes: {
+				'http-equiv': 'Content-Security-Policy',
+				content:
+					"default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://www.googletagmanager.com https://analytics.homkizz.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https://ZV7NSE3BF9-dsn.algolia.net https://analytics.homkizz.com; frame-ancestors 'none';",
 			},
 		},
 	],

@@ -158,6 +158,7 @@ async function main() {
 		'Ne jamais mentionner que le texte a été généré automatiquement.',
 		'Ne pas encapsuler le contenu global dans une balise MDX.',
 		"Ne pas surjouer les liens avec le parcours : s'ils sont naturels, ils doivent être subtilement intégrés.",
+		'Ne jamais inclure de balises <script> ou de code JavaScript exécutable dans le contenu.',
 		'Ne vends pas à suivre les réseauc sociaux',
 		"Essaye de pousser l'utilisateur à aller sur un autre article de https://william-donnette.dev/blog",
 		"Mets l'article à la date du jour",
@@ -181,7 +182,11 @@ async function main() {
 		{role: 'user', content: prompt.replace('{{TOPIC}}', topic)},
 	];
 
-	const {slug, content} = await generateArticle(messages);
+	let {slug, content} = await generateArticle(messages);
+
+	// Sécurisation : Supprimer les balises <script> potentielles (protection contre l'injection de prompt / XSS)
+	content = content.replace(/<script\b[^>]*>([\s\S]*?)<\/script>/gim, '');
+
 	const date = new Date().toISOString().split('T')[0];
 	const articleName = `${date}-${normalizeString(slug)}`;
 	saveArticleToFile(articleName, content);
