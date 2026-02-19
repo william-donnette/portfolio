@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import type * as Preset from '@docusaurus/preset-classic';
 import type {Config} from '@docusaurus/types';
 import tailwindPlugin from './plugins/tailwind-config.cjs';
@@ -149,7 +150,7 @@ const config: Config = {
 		},
 		algolia: {
 			appId: 'ZV7NSE3BF9',
-			apiKey: '72cbda1599ca44ddbd1b62735d0b54c5',
+			apiKey: process.env.ALGOLIA_SEARCH_API_KEY!,
 			indexName: 'portfolio_search',
 		},
 		matomo: {
@@ -165,6 +166,14 @@ const config: Config = {
 			attributes: {
 				name: 'google-adsense-account',
 				content: 'ca-pub-7732822326275292',
+			},
+		},
+		{
+			tagName: 'meta',
+			attributes: {
+				'http-equiv': 'Content-Security-Policy',
+				content:
+					"default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://pagead2.googlesyndication.com https://www.googletagmanager.com https://analytics.homkizz.com; connect-src 'self' https://*.algolia.net https://*.algolianet.com https://analytics.homkizz.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src 'self' https://googleads.g.doubleclick.net; object-src 'none'; upgrade-insecure-requests;",
 			},
 		},
 	],
