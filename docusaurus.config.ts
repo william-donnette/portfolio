@@ -2,6 +2,13 @@ import type * as Preset from '@docusaurus/preset-classic';
 import type {Config} from '@docusaurus/types';
 import tailwindPlugin from './plugins/tailwind-config.cjs';
 
+const isProd = process.env.NODE_ENV === 'production';
+const algoliaApiKey = process.env.ALGOLIA_SEARCH_API_KEY;
+
+if (isProd && !algoliaApiKey) {
+	throw new Error('ALGOLIA_SEARCH_API_KEY is required for production build');
+}
+
 const config: Config = {
 	title: 'William Donnette',
 	tagline: "Développeur Full Stack, Ingénieur en Système d'Information, Passionné par la conception et le développement d'applications.",
@@ -149,7 +156,7 @@ const config: Config = {
 		},
 		algolia: {
 			appId: 'ZV7NSE3BF9',
-			apiKey: '72cbda1599ca44ddbd1b62735d0b54c5',
+			apiKey: algoliaApiKey,
 			indexName: 'portfolio_search',
 		},
 		matomo: {
