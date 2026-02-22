@@ -17,9 +17,13 @@ interface ButtonProps extends PropsWithChildren, HTMLProps<HTMLAnchorElement> {
 }
 
 const Button: FunctionComponent<ButtonProps> = ({children, className, variant, proportion = 'medium', ...props}) => {
+	const isExternal = props.target === '_blank';
+	const rel = isExternal ? (props.rel ? `${props.rel} noopener noreferrer` : 'noopener noreferrer') : props.rel;
+
 	return (
 		<a
 			{...props}
+			rel={rel}
 			className={classNames(
 				'inline-flex items-center rounded-lg cursor-pointer',
 				variantStyles[variant],
