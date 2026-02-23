@@ -1,0 +1,62 @@
+---
+title: "Sécurité Web : Les 5 réflexes à adopter dès le premier commit 🛡️"
+slug: '/securite-web-reflexes-essentiels'
+description: "Découvrez les bases de la sécurité web pour protéger vos applications et vos utilisateurs dès le début du développement."
+image: /img/web.jpg
+tags: [security, webdev, cybersecurity, best-practices, javascript, typescript]
+authors: [william-donnette]
+keywords: [Sécurité Web, Cybersécurité, Bonnes Pratiques, Développement Web, OWASP]
+date: 2026-02-23
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+import ArialMultiplex from '@site/src/components/ads/arial-multiplex';
+
+![Sécurité Web](/img/web.jpg 'Sécurité Web')
+
+<HorizontalDisplay />
+
+<!--truncate-->
+
+On a tous connu ce moment de sueur froide : celui où l'on réalise qu'une clé API sensible a été poussée par erreur sur un dépôt public. Dans mon parcours de développeur fullstack, j'ai appris que la sécurité n'est pas une option qu'on ajoute à la fin du projet, mais une fondation sur laquelle on construit chaque brique.
+
+Aujourd'hui, je vous partage 5 réflexes essentiels pour blinder vos applications dès le début.
+
+# 1. Jamais de secrets en clair ! 🔑
+
+C'est la base, et pourtant... On ne compte plus les fuites de données dues à un fichier `.env` malencontreusement committé. Mon conseil ? Utilisez systématiquement un fichier `.gitignore` robuste et des outils comme **git-secrets** ou **Talisman** pour empêcher tout commit contenant des motifs suspects (clés AWS, tokens, etc.).
+
+Pour vos déploiements, privilégiez les gestionnaires de secrets comme **HashiCorp Vault** ou les solutions intégrées à vos plateformes de CI/CD.
+
+# 2. Valider, c'est protéger 🛡️
+
+"Never trust user input". C'est le mantra de tout développeur soucieux de sécurité. Qu'il s'agisse d'un formulaire de contact ou d'une API REST, chaque donnée entrante doit être validée et assainie.
+
+En utilisant TypeScript et des librairies comme **Zod** ou **Joi**, vous pouvez définir des schémas de validation stricts qui bloquent les tentatives d'injection SQL ou XSS avant même qu'elles n'atteignent votre logique métier.
+
+# 3. Le principe du moindre privilège 🗝️
+
+Pourquoi donner des droits d'administrateur à un service qui ne fait que lire des données ? En limitant les accès de chaque composant de votre infrastructure au strict nécessaire, vous réduisez considérablement l'impact d'une éventuelle faille.
+
+C'est particulièrement vrai quand on travaille avec **Docker** ou sur des architectures Cloud. Une base de données ne devrait être accessible que par le service qui en a besoin, et rien d'autre.
+
+<ArialInArticle />
+
+# 4. Dépendances : surveillez vos arrières 📦
+
+On importe souvent des milliers de lignes de code via `npm` ou `yarn` sans sourciller. Mais une dépendance compromise peut devenir un cheval de Troie dans votre application.
+
+Prenez l'habitude de lancer un `npm audit` régulièrement et intégrez des outils comme **Snyk** ou **Dependabot** dans votre workflow pour être alerté dès qu'une vulnérabilité est découverte dans l'une de vos bibliothèques.
+
+# 5. HTTPS partout, tout le temps 🔒
+
+En 2026, il n'y a plus d'excuse pour ne pas utiliser le HTTPS. Grâce à **Let's Encrypt**, sécuriser les échanges entre vos utilisateurs et vos serveurs est devenu gratuit et automatisable. Le HTTPS ne protège pas seulement les données, il renforce aussi la confiance de vos visiteurs et améliore votre référencement SEO.
+
+# Conclusion : La sécurité est un voyage, pas une destination 🚀
+
+La cybersécurité est un domaine en constante évolution. Ces 5 réflexes ne sont que le début, mais ils posent des bases solides pour vos projets. Rappelez-vous : il vaut mieux passer 10 minutes à sécuriser son code aujourd'hui que 10 jours à gérer une crise demain.
+
+Si vous avez aimé ce sujet, jetez un œil à mes autres chroniques sur https://william-donnette.dev/blog. Et pour aller plus loin dans l'optimisation de vos projets, découvrez mon article sur [Tailwind CSS : l'outil indispensable](/blog/tailwind-css-outil-indispensable).
+
+<ArialMultiplex />
