@@ -1,0 +1,52 @@
+---
+title: "Le Coffre-Fort est Percé : Pourquoi votre mot de passe ne suffit plus en 2026"
+slug: '/cybersecurite-best-practices-2026'
+description: "En 2026, la cybersécurité n'est plus une option mais une nécessité. Découvrez les meilleures pratiques pour protéger vos données et celles de vos utilisateurs."
+image: /img/web.jpg
+tags: [cybersécurité, sécurité, data, best-practices]
+authors: [william-donnette]
+keywords: [cybersécurité, sécurité web, protection des données, mfa, passkeys]
+date: 2026-02-17
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+
+![Cybersecurity](/img/web.jpg 'Cybersecurity')
+
+Ce matin, en ouvrant ma console, j'ai eu cette petite décharge d'adrénaline que tout dev connaît : une tentative d'intrusion massive sur l'un de mes serveurs de test. Rien de grave, tout était sous contrôle, mais ça m'a fait réfléchir. En 2026, on ne peut plus se contenter de "123456" ou du nom de son chat suivi d'un point d'exclamation.
+
+La réalité, c'est que la frontière entre notre vie numérique et notre sécurité réelle est devenue poreuse. On ne parle plus seulement de protéger ses mails, mais l'intégralité de son identité numérique, de ses finances à ses projets les plus confidentiels.
+
+<!--truncate-->
+
+<HorizontalDisplay />
+
+### L'ère des Passkeys : Dire adieu au clavier 🔑
+
+On nous a répété pendant des années de changer nos mots de passe tous les trois mois. Résultat ? On finit par les oublier ou, pire, par utiliser le même partout. Les **Passkeys** sont enfin arrivés à maturité. En utilisant la biométrie ou un appareil de confiance, on élimine d'un coup le phishing traditionnel.
+
+C'est une révolution que j'intègre désormais par défaut dans tous mes nouveaux projets. Plus de base de données de hash de mots de passe à gérer (et à se faire voler), juste une clé cryptographique unique. Un gain de sécurité massif, et une expérience utilisateur enfin fluide.
+
+### La gestion des secrets : le tendon d'Achille des devs 🏗️
+
+Si vous êtes dev, vous le savez : une variable d'environnement mal protégée dans un repo public, et c'est le drame en moins de 30 secondes. Les bots scannent GitHub en permanence.
+
+C'est pour ça que j'insiste toujours sur l'utilisation de gestionnaires de secrets comme **HashiCorp Vault** ou les solutions natives des cloud providers. Ne jamais, au grand jamais, stocker une clé d'API en clair. C'est la base, mais c'est encore l'erreur numéro un que je croise lors de mes audits.
+
+<ArialInArticle />
+
+### L'humain, maillon fort ou maillon faible ? 🧠
+
+On peut avoir la meilleure infrastructure du monde, si on clique sur un lien douteux dans un SMS "Urgent", le château de cartes s'écroule. La cybersécurité, c'est avant tout une question de culture et de réflexes.
+
+Voici mes 3 règles d'or pour 2026 :
+- **Double authentification (MFA)** systématique sur CHAQUE service. 🚩
+- **Zéro confiance (Zero Trust)** : même au sein de votre réseau local, identifiez-vous. 🚩
+- **Mises à jour automatiques** : une faille non corrigée est une porte ouverte. 🚩
+
+### En conclusion : rester en mouvement 🚀
+
+La sécurité n'est pas un état, c'est un processus. Les menaces évoluent, nos outils aussi. Ne subissez pas le changement, anticipez-le. Votre futur "moi" vous remerciera d'avoir pris ces 5 minutes pour sécuriser vos accès aujourd'hui.
+
+Si vous avez aimé ce sujet, jetez un œil à mes autres chroniques sur https://william-donnette.dev/blog
