@@ -158,7 +158,7 @@ async function main() {
 		'Ne jamais mentionner que le texte a été généré automatiquement.',
 		'Ne pas encapsuler le contenu global dans une balise MDX.',
 		"Ne pas surjouer les liens avec le parcours : s'ils sont naturels, ils doivent être subtilement intégrés.",
-		'Ne vends pas à suivre les réseauc sociaux',
+		'Ne vends pas à suivre les réseaux sociaux',
 		"Essaye de pousser l'utilisateur à aller sur un autre article de https://william-donnette.dev/blog",
 		"Mets l'article à la date du jour",
 	];
