@@ -149,7 +149,7 @@ const config: Config = {
 		},
 		algolia: {
 			appId: 'ZV7NSE3BF9',
-			apiKey: '72cbda1599ca44ddbd1b62735d0b54c5',
+			apiKey: process.env.ALGOLIA_SEARCH_API_KEY ?? 'placeholder-for-search-api-key',
 			indexName: 'portfolio_search',
 		},
 		matomo: {
