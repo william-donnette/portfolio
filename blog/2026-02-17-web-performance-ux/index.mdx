@@ -1,0 +1,49 @@
+---
+title: "Performance Web : Pourquoi chaque milliseconde est un combat ⚡"
+slug: web-performance-ux-milliseconde-combat
+description: "Découvrez pourquoi la performance web n'est pas qu'une affaire de chiffres, mais une question d'expérience utilisateur et de conversion."
+image: /img/web.jpg
+tags: [web, performance, ux, lighthouse, core-web-vitals]
+authors: [william-donnette]
+keywords: [performance web, UX, temps de chargement, Core Web Vitals, optimisation]
+date: 2026-02-17
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+
+Vous est-il déjà arrivé de quitter un site avant même qu'il ne s'affiche ? Moi, oui. Souvent. En tant que développeur, je sais que derrière chaque page qui s'ouvre instantanément se cache une bataille acharnée contre la latence.
+
+Aujourd'hui, je vous emmène dans les coulisses de cette quête de vitesse. Car la performance web n'est pas qu'une affaire de "score Lighthouse" tout vert ; c'est le premier pilier d'une expérience utilisateur réussie. 🏎️
+
+<!--truncate-->
+
+<HorizontalDisplay />
+
+## L'impact psychologique de l'attente 🧠
+
+Imaginez : vous cliquez sur un lien. Une seconde passe. Rien. Deux secondes. Vous commencez à douter. À trois secondes, votre cerveau a déjà commencé à chercher le bouton "retour". C'est cruel, mais c'est la réalité du Web en 2026.
+
+Chaque milliseconde gagnée, c'est un utilisateur qui reste, un panier qui se valide, un lecteur qui termine son article. J'ai vu des projets voir leur taux de conversion bondir simplement en optimisant le chargement de leurs images ou en retardant l'exécution de scripts tiers non essentiels.
+
+## Mesurer pour mieux régner 📊
+
+On ne peut pas améliorer ce qu'on ne mesure pas. C'est là que les **Core Web Vitals** entrent en scène. Ils sont devenus mes meilleurs alliés :
+
+*   **LCP (Largest Contentful Paint)** : Le temps que met l'élément principal à apparaître. 🖼️
+*   **FID (First Input Delay)** : La réactivité du site au premier clic. 🖱️
+*   **CLS (Cumulative Layout Shift)** : Ce moment agaçant où le texte bouge tout seul pendant le chargement. 🏗️
+
+<ArialInArticle />
+
+## Mes astuces de terrain 🛠️
+
+Pour moi, optimiser c'est avant tout faire preuve de bon sens technique :
+
+1.  **Prioriser le critique** : Charger d'abord ce que l'utilisateur voit immédiatement.
+2.  **Alléger les assets** : Le WebP et l'AVIF ne sont plus des options, ce sont des nécessités.
+3.  **Nettoyer le JS** : On évite les bibliothèques de 500kb pour une simple animation.
+
+La performance est un marathon, pas un sprint. C'est un travail constant de veille et d'ajustement. Mais quel plaisir de voir une application répondre au doigt et à l'œil !
+
+Si vous avez aimé ce sujet, jetez un œil à mes autres chroniques sur https://william-donnette.dev/blog
