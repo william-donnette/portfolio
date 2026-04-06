@@ -1,0 +1,57 @@
+---
+title: "Web Performance : Pourquoi chaque milliseconde compte pour vos utilisateurs ⚡"
+slug: '/performance-web-ux'
+description: "La vitesse n'est pas qu'un luxe, c'est le socle de l'expérience utilisateur. Découvrez comment j'optimise mes projets pour un web plus rapide."
+image: /img/web.jpg
+tags: [performance, ux, webdev, lighthouse, web-vitals, frontend]
+authors: [william-donnette]
+keywords: [Web Performance, UX, User Experience, Core Web Vitals, Lighthouse, Optimisation Web]
+date: 2026-02-17
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+
+![Web Performance](/img/web.jpg 'Web Performance')
+
+<HorizontalDisplay />
+
+Imaginez : vous attendez que cette page se charge. Une seconde... deux secondes... trois secondes. À quatre, vous avez déjà cliqué sur le bouton "retour". Je l'ai vécu des centaines de fois, et vos utilisateurs aussi.
+
+Dans mon quotidien de développeur, j'ai compris une vérité brutale : un site magnifique qui met 10 secondes à s'afficher est un site mort. La performance n'est pas une simple "feature" technique, c'est le cœur battant de l'expérience utilisateur (UX).
+
+<!--truncate-->
+
+# Le coût caché de la lenteur 💸
+
+On pense souvent que quelques millisecondes de plus ne changent rien. Détrompez-vous. Les géants du web l'ont prouvé : une augmentation du temps de chargement de 100ms peut faire chuter le taux de conversion de 7%.
+
+Quand je travaille sur une application, je ne regarde pas seulement si le code est propre. Je me demande : "Est-ce que l'utilisateur se sent aux commandes, ou subit-il l'attente ?". Une interface fluide, c'est un lien de confiance que l'on tisse avec celui qui est derrière l'écran.
+
+# Mesurer pour mieux régner 📏
+
+Pour améliorer quelque chose, il faut d'abord pouvoir le mesurer. C'est là qu'entrent en scène les **Core Web Vitals** de Google.
+
+- **LCP (Largest Contentful Paint) :** Le temps pour afficher le contenu principal.
+- **FID (First Input Delay) :** La réactivité de la page lors du premier clic.
+- **CLS (Cumulative Layout Shift) :** Est-ce que les éléments sautent pendant le chargement ?
+
+J'utilise systématiquement **Lighthouse** et **PageSpeed Insights** pour traquer ces indicateurs. C'est mon radar de grand reporter : il me dit où se cachent les goulots d'étranglement avant même que les utilisateurs ne les sentent.
+
+<ArialInArticle />
+
+# Les réflexes qui font la différence 🚀
+
+Comment gagner cette course contre la montre ? Voici mes leviers préférés :
+
+- **L'optimisation des images :** C'est souvent le coupable numéro un. Utiliser du format WebP ou AVIF peut réduire le poids de vos visuels de 80% sans perte de qualité visible.
+- **Le Lazy Loading :** Ne charger que ce qui est visible. Pourquoi charger le footer alors que l'utilisateur n'a même pas fini de lire le titre ? 🚩
+- **Le Code Splitting :** Envoyer uniquement le JavaScript nécessaire pour la page en cours. Un bundle de 2Mo est une barrière infranchissable pour une connexion mobile moyenne.
+
+# Conclusion : Plus qu'une question de vitesse 🏁
+
+Au final, optimiser la performance, c'est respecter le temps de vos utilisateurs. C'est rendre le web accessible à tous, même à ceux qui n'ont pas la fibre ou le dernier iPhone.
+
+Un web rapide est un web inclusif, efficace et, avouons-le, beaucoup plus agréable à parcourir.
+
+Si vous avez aimé ce sujet, jetez un œil à mes autres chroniques sur https://william-donnette.dev/blog
