@@ -37,6 +37,9 @@ const MainHero: FunctionComponent<MainHeroProps> = () => {
 					src={siteConfig.themeConfig.image as string}
 					alt={`Photo de ${siteConfig.title}`}
 					className="rounded-full w-40 h-40 lg:w-80 lg:h-80 object-cover mx-auto shadow-lg"
+					fetchPriority="high"
+					width="320"
+					height="320"
 				/>
 			</div>
 			{/* </div> */}
