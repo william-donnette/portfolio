@@ -1,0 +1,4 @@
+## 2025-05-22 - Command Injection in GitLab CI Pipeline
+**Vulnerability:** Shell variables `$TOPIC`, `$BRANCH_NAME`, and `$OPENAI_API_KEY` were used without quotes in the `.gitlab-ci.yml` script. This allowed for command injection if these variables (especially `$TOPIC` which can be user-supplied) contained shell metacharacters like `;`, `&`, or `|`.
+**Learning:** CI/CD pipelines often execute shell scripts where environment variables or job inputs are directly interpolated. Without proper quoting, these inputs can be manipulated to execute arbitrary commands in the CI runner environment.
+**Prevention:** Always double-quote shell variables in CI/CD scripts (e.g., `"$VARIABLE"`) to ensure they are treated as a single argument and to prevent the shell from interpreting any metacharacters they might contain.
