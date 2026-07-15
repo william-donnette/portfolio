@@ -1,0 +1,3 @@
+## 2025-07-15 - [Image Optimization Patterns]
+**Learning:** To optimize for Core Web Vitals (LCP and CLS), always provide intrinsic `width` and `height` attributes to `<img>` tags, even when their size is controlled by CSS (like Tailwind's `h-40`). This allows the browser to calculate the aspect ratio and reserve space, preventing layout shifts. Additionally, use `fetchPriority="high"` for above-the-fold images to improve LCP; in React, this may require a `// @ts-ignore` comment if the attribute isn't in the type definitions yet.
+**Action:** Always apply `width`, `height`, and appropriate `loading` or `fetchPriority` attributes to all images based on their position relative to the fold.
