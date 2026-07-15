@@ -60,6 +60,8 @@ const config: Config = {
 				alt: 'Logo de William Donnette',
 				src: 'img/logo.webp',
 				className: 'rounded-lg',
+				width: 500,
+				height: 500,
 			},
 			items: [
 				{to: '/docs/intro', label: 'Curriculum Vitae', position: 'left'},
