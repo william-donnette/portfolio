@@ -1,0 +1,55 @@
+---
+title: "Chasse aux millisecondes : Pourquoi la vitesse web est le nouveau contrat de confiance UX"
+slug: '/chasse-aux-millisecondes-web-performance-ux'
+description: "Chaque milliseconde de chargement perdue fait fuir vos utilisateurs. Découvrez mes stratégies concrètes pour allier vitesse fulgurante et expérience utilisateur irréprochable."
+image: /img/web.jpg
+tags: [webdev, performance, ux, frontend, react, web]
+authors: [william-donnette]
+keywords: [Web Performance, UX, Core Web Vitals, Optimization, Frontend, React, Temps de chargement]
+date: 2026-02-17
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+
+<img src="/img/web.jpg" alt="Performance Web et UX" width="3840" height="2160" className="w-full h-auto rounded-lg mb-6" />
+
+<HorizontalDisplay />
+
+Il y a quelques semaines, alors que j'analysais les métriques de fréquentation d'une application web grand public, un chiffre m'a sauté aux yeux : un délai de chargement supplémentaire de seulement 400 millisecondes entraînait une baisse d'engagement de près de 15 %. Une vraie saignée silencieuse pour l'expérience utilisateur.
+
+Dans un monde où l'attention est devenue la ressource la plus rare, la vitesse n'est plus une simple option technique ou un bonus de confort. C'est le fondement même de la confiance entre une interface et son utilisateur, le premier marqueur de qualité perçue.
+
+<!--truncate-->
+
+## 🚩 Le piège de l'obésité digitale
+
+Au fil des années et des évolutions technologiques, nos applications web sont devenues d'une richesse incroyable. Composants interactifs, animations fluides, typographies sur mesure, scripts d'analyse... mais cette profusion a un coût lourd si elle n'est pas maîtrisée.
+
+* 🚩 **Des bundles JavaScript hypertrophiés** qui étouffent le processeur des smartphones modeste.
+* 🚩 **Des images en haute résolution non optimisées** qui saturent la bande passante sur le réseau mobile.
+* 🚩 **Un saut de mise en page (CLS)** intempestif qui agace l'utilisateur au moment où il s'apprête à cliquer.
+
+Lorsque je conçois des projets comme **Sport’Up** ou lors de mes missions chez **A3CDigital**, mon obsession est d'éradiquer ces frictions avant même qu'elles n'atteignent la production.
+
+## ⚡ Mes leviers d'action pour une vitesse fulgurante
+
+Pour faire sauter les verrous de la lenteur, l'approche doit être holistique et méthodique. Voici les piliers sur lesquels je m'appuie systématiquement pour garantir un temps d'affichage minimal :
+
+1. **La budgétisation des assets :** Fixer une limite stricte sur la taille des scripts transmis au navigateur dès le départ.
+2. **Le Lazy Loading ciblé :** Charger uniquement ce qui est immédiatement visible au-dessus de la ligne de flottaison (above the fold) et différer le reste.
+3. **L'optimisation stricte des images :** Adapter la résolution, utiliser des formats modernes (WebP/AVIF) et expliciter systématiquement les dimensions pour bannir le Cumulative Layout Shift.
+
+<ArialInArticle />
+
+## 🎯 L'UX perçue : Quand la psychologie rencontre le code
+
+La performance technique brute (le temps mesuré par un outil) ne fait pas tout. Ce qui compte au final, c'est l'expérience ressentie par la personne derrière son écran.
+
+En intégrant des **skeletons screens** élégants à la place de roues de chargement anxieuses, ou en anticipant les interactions utilisateur grâce au prefetching intelligent, on transforme une attente passive en une navigation fluide et vivante.
+
+## 🚀 Le mot de la fin
+
+Optimiser la performance web et l'UX n'est pas un projet ponctuel qu'on coche sur une checklist avant un lancement, mais une discipline continue. Chaque gain de 100 ms est une victoire directe pour l'ergonomie, le référencement et la satisfaction utilisateur.
+
+Si vous avez aimé ce sujet, jetez un œil à mes autres chroniques sur https://william-donnette.dev/blog
