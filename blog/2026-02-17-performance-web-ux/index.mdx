@@ -1,0 +1,55 @@
+---
+title: "Performance Web & UX : Pourquoi 100 millisecondes changent absolument tout"
+slug: '/performance-web-ux-100ms'
+description: "Découvrez comment l'optimisation des performances web et des Core Web Vitals façonne une expérience utilisateur d'exception et booste vos conversions."
+image: /img/web.jpg
+tags: [webdev, performance, ux, frontend, react, web-vitals]
+authors: [william-donnette]
+keywords: [Performance Web, UX, Core Web Vitals, LCP, INP, CLS, Développement Web]
+date: 2026-02-17
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+
+<img src="/img/web.jpg" alt="Performance Web & UX" width="3840" height="2160" />
+
+<HorizontalDisplay />
+
+Chaque seconde compte sur le web, mais en réalité, la bataille se joue à l'échelle de la milliseconde. Dans mon quotidien de développeur fullstack, j'ai vu d'excellents produits perdre des utilisateurs à cause d'une interface poussive ou d'un saut de page inopiné au chargement.
+
+La vitesse ne relève pas simplement du confort technique : c'est le cœur battant de l'expérience utilisateur. Lorsqu'un site répond instantanément, la friction s'efface pour laisser place à une navigation fluide et captivante.
+
+<!--truncate-->
+
+# 🚩 1. Les Core Web Vitals : La boussole de la performance moderne
+
+Google a démocratisé trois métriques clés pour évaluer l'expérience utilisateur réelle. Comprendre ces indicateurs est indispensable pour piloter ses optimisations :
+
+- **LCP (Largest Contentful Paint) :** Mesure le temps nécessaire pour afficher le contenu principal. L'objectif est de rester sous la barre des 2,5 secondes.
+- **INP (Interaction to Next Paint) :** Le successeur du FID. Il évalue la réactivité globale du site lors de chaque clic ou frappe au clavier.
+- **CLS (Cumulative Layout Shift) :** Mesure la stabilité visuelle. Fini les éléments qui bougent subitement pendant que vous essayez de cliquer !
+
+# 🚩 2. L'impact direct sur l'engagement et le business
+
+On oublie parfois qu'une baisse de performance se traduit directement par un taux de rebond en flèche.
+
+- ⏱️ **Friction invisible :** Un retard de 100 ms dans le temps de réponse peut réduire la perception de fluidité et interrompre l'attention de l'utilisateur.
+- 📈 **Conversion :** Les études le prouvent régulièrement : améliorer le chargement d'une seconde peut faire grimper les conversions de plus de 10 %.
+- 🔍 **Référencement SEO :** Un site rapide et stable bénéficie d'un meilleur positionnement sur les moteurs de recherche.
+
+<ArialInArticle />
+
+# 🚩 3. Mes leviers d'action préférés pour des sites ultra-rapides
+
+Pour obtenir des performances d'exception sans sacrifier la richesse visuelle, voici quelques réflexes que j'applique systématiquement :
+
+- **Optimisation et formats d'images modernes :** Utiliser des formats légers comme WebP ou AVIF, tout en définissant toujours les dimensions (`width` et `height`) pour supprimer le CLS.
+- **Lazy-loading intelligent :** Différer le chargement des ressources sous la ligne de flottaison afin de prioriser l'affichage des éléments critiques.
+- **Minimisation du JS exécuté :** Réduire la taille des bundles JavaScript et utiliser le code-splitting pour n'envoyer au navigateur que ce dont il a besoin.
+
+# 🚩 Conclusion : Viser l'excellence ressentie
+
+La performance web n'est pas une métrique isolée qu'on mesure une fois au lancement. C'est une discipline continue qui rapproche le code de la psychologie humaine. Offrir une expérience rapide et réactive, c'est respecter le temps de vos utilisateurs.
+
+Si vous avez aimé ce sujet, jetez un œil à mes autres chroniques sur https://william-donnette.dev/blog.
