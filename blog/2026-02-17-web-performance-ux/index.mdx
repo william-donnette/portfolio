@@ -1,0 +1,63 @@
+---
+title: "Web Performance & UX : Pourquoi chaque milliseconde compte pour vos utilisateurs ⚡"
+slug: '/web-performance-ux-guide'
+description: "Découvrez comment l'optimisation des performances web et de l'expérience utilisateur (UX) transforme la rétention et la conversion de vos applications."
+image: /img/web.jpg
+tags: [webdev, performance, ux, frontend, react, core-web-vitals]
+authors: [william-donnette]
+keywords: [Web Performance, UX, Core Web Vitals, LCP, CLS, Optimisation Web, React]
+date: 2026-02-17
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+
+<img src="/img/web.jpg" alt="Web Performance et UX" width="3840" height="2160" />
+
+<HorizontalDisplay />
+
+On sous-estime trop souvent le pouvoir dévastateur de la lenteur sur un site web. Il suffit d'une seconde de latence supplémentaire au chargement d'une page pour voir s'envoler jusqu'à 20 % de taux de conversion. Dans mon quotidien d'ingénieur fullstack, j'ai constaté à maintes reprises qu'une interface magnifiquement conçue ne sert à rien si personne n'attend son affichage.
+
+Aujourd'hui, les attentes des utilisateurs sont immédiates, fluides et sans compromis. La performance web n'est plus une simple considération technique de fin de projet : c'est le cœur même de l'expérience utilisateur (UX) et un pilier stratégique pour toute application moderne.
+
+<!--truncate-->
+
+# 1. Core Web Vitals : La boussole de l'expérience utilisateur ⏱️
+
+Quand Google a introduit les **Core Web Vitals**, la règle du jeu a changé pour les développeurs web. Ces indicateurs mesurent ce que ressent réellement un visiteur lorsqu'il navigue sur votre application.
+
+🚩 Voici les trois métriques clés à surveiller absolument :
+
+* **LCP (Largest Contentful Paint) :** Le temps nécessaire pour afficher le plus grand élément visible (souvent l'image hero ou le titre principal). Visez moins de 2,5 secondes !
+* **INP (Interaction to Next Paint) :** La réactivité aux clics et saisies utilisateur. Une interface qui freeze, c'est l'abandon garanti.
+* **CLS (Cumulative Layout Shift) :** La stabilité visuelle. Rien n'est plus frustrant qu'un bouton qui se décale au moment où l'on s'apprête à cliquer !
+
+# 2. L'art de l'optimisation des ressources 🖼️
+
+Sur la plupart des applications web, plus de 60 % du poids des pages provient des images et des scripts JavaScript. Réduire cette charge demande de la méthode et des arbitrages précis.
+
+Pour les images, l'adoption de formats modernes comme **AVIF** ou **WebP**, combinée à des attributs explicites de taille (`width` et `height`) et au chargement différé (`loading="lazy"`), permet de gagner des précieuses secondes. Côté JavaScript, le découpage du code (*code-splitting*) et le chargement à la demande évitent de bloquer le fil d'exécution principal du navigateur.
+
+<ArialInArticle />
+
+# 3. L'impact psychologique de la vitesse perçue 🧠
+
+La vitesse mesurée par un outil de profilage est une chose, mais la **vitesse perçue** par l'utilisateur en est une autre tout aussi capitale.
+
+🚩 Quelques astuces simples pour améliorer la perception de vitesse :
+
+* **Affichez des Skeleton Screens :** Plutôt qu'un écran blanc ou un spinner rotatif, montrez la structure de la page pendant le chargement.
+* **Préparez la navigation (Optimistic UI) :** Mettez à jour l'interface immédiatement avant même la réponse du serveur pour une sensation d'instantanéité.
+* **Anticipez les requêtes (Prefetching) :** Préchargez les ressources des liens que l'utilisateur est le plus susceptible de survoler.
+
+# 4. Intégrer la performance dès le premier jour 🚀
+
+Traiter la performance comme une tâche de fin de sprint est la meilleure recette pour accumuler de la dette technique. Lors de mes développements sur des projets complexes ou des applications web à fort trafic, j'applique toujours une culture du "budget de performance".
+
+Chaque composant, chaque dépendance ajoutée à `package.json` doit être évaluée en termes d'impact sur le bundle final. Des outils de CI/CD automatisés permettent aujourd'hui de bloquer toute régression de performance avant même que le code ne rejoigne la branche principale.
+
+# Conclusion : La rapidité au service de la satisfaction 💡
+
+Optimiser la performance web et l'UX, c'est respecter le temps de vos utilisateurs. En associant une architecture frontend sobre, des ressources optimisées et un design pensé pour l'instantanéité, vous offrez une expérience remarquable qui transforme de simples visiteurs en utilisateurs fidèles.
+
+Si vous avez aimé ce sujet, jetez un œil à mes autres chroniques sur https://william-donnette.dev/blog.
