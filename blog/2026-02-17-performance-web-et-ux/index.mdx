@@ -1,0 +1,58 @@
+---
+title: "La Vitesse est une Vertu : Pourquoi la performance Web dicte l'UX moderne"
+slug: '/performance-web-et-ux-priorite'
+description: "Chaque milliseconde compte : plongée au cœur de la performance web, des Core Web Vitals au temps d'attention des utilisateurs. Pourquoi l'optimisation est le vrai levier UX."
+image: /img/web.jpg
+tags: [web, performance, ux, frontend, core-web-vitals, react]
+authors: [william-donnette]
+keywords: [Performance Web, UX, Core Web Vitals, LCP, CLS, Frontend, Optimisation]
+date: 2026-02-17
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+
+<img src="/img/web.jpg" alt="Performance Web et UX" width="3840" height="2160" className="w-full rounded-lg mb-6" />
+
+On sous-estime souvent l'impact d'une demi-seconde d'attente sur un site web. Pourtant, lors de mes récents travaux d'audit et de refonte d'interfaces web, un constat s'impose avec une clarté limpide : la vitesse n'est pas un simple détail technique, c'est le fondement même de l'expérience utilisateur.
+
+Chaque milliseconde perdue à charger un script inutile ou une image trop lourde érode la confiance de vos visiteurs. Quand l'affichage vacille ou accuse du retard, l'attention s'évapore et l'engagement s'effondre avant même que le premier contenu ne soit lu.
+
+<HorizontalDisplay />
+
+<!--truncate-->
+
+## 🚩 Le piège du "ça marche chez moi"
+
+Dans le confort de nos environnements de développement connectés à la fibre et propulsés par des machines de guerre, il est facile de s'illusionner. Mais sur le terrain, vos utilisateurs naviguent sur smartphone, souvent en 4G instable ou dans les transports.
+
+C'est là que le fossé se creuse. Une application web surchargée de bundles JavaScript non optimisés peut transformer une simple consultation de page en un parcours du combattant.
+
+- **Le verdict est sans appel :** 53% des utilisateurs mobiles abandonnent un site si le chargement dépasse 3 secondes.
+- **L'impact business :** Une amélioration de 100 ms du temps de chargement peut augmenter le taux de conversion de près de 8%.
+
+## 🎯 Cibler les vraies métriques : Les Core Web Vitals
+
+Pendant longtemps, on mesurait uniquement le temps de chargement global (`DOMContentLoaded`). Aujourd'hui, grâce aux **Core Web Vitals** de Google, nous mesurons ce que l'utilisateur ressent réellement :
+
+- ⚡ **LCP (Largest Contentful Paint) :** A quelle vitesse le contenu principal s'affiche-t-il ?
+- 📐 **CLS (Cumulative Layout Shift) :** La page saute-t-elle pendant le chargement à cause d'images sans dimensions ?
+- 👆 **INP (Interaction to Next Paint) :** L'interface réagit-elle instantanément au moindre clic ?
+
+<ArialInArticle />
+
+## 🛠️ Ma feuille de route pour une UX véloce
+
+Pour transformer une application lourde en une expérience fluide et réactive, j'applique toujours quelques principes cardinaux :
+
+- 🚩 **Optimiser et dimensionner les médias :** Servir des images adaptées au format Next-Gen (WebP/AVIF) avec des attributs explicitement renseignés (`width` et `height`) pour éradiquer le CLS.
+- 🚩 **Code-splitting et Lazy Loading :** Ne charger que le JavaScript strict nécessaire à la vue courante. Le reste attendra.
+- 🚩 **Privilégier le rendu hybride ou SSG/SSR :** Délivrer du HTML prêt à être affiché dès la première poignée de millisecondes.
+
+## 🚀 La performance est une culture, pas une option
+
+L'optimisation web n'est pas une tâche qu'on coche en fin de projet juste avant de livrer. C'est un état d'esprit qui doit guider chaque décision d'architecture, du choix des dépendances au moindre composant UI.
+
+Une interface rapide procure une sensation de fluidité et de professionnalisme inégalée. C'est le meilleur respect qu'on puisse offrir à l'utilisateur.
+
+Si vous avez aimé ce sujet, jetez un œil à mes autres chroniques sur https://william-donnette.dev/blog
