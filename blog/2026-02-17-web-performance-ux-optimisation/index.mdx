@@ -1,0 +1,53 @@
+---
+title: "Performance Web & UX : Comment j'ai divisé par 2 le temps d'affichage de mes applications"
+slug: '/web-performance-ux-optimisation'
+description: "Chronique d'un chasseur de millisecondes : découvrez les arbitrages techniques et les leviers UX qui transforment une application lente en expérience instantanée."
+image: /img/web.jpg
+tags: [performance, ux, webdev, react, frontend, optimisation]
+authors: [william-donnette]
+keywords: [Performance Web, UX, Core Web Vitals, Optimisation React, FCP, LCP, Web Vitals]
+date: 2026-02-17
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+
+<img src="/img/web.jpg" width="3840" height="2160" alt="Performance Web et UX" className="w-full h-auto rounded-lg mb-6" />
+
+Chaque seconde d'attente sur le web est une promesse non tenue. Il y a quelques mois, en analysant les métriques d'une interface en production, j'ai constaté avec amertume qu'un écran clé mettait près de 3,2 secondes à devenir pleinement interactif sur un réseau mobile moyen.
+
+Pour un utilisateur moderne, trois secondes équivalent à une éternité. J'ai donc décidé d'ouvrir le capot et de mener une traque sans merci contre le gaspillage d'octets et les rendus inutiles.
+
+<!--truncate-->
+
+<HorizontalDisplay />
+
+# 🚩 Le diagnostic : où partent vos millisecondes ?
+
+Avant de modifier la moindre ligne de code, la première étape consiste toujours à mesurer. En utilisant Chrome DevTools et WebPageTest, le constat était sans appel :
+
+- 📦 **Un bundle JavaScript surchargé :** des bibliothèques importées dans leur intégralité pour seulement une ou deux fonctions utiles.
+- 🖼️ **Des images non optimisées :** des fichiers volumineux bloquant le *Largest Contentful Paint* (LCP).
+- 🔄 **Des re-rendus en cascade :** des composants React qui réévaluaient tout leur arbre DOM à la moindre interaction.
+
+# 🚩 Les leviers techniques qui font la différence
+
+Pour inverser la tendance, j'ai appliqué trois règles d'or fondées sur la sobriété numérique et l'optimisation ciblée :
+
+- **Le Code Splitting et Dynamic Import :** diviser le bundle pour ne charger que ce dont l'utilisateur a immédiatement besoin à l'écran.
+- **La gestion stricte des assets visuels :** passer au format WebP/AVIF et définir systématiquement des attributs `width` et `height` pour éradiquer le *Cumulative Layout Shift* (CLS).
+- **La mémorisation intelligente :** rationaliser l'utilisation des hooks pour éviter de recalculer inutilement des structures lourdes.
+
+<ArialInArticle />
+
+# 🚩 L'impact psychologique de l'UX
+
+La performance pure ne fait pas tout : l'expérience ressentie est tout aussi capitale.
+
+En intégrant des *skeleton screens* élégants et des indicateurs de chargement optimistes (*optimistic UI*), nous avons transformé la perception d'attente chez l'utilisateur. Le résultat ? Une impression de fluidité immédiate, même lorsque le réseau vacille.
+
+# 🚀 Conclusion : la rapidité est un choix de conception
+
+En réduisant le temps de chargement initial sous la barre des 1,4 seconde, l'engagement et la satisfaction des utilisateurs ont grimpé en flèche. La performance web n'est pas une option qu'on ajoute à la fin d'un projet, c'est une exigence de chaque instant.
+
+Si vous avez aimé ce sujet, jetez un œil à mes autres chroniques sur https://william-donnette.dev/blog
