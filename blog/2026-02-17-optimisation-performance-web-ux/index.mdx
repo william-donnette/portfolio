@@ -1,0 +1,56 @@
+---
+title: "Web Performance & UX : La chasse aux millisecondes qui change tout"
+slug: '/optimisation-performance-web-ux'
+description: "Découvrez comment l'optimisation des Core Web Vitals et de l'UX transforme l'expérience utilisateur et démultiplie la rétention sur le web."
+image: /img/web.jpg
+tags: [performance, ux, webdev, react, frontend, optimisation]
+authors: [william-donnette]
+keywords: [Web Performance, UX, Core Web Vitals, LCP, CLS, Optimisation Web, React]
+date: 2026-02-17
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+
+<img src="/img/web.jpg" alt="Web Performance & UX" width="3840" height="2160" />
+
+<HorizontalDisplay />
+
+Chaque seconde d'attente sur un site web est une promesse non tenue envers votre utilisateur. Dans les coulisses des applications modernes, la vitesse de chargement n'est plus un simple détail technique, mais le cœur battant de l'expérience utilisateur.
+
+Lors de mes récents travaux d'audit et d'optimisation d'applications web, j'ai mesuré l'impact dévastateur du moindre ralentissement sur l'engagement. Quand le temps d'affichage franchit la barre des trois secondes, plus de la moitié de vos visiteurs ont déjà repris la mer.
+
+<!--truncate-->
+
+# Le verdict impitoyable des chiffres ⏱️
+
+Au fil de mes investigations sur le terrain, un constat s'impose : la vitesse perçue est tout aussi vitale que la vitesse réelle. Les métriques Google Core Web Vitals ne sont pas des punitions académiques, mais le reflet fidèle du ressenti humain.
+
+Sur une plateforme récente où nous sommes intervenus, quelques ajustements ciblés ont permis d'observer des gains immédiats :
+
+🚩 **LCP (Largest Contentful Paint) divisé par deux :** L'élément principal s'affiche désormais sous la barre symbolique des 1,2 seconde.
+
+🚩 **CLS (Cumulative Layout Shift) réduit à zéro :** Plus aucun saut de page inopiné au chargement des images ou des polices.
+
+🚩 **Taux de rebond en chute libre :** Un gain direct de 25 % sur la conservation des sessions utilisateurs dès la première semaine.
+
+# Les trois leviers d'une fluidité exemplaire 🛠️
+
+Pour obtenir ces résultats sans réécrire l'intégralité du code source, la méthode doit être chirurgicale. Voici les piliers stratégiques que j'applique systématiquement :
+
+## 1. La diète numérique des assets 📦
+Les images non compressées et les bundles JavaScript surchargés sont les premiers coupables. Adopter des formats modernes comme WebP ou AVIF et utiliser le lazy-loading natif libère immédiatement la bande passante.
+
+<ArialInArticle />
+
+## 2. Le rendu critique en priorité 🎯
+Rien ne sert de tout charger d'un coup. Prioriser les ressources indispensables à l'affichage initial (above the fold) permet à l'utilisateur de commencer sa navigation pendant que le reste s'installe discrètement en arrière-plan.
+
+## 3. La stabilité visuelle avant tout 📐
+Rien n'est plus exaspérant qu'un bouton qui se déplace au moment précis où l'on clique dessus. En réservant explicitement les dimensions des éléments média (`width` et `height`), on garantit une mise en page imperturbable.
+
+# L'expérience utilisateur au centre de la stratégie 🚀
+
+La performance web est un équilibre subtil entre ingénierie et psychologie. Un site rapide inspire confiance, crédibilité et professionnalisme. En plaçant l'UX au centre de nos arbitrages techniques, nous transformons une simple visite en une expérience fluide et mémorable.
+
+Si vous avez aimé ce sujet, jetez un œil à mes autres chroniques sur https://william-donnette.dev/blog
