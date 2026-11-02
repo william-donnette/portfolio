@@ -1,0 +1,69 @@
+---
+title: "Performance Web : Pourquoi chaque milliseconde compte pour votre UX ⚡"
+slug: '/performance-web-impact-ux'
+description: "Plongez dans les coulisses de la vitesse web : découvrez comment traquer les millisecondes perdues pour booster l'expérience utilisateur et les conversions."
+image: /img/web.jpg
+tags: [webdev, performance, ux, frontend, core-web-vitals, optimisation]
+authors: [william-donnette]
+keywords: [Performance Web, UX, Core Web Vitals, Vitesse de chargement, Optimisation Web, Frontend]
+date: 2026-02-17
+---
+
+import HorizontalDisplay from '@site/src/components/ads/horizontal-display';
+import ArialInArticle from '@site/src/components/ads/arial-in-article';
+import ArialMultiplex from '@site/src/components/ads/arial-multiplex';
+
+<img
+  src="/img/web.jpg"
+  alt="Performance Web et UX"
+  width="3840"
+  height="2160"
+  className="w-full h-auto rounded-lg shadow-md"
+/>
+
+<HorizontalDisplay />
+
+Imaginez la scène : vous êtes dans le tramway entre deux arrêts à Montpellier, le réseau oscille entre 4G et 5G, et vous tentez d'accéder à un service en ligne urgent. Trois secondes passent. Rien. Une page blanche s'éternise, un loader tourne dans le vide, et le premier réflexe viscéral se produit : vous fermez l'onglet.
+
+Dans mon quotidien de développeur fullstack, j'ai vu des dizaines de projets investir des fortunes en design et en fonctionnalités sophistiquées, pour finalement tout gâcher sur la ligne d'arrivée. La dure réalité du web moderne est implacable : un produit lent est un produit mort avant même d'avoir été testé.
+
+<!--truncate-->
+
+## 1. La psychologie de l'attente : ce que disent les chiffres ⏱️
+
+Quand on analyse le comportement des utilisateurs, on réalise vite que la tolérance au délai est quasi nulle. Ce n'est pas seulement une question d'impatience, c'est une réaction cognitive :
+
+🚩 **Le seuil des 100 ms :** Le cerveau humain perçoit l'action comme instantanée. C'est l'idéal pour un retour d'interaction tactile ou un clic.
+🚩 **Le cap des 1 seconde :** L'utilisateur conserve le fil de sa pensée, mais sent déjà une micro-friction.
+🚩 **Au-delà de 3 secondes :** Plus de 50 % des visiteurs mobiles abandonnent la session. Le tunnel de conversion s'effondre net.
+
+Lorsque j'optimise des interfaces web, je ne cherche pas seulement à flatter les scores d'un audit automatisé : je traque l'irritation silencieuse de l'utilisateur qui attend.
+
+## 2. Core Web Vitals : dompter le trio infernal 🎯
+
+Google a rebattu les cartes avec ses signaux web essentiels. En tant que créateurs du web, nous devons avoir les yeux rivés sur ces trois métriques clés :
+
+- **LCP (Largest Contentful Paint) :** Le temps d'affichage du plus gros bloc visible. Si votre image héro met 4 secondes à s'afficher à cause d'un fichier brut non compressé de 5 Mo, vous avez perdu.
+- **INP (Interaction to Next Paint) :** La réactivité réelle lors des clics et frappes au clavier. Les longs calculs bloquant le thread principal JavaScript sont les pires ennemis de l'INP.
+- **CLS (Cumulative Layout Shift) :** Rien n'est plus frustrant qu'un bouton qui se décale subitement au moment exact où vous alliez appuyer dessus parce qu'une bannière publicitaire ou une image sans dimensions vient de charger.
+
+<ArialInArticle />
+
+## 3. Mon plan d'action sur le terrain 🛠️
+
+Face à une application qui s'essouffle, voici les leviers concrets que j'applique systématiquement :
+
+- **Calibrer systématiquement les médias :** Spécifier les attributs `width` et `height` sur chaque balise image pour réserver l'espace dans le layout et éradiquer le CLS.
+- **Tailler dans le gras de JavaScript :** Adopter le lazy loading des composants secondaires, éliminer les bibliothèques surdimensionnées et différer tout ce qui n'est pas indispensable au premier rendu.
+- **Miser sur le cache et les formats modernes :** Servir des images au format WebP ou AVIF, configurer un CDN efficace et compresser avec Brotli.
+- **Soigner le rendu perçu :** Utilisez des squelettes de chargement (skeletons) plutôt que des spinners anxiogènes. L'utilisateur a l'impression d'avancer quand la structure apparaît immédiatement.
+
+## 4. La vitesse comme argument business 🚀
+
+Optimiser la performance technique n'est pas un caprice d'ingénieur obsédé par les benchmarks. C'est un levier direct d'impact : un site rapide convertit davantage, améliore son référencement naturel et réduit son empreinte énergétique sur les terminaux clients.
+
+Chaque centaine de millisecondes gagnée est une friction en moins entre votre vision et vos utilisateurs.
+
+Si vous avez aimé ce sujet, jetez un œil à mes autres chroniques sur https://william-donnette.dev/blog.
+
+<ArialMultiplex />
